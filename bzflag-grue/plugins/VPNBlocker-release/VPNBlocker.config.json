@@ -1,0 +1,12 @@
+{
+  "allow_vpn": "verified",
+  "max_bzid": 57863,
+  "services": [
+    {
+      "type": "iphub",
+      "key": "MTgyOTQ6ekZKbWwwa2doOGFMQzQ4NnFlMzVHNjRTbnZhaWpUVHY="
+    }
+  ],
+  "block_list_url": "",
+  "report_url": ""
+}

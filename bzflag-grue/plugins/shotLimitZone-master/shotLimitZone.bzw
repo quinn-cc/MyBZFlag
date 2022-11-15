@@ -1,0 +1,23 @@
+options
+    -a 0 0
+    +f US{5}
+    +f GM{10}
+    +f TH{1}
+    -ms 5
+    -set _maxFlagGrabs 1
+    -set _worldSize 400
+    -sl GM 10
+end
+
+shotLimitZone
+    position 0 0 0
+    size 10 10 5
+    shotLimit 10
+    flag SW
+end
+
+zone
+    pos 0 0 0
+    size 10 10 0.1
+    zoneflag SW
+end

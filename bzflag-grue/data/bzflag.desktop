@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=BZFlag
+GenericName=Tank Battle Game
+Comment=Battle enemy tanks
+Keywords=capture;flag;tank;game;multiplayer;network;
+Exec=/usr/games/bzflag
+Icon=bzflag-48x48
+Type=Application
+Categories=Game;ActionGame;

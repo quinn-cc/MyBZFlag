@@ -1,0 +1,3 @@
+base64.o: base64.cxx /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

@@ -1,0 +1,58 @@
+BZFlag README for Linux
+=======================
+
+BZFlag is an online multiplayer 3D tank battle game. You can play against
+other people anywhere on a TCP/IP based network, including the Internet.
+BZFlag is free and open source. Please read the file COPYING in the
+bzflag-<version> directory of the standard doc directory (probably
+/usr/share/doc).
+
+Hardware accelerated OpenGL is *highly* recommended. Intel graphics chipsets
+are well supported on Linux, with the exception of the few PowerVR-based
+versions. AMD graphics cards are also well supported on Linux, but may require
+additional firmware to be installed for 3D accelerated graphics to function.
+For instance, on Debian this is accomplished by enabling the contrib and
+non-free repositories and installing the firmware-amd-graphics package. For
+nVidia, there is an open-source Nouveau driver, but you might find this does
+not function well enough and may instead need the proprietary nVidia drivers.
+Install those through your package/driver manager (or, less ideally, from
+nvidia.com).
+
+More information about BZFlag is available in the man pages for bzflag, bzfs,
+bzadmin, and bzw. Also check:
+
+  http://www.BZFlag.org/
+
+Different Linux distributions use different naming conventions for the packages
+that provide the dependencies needed to compile and run BZFlag. Known build
+requirements include:
+
+  Debian & Ubuntu:
+
+    apt-get install g++ libtool automake autoconf libsdl2-dev libcurl3-dev \
+    libc-ares-dev zlib1g-dev libncurses-dev libglew-dev make
+
+  Fedora:
+
+    dnf install SDL2-devel c-ares-devel libcurl-devel gcc-c++ libtool \
+    ncurses-devel zlib-devel glew-devel
+
+After any development packages are installed, execute the following commands
+from the top-level BZFlag source directory:
+
+  ./autogen.sh
+  ./configure
+  make
+
+This will build BZFlag. The autogen.sh step can be skipped if the source code
+was received from the tarball package, but must be included if the source came
+directly from a git clone.
+
+If you wish to install the executables to the usr directory after the build,
+then execute as root:
+
+  make install
+
+
+Submit bug reports and comments on the GitHub site
+https://github.com/BZFlag-Dev/bzflag/issues
