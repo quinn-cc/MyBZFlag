@@ -12,7 +12,7 @@
 /* #undef BROKEN_DINPUT */
 
 /* BZFlag build date */
-#define BUILD_DATE "2022-11-08"
+#define BUILD_DATE "2022-11-15"
 
 /* Data file directory */
 #define BZFLAG_DATA "/usr/local/share/bzflag"

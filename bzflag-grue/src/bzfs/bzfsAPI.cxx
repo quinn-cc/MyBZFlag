@@ -4696,31 +4696,39 @@ BZF_API void bz_forcePlayerSpawn(int playerID)
 
 BZF_API bool bz_isTeamFlag (const char* flagAbbr)
 {
-    return (strcmp(flagAbbr, "R*") == 0 ||
-            strcmp(flagAbbr, "G*") == 0 ||
-            strcmp(flagAbbr, "B*") == 0 ||
-            strcmp(flagAbbr, "P*") == 0);
+    if (flagAbbr)
+        return (strcmp(flagAbbr, "R*") == 0 ||
+                strcmp(flagAbbr, "G*") == 0 ||
+                strcmp(flagAbbr, "B*") == 0 ||
+                strcmp(flagAbbr, "P*") == 0);
+    else
+        return false;
 }
 
 BZF_API void bz_sendToTeamsExcept(bz_eTeamType _team, const char* msg, int from)
 {
-    if (bz_getPlayerTeam(_team) != eRedTeam)
-		bz_sendTextMessage(from, eRedTeam, msg);
-	if (bz_getPlayerTeam(_team) != eGreenTeam)
-        bz_sendTextMessage(from, eGreenTeam, msg);
-	if (bz_getPlayerTeam(_team) != ePurpleTeam)
-        bz_sendTextMessage(from, ePurpleTeam, msg);
-	if (bz_getPlayerTeam(_team) != eBlueTeam)
-        bz_sendTextMessage(from, eBlueTeam, msg);
+    if (_team && msg)
+    {
+        if (_team != eRedTeam)
+            bz_sendTextMessage(from, eRedTeam, msg);
+        if (_team != eGreenTeam)
+            bz_sendTextMessage(from, eGreenTeam, msg);
+        if (_team != ePurpleTeam)
+            bz_sendTextMessage(from, ePurpleTeam, msg);
+        if (_team != eBlueTeam)
+            bz_sendTextMessage(from, eBlueTeam, msg);
+    }
 }
 
 BZF_API bz_eTeamType bz_getTeamFromFlag(const char* flagAbbr)
 {
-    if      (strcmp(flagAbbr, "R*") == 0) return eRedTeam;
-    else if (strcmp(flagAbbr, "G*") == 0) return eGreenTeam;
-    else if (strcmp(flagAbbr, "B*") == 0) return eBlueTeam;
-    else if (strcmp(flagAbbr, "P*") == 0) return ePurpleTeam;
-
+    if (flagAbbr)
+    {
+        if      (strcmp(flagAbbr, "R*") == 0) return eRedTeam;
+        else if (strcmp(flagAbbr, "G*") == 0) return eGreenTeam;
+        else if (strcmp(flagAbbr, "B*") == 0) return eBlueTeam;
+        else if (strcmp(flagAbbr, "P*") == 0) return ePurpleTeam;
+    }
     return eNoTeam;
 }
 

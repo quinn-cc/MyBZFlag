@@ -59,13 +59,11 @@ void TeamFlagGeno::Event(bz_EventData *eventData)
 		{
 			bz_FlagGrabbedEventData_V1 *data = (bz_FlagGrabbedEventData_V1*) eventData;
 			bz_ApiString flag = bz_getFlagName(data->flagID);
-			bz_debugMessage(0, flag.c_str());
 			
 			// If a player grabs their own team flag, warn the other teams by
 			// sending out a message.
 			if (bz_getTeamFromFlag(flag.c_str()) == bz_getPlayerTeam(data->playerID))
 			{
-				bz_debugMessage(0, "watch out");
 				string msg = "Watch out! " + (string) bz_getPlayerCallsign(data->playerID) + " is packing genocide!";
 				bz_sendToTeamsExcept(bz_getPlayerTeam(data->playerID), msg.c_str());
 			}
@@ -106,7 +104,7 @@ void TeamFlagGeno::Event(bz_EventData *eventData)
 					bz_sendTextMessagef(
 						BZ_SERVER,
 						BZ_ALLUSERS,
-						"AVENGED! %s's death has been avenged, having %s destroyed with genocide instead!",
+						"AVENGED! %s's death has been avenged, having %s hit with genocide instead!",
 						bz_getPlayerCallsign(data->playerID),
 						bz_getPlayerCallsign(data->killerID)
 					);

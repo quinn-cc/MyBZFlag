@@ -95,9 +95,7 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 				{
 					// If the burrow immune setting is on, make sure they dont
 					// have Burrow.
-					if (!bz_getBZDBBool("_annihilationBUImmune") ||
-						(bz_getPlayerFlag(player->playerID) &&
-						(bz_getPlayerFlag(player->playerID) == "BU")))
+					if (!(bz_getBZDBBool("_annihilationBUImmune") && bz_getPlayerFlagAbbr(player->playerID) == "BU"))
 					{
 						bz_killPlayer(playerList->get(i), false, data->playerID, "AN");
 						// bz_killPlayer automatically decrements their score,
@@ -105,7 +103,13 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 						bz_incrementPlayerLosses(playerList->get(i), -1);
 						
 						if (playerList->get(i) != data->playerID)
-		            		bz_sendTextMessagef(playerList->get(i), playerList->get(i), "Map annihilated by player %s.", player->callsign.c_str());
+						{
+		            		bz_sendTextMessagef(
+								playerList->get(i), playerList->get(i),
+								"Map annihilated by player %s.",
+								player->callsign.c_str()
+							);
+						}
                 	}
 				}
 				
