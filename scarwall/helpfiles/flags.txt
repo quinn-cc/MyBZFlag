@@ -1,0 +1,10 @@
+**********************************************************
+*            			Custom Flags              		 *
+*                                                        *
+* The custom flags currently in use are:			     *
+* - Grenade			- Vertical Velocity		- Avenger 	 *
+* - Annihilation  	- Gruesome Killer		- Skyfire    *
+* - Triple Barrel 	- Fifty Point			- Airshot	 *
+* - Fifty Fifty		- Dimension Door					 *
+* For flag help, type /help <flagName> with camel case.  *
+**********************************************************

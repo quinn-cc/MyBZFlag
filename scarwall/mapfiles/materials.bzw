@@ -1,0 +1,235 @@
+#Space Skybox
+material
+	name skyboxBase
+	color 1 1 1
+end
+material 
+	name LeftSkyboxMaterial  
+	matref skyboxBase
+	texture http://images.bzflag.org/llegendary/Optic%20Delusion_skybox1.png
+	diffuse red
+end
+material
+	name FrontSkyboxMaterial
+	matref skyboxBase
+	texture http://images.bzflag.org/llegendary/Optic%20Delusion_skybox2.png
+	diffuse yellow
+end
+material
+	name RightSkyboxMaterial
+	matref skyboxBase
+	texture http://images.bzflag.org/llegendary/Optic%20Delusion_skybox4.png
+	diffuse green
+	#texture /home/quinn/Documents/bzflag-maps/textures/skybox-1/right
+end
+material
+	name BackSkyboxMaterial
+	matref skyboxBase
+	texture http://images.bzflag.org/llegendary/Optic%20Delusion_skybox5.png
+	diffuse blue
+	#texture /home/quinn/Documents/bzflag-maps/textures/skybox-1/back
+end
+material
+	name TopSkyboxMaterial
+	matref skyboxBase
+	texture http://images.bzflag.org/llegendary/Optic%20Delusion_skybox3.png
+	diffuse purple
+	#texture /home/quinn/Documents/bzflag-maps/textures/skybox-1/top
+end
+material
+	name BottomSkyboxMaterial 
+	matref skyboxBase
+	texture http://images.bzflag.org/llegendary/Optic%20Delusion_skybox6.png 
+	diffuse white
+	#texture /home/quinn/Documents/bzflag-maps/textures/skybox-1/bottom
+end
+#End Space Skybox
+
+
+
+##################################################
+###### 			Ground Material 			######
+##################################################
+material
+	name GroundMaterial
+	texture http://images.bzflag.org/qcarmack/ground.png
+	#texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/ground
+	diffuse 1 1 1 1
+end
+	
+
+material
+  name base_brick_siding
+  diffuse 1 1 1 1
+  emission 0 0 0
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/base_brick_siding.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/base_brick_siding
+end
+
+material
+  name brick
+  diffuse 1 1 1 1
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/bricks_2.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/bricks_2
+end
+
+material
+  name concrete_dark
+  diffuse .2 .2 .2 1
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/concrete.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete
+end
+
+material
+  name concrete_green
+  diffuse .85 1 .85 1
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/concrete.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete
+end
+
+material
+  name concrete_red
+  diffuse 1 .7 .7 1
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/concrete.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete
+end
+
+material
+  name concrete_grey
+  diffuse 1 1 1 1
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/concrete.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete
+end
+
+material
+  name scarwall_logo
+  diffuse 0 0 0 0.1890
+  emission 0.0000 0.3137 0.8000
+  specular 0.0551 0.1959 0.4142
+  shininess 25.6000
+  texture http://images.bzflag.org/qcarmack/scarwall_logo.png
+end
+
+material
+  name glow_green
+  diffuse 0.0279 1 0.0410 1.0000
+  emission 0.0279 0.4000 0.0410
+  shininess 25.6000
+  texture http://images.bzflag.org/qcarmack/flourescent.png
+end
+
+material
+  name glow_red
+  diffuse 1 0.0000 0.0011 1.0000
+  emission 0.4000 0.0000 0.0011
+  shininess 25.6000
+  texture http://images.bzflag.org/qcarmack/flourescent.png
+end
+
+material
+  name glow_lamppost
+  diffuse .988 .909 0.015 1.0000
+  emission .988 .909 0.015 
+  specular 0.4687 0.1540 0.0590
+  shininess 0
+  nolighting
+end
+
+material
+  name metal
+  diffuse 1 1 1 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.5667 0.5667 0.5667
+  shininess 25.6000
+  texture http://images.bzflag.org/qcarmack/concrete.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures/metal
+end
+
+material
+  name chain_link
+  diffuse 1 1 1 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.5667 0.5667 0.5667
+  shininess 25.6000
+  texture http://images.bzflag.org/gbratley/Spazzy%20McGee_fence-barbs.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures/metal
+end
+
+material
+  name wood
+  diffuse 1 1 1 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/wood.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/wood
+end
+
+material
+  name rock
+  diffuse 1 1 1 1
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/rock.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/rock
+end
+
+material
+  name gemstone_purple
+  diffuse .76 .2 .92 .9
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/concrete.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete
+end
+
+material
+  name gemstone_blue
+  diffuse .28 .76 .84 .9
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://images.bzflag.org/qcarmack/concrete.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete
+end
+
+material
+  name glass_blue
+  diffuse 0.0219 0.2579 0.8000 0.1890
+  emission 0.0000 0.0000 0.0000
+  specular 0.0653 0.1701 0.4107
+  shininess 25.6000
+end
+
+
+material
+  name protector
+  diffuse 0 0 0 0
+  emission 0 0 0
+  specular 0 0 0
+  shininess 0
+  noradar
+  nolighting
+  noculling
+  nosorting
+end
+
+

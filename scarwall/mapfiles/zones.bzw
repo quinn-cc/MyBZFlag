@@ -1,0 +1,104 @@
+
+###############################
+## 	 	Zoned Wings          ##
+###############################
+zone
+	position -256 0 0
+	size 1 1 1
+	zoneflag WG 1
+end
+shotLimitZone
+	position -256 0 0
+	radius 2
+	height 2
+	shotLimit 1
+	flag WG
+end
+zone
+	position 256 0 0
+	size 1 1 1
+	zoneflag WG 1
+end
+shotLimitZone
+	position 256 0 0
+	radius 2
+	height 2
+	shotLimit 1
+	flag WG
+end
+zone
+	position 0 256 0
+	size 1 1 1
+	zoneflag WG 1
+end
+shotLimitZone
+	position 0 256 0
+	radius 2
+	height 2
+	shotLimit 1
+	flag WG
+end
+zone
+	position 0 -256 0
+	size 1 1 1
+	zoneflag WG 1
+end
+shotLimitZone
+	position 0 -256 0
+	radius 2
+	height 2
+	shotLimit 1
+	flag WG
+end
+
+############################
+###      Zoned SW         ##
+############################
+zone
+	position -274 122 0
+	size 1 1 1
+	zoneflag SW 1
+end
+shotLimitZone
+	position -274 122 0
+	radius 2
+	height 2
+	shotLimit 2
+	flag SW
+end
+zone
+	position 274 122 0
+	size 1 1 1
+	zoneflag SW 1
+end
+shotLimitZone
+	position 274 122 0
+	radius 2
+	height 2
+	shotLimit 2
+	flag SW
+end
+zone
+	position 274 -122 0
+	size 1 1 1
+	zoneflag SW 1
+end
+shotLimitZone
+	position 274 -122 0
+	radius 2
+	height 2
+	shotLimit 2
+	flag SW
+end
+zone
+	position -274 -122 0
+	size 1 1 1
+	zoneflag SW 1
+end
+shotLimitZone
+	position -274 -122 0
+	radius 2
+	height 2
+	shotLimit 2
+	flag SW
+end

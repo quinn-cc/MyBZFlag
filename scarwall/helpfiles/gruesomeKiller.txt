@@ -1,0 +1,8 @@
+**********************************************************
+*                    Gruesome Killer                     *
+*                                                        *
+* Kills explode in a shock wave, along with "shrapnel"   *
+* which are bullets erupting in all directions. If any   *
+* other enemy is hit by the shock wave or shrapnel, then *
+* they also explode in a shock wave and shrapnel.        *
+**********************************************************

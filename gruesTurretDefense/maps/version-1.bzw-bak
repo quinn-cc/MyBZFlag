@@ -1,0 +1,3535 @@
+# Exported from Wings 3D 2.2.4
+
+material
+  name bricks
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.5667 0.5667 0.5667
+  shininess 25.6000
+  texture bricks_2.png
+end
+
+material
+  name concrete
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1358
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1359
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1360
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1361
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1362
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1363
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1364
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1365
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1366
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1367
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1368
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1369
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1370
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1371
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1372
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1373
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1374
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name concrete_dark1375
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1000 0.1000 0.1000
+  shininess 25.6000
+  texture concrete.png
+end
+
+material
+  name default
+  diffuse 0.7899 0.8133 0.6940 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.1690 0.1713 0.1594
+  shininess 25.6000
+end
+
+material
+  name glass
+  diffuse 0.8000 0.8000 0.8000 1.0000
+  emission 0.0000 0.0000 0.0000
+  specular 0.5667 0.5667 0.5667
+  shininess 25.6000
+end
+
+mesh
+  name Cube.029_Cube.013
+  #8 vertices, 6 faces
+  vertex 97.0000 149.0000 -0.0000
+  vertex 97.0000 149.0000 4.0000
+  vertex 97.0000 151.0000 -0.0000
+  vertex 97.0000 151.0000 4.0000
+  vertex 103.0000 149.0000 -0.0000
+  vertex 103.0000 149.0000 4.0000
+  vertex 103.0000 151.0000 -0.0000
+  vertex 103.0000 151.0000 4.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -0.7557 -1.1333
+  texcoord -0.7557 -0.7249
+  texcoord -0.7557 0.5000
+  texcoord -0.7557 0.9083
+  texcoord -0.7557 2.1333
+  texcoord -0.7555 -1.1330
+  texcoord -0.7555 2.1330
+  texcoord 0.0609 -1.1333
+  texcoord 0.0609 -0.7249
+  texcoord 0.0609 0.5000
+  texcoord 0.0609 0.9083
+  texcoord 0.0609 2.1333
+  texcoord 0.3332 -1.1330
+  texcoord 0.3332 2.1330
+  texcoord 0.3339 -1.1330
+  texcoord 0.3339 2.1330
+  texcoord 1.4226 -1.1330
+  texcoord 1.4226 2.1330
+  #matref Cube.029_Cube.013 # group?_concrete_dark1375
+  matref concrete_dark1375
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 10 11 4 3
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 9 10
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 12 13 6 5
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 16 17 15 14
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 8 9
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 8 1 0
+  endface
+end
+mesh
+  name Cube.028_Cube.013
+  #8 vertices, 6 faces
+  vertex -103.0000 149.0000 -0.0000
+  vertex -103.0000 149.0000 4.0000
+  vertex -103.0000 151.0000 -0.0000
+  vertex -103.0000 151.0000 4.0000
+  vertex -97.0000 149.0000 -0.0000
+  vertex -97.0000 149.0000 4.0000
+  vertex -97.0000 151.0000 -0.0000
+  vertex -97.0000 151.0000 4.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -0.7557 -1.1333
+  texcoord -0.7557 -0.7249
+  texcoord -0.7557 0.5000
+  texcoord -0.7557 0.9083
+  texcoord -0.7557 2.1333
+  texcoord -0.7555 -1.1330
+  texcoord -0.7555 2.1330
+  texcoord 0.0609 -1.1333
+  texcoord 0.0609 -0.7249
+  texcoord 0.0609 0.5000
+  texcoord 0.0609 0.9083
+  texcoord 0.0609 2.1333
+  texcoord 0.3332 -1.1330
+  texcoord 0.3332 2.1330
+  texcoord 0.3339 -1.1330
+  texcoord 0.3339 2.1330
+  texcoord 1.4226 -1.1330
+  texcoord 1.4226 2.1330
+  #matref Cube.028_Cube.013 # group?_concrete_dark1374
+  matref concrete_dark1374
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 10 11 4 3
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 9 10
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 12 13 6 5
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 16 17 15 14
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 8 9
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 8 1 0
+  endface
+end
+mesh
+  name Cube.027_Cube.013
+  #8 vertices, 6 faces
+  vertex 97.0000 -1.0000 0.0000
+  vertex 97.0000 -1.0000 4.0000
+  vertex 97.0000 1.0000 -0.0000
+  vertex 97.0000 1.0000 4.0000
+  vertex 103.0000 -1.0000 0.0000
+  vertex 103.0000 -1.0000 4.0000
+  vertex 103.0000 1.0000 -0.0000
+  vertex 103.0000 1.0000 4.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 -0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 -0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 -0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 0.0000 1.0000 -0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -0.7557 -1.1333
+  texcoord -0.7557 -0.7249
+  texcoord -0.7557 0.5000
+  texcoord -0.7557 0.9083
+  texcoord -0.7557 2.1333
+  texcoord -0.7555 -1.1330
+  texcoord -0.7555 2.1330
+  texcoord 0.0609 -1.1333
+  texcoord 0.0609 -0.7249
+  texcoord 0.0609 0.5000
+  texcoord 0.0609 0.9083
+  texcoord 0.0609 2.1333
+  texcoord 0.3332 -1.1330
+  texcoord 0.3332 2.1330
+  texcoord 0.3339 -1.1330
+  texcoord 0.3339 2.1330
+  texcoord 1.4226 -1.1330
+  texcoord 1.4226 2.1330
+  #matref Cube.027_Cube.013 # group?_concrete_dark1373
+  matref concrete_dark1373
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 10 11 4 3
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 9 10
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 12 13 6 5
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 16 17 15 14
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 8 9
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 8 1 0
+  endface
+end
+mesh
+  name Cube.026_Cube.013
+  #8 vertices, 6 faces
+  vertex -103.0000 -1.0000 0.0000
+  vertex -103.0000 -1.0000 4.0000
+  vertex -103.0000 1.0000 -0.0000
+  vertex -103.0000 1.0000 4.0000
+  vertex -97.0000 -1.0000 0.0000
+  vertex -97.0000 -1.0000 4.0000
+  vertex -97.0000 1.0000 -0.0000
+  vertex -97.0000 1.0000 4.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 -0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 -0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 -0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 0.0000 1.0000 -0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -0.7557 -1.1333
+  texcoord -0.7557 -0.7249
+  texcoord -0.7557 0.5000
+  texcoord -0.7557 0.9083
+  texcoord -0.7557 2.1333
+  texcoord -0.7555 -1.1330
+  texcoord -0.7555 2.1330
+  texcoord 0.0609 -1.1333
+  texcoord 0.0609 -0.7249
+  texcoord 0.0609 0.5000
+  texcoord 0.0609 0.9083
+  texcoord 0.0609 2.1333
+  texcoord 0.3332 -1.1330
+  texcoord 0.3332 2.1330
+  texcoord 0.3339 -1.1330
+  texcoord 0.3339 2.1330
+  texcoord 1.4226 -1.1330
+  texcoord 1.4226 2.1330
+  #matref Cube.026_Cube.013 # group?_concrete_dark1372
+  matref concrete_dark1372
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 10 11 4 3
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 9 10
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 12 13 6 5
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 16 17 15 14
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 8 9
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 8 1 0
+  endface
+end
+mesh
+  name Cube.025_Cube.013
+  #8 vertices, 6 faces
+  vertex 97.0000 -201.0000 0.0000
+  vertex 97.0000 -201.0000 4.0000
+  vertex 97.0000 -199.0000 0.0000
+  vertex 97.0000 -199.0000 4.0000
+  vertex 103.0000 -201.0000 0.0000
+  vertex 103.0000 -201.0000 4.0000
+  vertex 103.0000 -199.0000 0.0000
+  vertex 103.0000 -199.0000 4.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -0.7557 -1.1333
+  texcoord -0.7557 -0.7249
+  texcoord -0.7557 0.5000
+  texcoord -0.7557 0.9083
+  texcoord -0.7557 2.1333
+  texcoord -0.7555 -1.1330
+  texcoord -0.7555 2.1330
+  texcoord 0.0609 -1.1333
+  texcoord 0.0609 -0.7249
+  texcoord 0.0609 0.5000
+  texcoord 0.0609 0.9083
+  texcoord 0.0609 2.1333
+  texcoord 0.3332 -1.1330
+  texcoord 0.3332 2.1330
+  texcoord 0.3339 -1.1330
+  texcoord 0.3339 2.1330
+  texcoord 1.4226 -1.1330
+  texcoord 1.4226 2.1330
+  #matref Cube.025_Cube.013 # group?_concrete_dark1371
+  matref concrete_dark1371
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 10 11 4 3
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 9 10
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 12 13 6 5
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 16 17 15 14
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 8 9
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 8 1 0
+  endface
+end
+mesh
+  name Cube.024_Cube.013
+  #8 vertices, 6 faces
+  vertex -103.0000 -201.0000 0.0000
+  vertex -103.0000 -201.0000 4.0000
+  vertex -103.0000 -199.0000 0.0000
+  vertex -103.0000 -199.0000 4.0000
+  vertex -97.0000 -201.0000 0.0000
+  vertex -97.0000 -201.0000 4.0000
+  vertex -97.0000 -199.0000 0.0000
+  vertex -97.0000 -199.0000 4.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -0.7557 -1.1333
+  texcoord -0.7557 -0.7249
+  texcoord -0.7557 0.5000
+  texcoord -0.7557 0.9083
+  texcoord -0.7557 2.1333
+  texcoord -0.7555 -1.1330
+  texcoord -0.7555 2.1330
+  texcoord 0.0609 -1.1333
+  texcoord 0.0609 -0.7249
+  texcoord 0.0609 0.5000
+  texcoord 0.0609 0.9083
+  texcoord 0.0609 2.1333
+  texcoord 0.3332 -1.1330
+  texcoord 0.3332 2.1330
+  texcoord 0.3339 -1.1330
+  texcoord 0.3339 2.1330
+  texcoord 1.4226 -1.1330
+  texcoord 1.4226 2.1330
+  #matref Cube.024_Cube.013 # group?_concrete_dark1370
+  matref concrete_dark1370
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 10 11 4 3
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 9 10
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 12 13 6 5
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 16 17 15 14
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 8 9
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 8 1 0
+  endface
+end
+mesh
+  name Cube.022_Cube.011
+  #8 vertices, 6 faces
+  vertex -200.0000 290.0000 -0.0000
+  vertex -200.0000 290.0000 10.0000
+  vertex -200.0000 300.0000 -0.0000
+  vertex -200.0000 300.0000 10.0000
+  vertex 200.0000 290.0000 -0.0000
+  vertex 200.0000 290.0000 10.0000
+  vertex 200.0000 300.0000 -0.0000
+  vertex 200.0000 300.0000 10.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -9.6238 15.4699
+  texcoord -9.6238 -4.2270
+  texcoord -9.6074 4.8124
+  texcoord -9.6073 -13.5691
+  texcoord -9.4996 0.4993
+  texcoord -9.4996 0.7432
+  texcoord -9.4995 -9.2559
+  texcoord -9.4995 -9.4998
+  texcoord -9.4992 -9.4994
+  texcoord -9.4992 -9.0117
+  texcoord -9.2557 0.7432
+  texcoord -9.2557 0.4993
+  texcoord -9.2557 -9.2559
+  texcoord -9.2557 -9.4998
+  texcoord -9.1479 4.8124
+  texcoord -9.1478 -13.5691
+  texcoord -9.1315 -4.2270
+  texcoord -9.1314 15.4699
+  texcoord 10.0106 -9.4994
+  texcoord 10.0106 -9.0116
+  texcoord 10.0118 10.0104
+  texcoord 10.0119 -9.4994
+  texcoord 10.4996 -9.4994
+  texcoord 10.4996 10.0104
+  #matref Cube.022_Cube.011 # group?_concrete_dark1369
+  matref concrete_dark1369
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 16 17 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 5 4 11 10
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 19 9 8 18
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 22 23 20 21
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 3 15 14
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 13 12 6 7
+  endface
+end
+mesh
+  name Cube.021_Cube.010
+  #8 vertices, 6 faces
+  vertex -170.0000 397.0000 68.8663
+  vertex -170.0000 397.0000 70.0000
+  vertex -170.0000 400.0000 68.8663
+  vertex -170.0000 400.0000 70.0000
+  vertex -150.0000 397.0000 68.8663
+  vertex -150.0000 397.0000 70.0000
+  vertex -150.0000 400.0000 68.8663
+  vertex -150.0000 400.0000 70.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.1413 0.3404
+  texcoord -1.1413 0.5000
+  texcoord -1.1413 2.0960
+  texcoord -1.1413 2.2556
+  texcoord -1.1413 -1.2556
+  texcoord -1.1412 -1.2555
+  texcoord -1.1412 -0.9363
+  texcoord -1.1412 2.2555
+  texcoord -1.1412 -0.9359
+  texcoord -0.9817 0.3404
+  texcoord -0.9817 0.5000
+  texcoord -0.9817 -1.2556
+  texcoord -0.9817 2.0960
+  texcoord -0.9817 2.2556
+  texcoord -0.8220 -0.9359
+  texcoord -0.8220 2.2555
+  texcoord 2.0503 -1.2555
+  texcoord 2.0503 -0.9363
+  #matref Cube.021_Cube.010 # group?_concrete_dark1368
+  matref concrete_dark1368
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 11 9 0 4
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 12 13
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 6 5 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 14 15 7 8
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 10 12
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 9 10 1 0
+  endface
+end
+mesh
+  name Cube.020_Cube.008
+  #8 vertices, 6 faces
+  vertex -170.0000 378.0000 74.0000
+  vertex -170.0000 378.0000 76.0000
+  vertex -170.0000 398.0000 74.0000
+  vertex -170.0000 398.0000 76.0000
+  vertex -150.0000 378.0000 74.0000
+  vertex -150.0000 378.0000 76.0000
+  vertex -150.0000 398.0000 74.0000
+  vertex -150.0000 398.0000 76.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.020_Cube.008 # group?_concrete_dark1367
+  matref concrete_dark1367
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Cube.019_Cube.007
+  #24 vertices, 22 faces
+  vertex -170.0000 379.0000 69.0000
+  vertex -170.0000 379.0000 74.0000
+  vertex -170.0000 398.0000 69.0000
+  vertex -170.0000 398.0000 74.0000
+  vertex -169.0000 379.0000 69.0000
+  vertex -169.0000 379.0000 74.0000
+  vertex -169.0000 398.0000 69.0000
+  vertex -169.0000 398.0000 74.0000
+  vertex -170.0000 378.0000 69.0000
+  vertex -170.0000 378.0000 74.0000
+  vertex -169.0000 378.0000 69.0000
+  vertex -169.0000 378.0000 74.0000
+  vertex -151.0000 379.0000 69.0000
+  vertex -151.0000 379.0000 74.0000
+  vertex -151.0000 378.0000 69.0000
+  vertex -151.0000 378.0000 74.0000
+  vertex -150.0000 379.0000 69.0000
+  vertex -150.0000 379.0000 74.0000
+  vertex -150.0000 378.0000 69.0000
+  vertex -150.0000 378.0000 74.0000
+  vertex -151.0000 398.0000 69.0000
+  vertex -151.0000 398.0000 74.0000
+  vertex -150.0000 398.0000 69.0000
+  vertex -150.0000 398.0000 74.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.0000
+  texcoord 0.3750 0.2500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 0.3750 1.0000
+  texcoord 0.6250 0.0000
+  texcoord 0.6250 0.2500
+  texcoord 0.6250 0.5000
+  texcoord 0.6250 0.7500
+  texcoord 0.6250 1.0000
+  texcoord 0.8750 0.5000
+  texcoord 0.8750 0.7500
+  #matref Cube.019_Cube.007 # group?_glass
+  matref glass
+  face
+    vertices 0 8 9 1
+    normals 2 31 35 7
+    texcoords 2 2 7 7
+  endface
+  face
+    vertices 1 3 2 0
+    normals 4 11 8 0
+    texcoords 7 8 3 2
+  endface
+  face
+    vertices 1 5 7 3
+    normals 6 21 29 13
+    texcoords 13 10 9 12
+  endface
+  face
+    vertices 1 9 11 5
+    normals 5 33 40 20
+    texcoords 13 13 10 10
+  endface
+  face
+    vertices 2 6 4 0
+    normals 10 26 15 1
+    texcoords 0 4 5 1
+  endface
+  face
+    vertices 3 7 6 2
+    normals 12 27 24 9
+    texcoords 8 9 4 3
+  endface
+  face
+    vertices 4 6 7 5
+    normals 14 25 28 19
+    texcoords 5 4 9 10
+  endface
+  face
+    vertices 4 10 8 0
+    normals 16 37 32 3
+    texcoords 5 5 1 1
+  endface
+  face
+    vertices 4 12 14 10
+    normals 18 45 55 39
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 5 13 12 4
+    normals 23 51 44 17
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 8 10 11 9
+    normals 30 36 41 34
+    texcoords 6 5 10 11
+  endface
+  face
+    vertices 10 14 15 11
+    normals 38 54 60 43
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 11 15 13 5
+    normals 42 58 49 22
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 12 16 18 14
+    normals 46 64 71 56
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 12 20 22 16
+    normals 48 78 84 65
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 13 21 20 12
+    normals 53 81 77 47
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 14 18 19 15
+    normals 57 72 75 61
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 15 19 17 13
+    normals 59 73 66 50
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 16 22 23 17
+    normals 63 82 85 68
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 17 19 18 16
+    normals 67 74 70 62
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 17 23 21 13
+    normals 69 87 80 52
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 21 23 22 20
+    normals 79 86 83 76
+    texcoords 10 10 5 5
+  endface
+end
+mesh
+  name Cube.018_Cube.005
+  #8 vertices, 6 faces
+  vertex -170.0000 378.0000 68.8692
+  vertex -170.0000 378.0000 69.0000
+  vertex -170.0000 398.0000 68.8692
+  vertex -170.0000 398.0000 69.0000
+  vertex -150.0000 378.0000 68.8692
+  vertex -150.0000 378.0000 69.0000
+  vertex -150.0000 398.0000 68.8692
+  vertex -150.0000 398.0000 69.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.018_Cube.005 # group?_glass
+  matref glass
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Cube.017_Cube.010
+  #8 vertices, 6 faces
+  vertex -90.0000 397.0000 68.8663
+  vertex -90.0000 397.0000 70.0000
+  vertex -90.0000 400.0000 68.8663
+  vertex -90.0000 400.0000 70.0000
+  vertex -70.0000 397.0000 68.8663
+  vertex -70.0000 397.0000 70.0000
+  vertex -70.0000 400.0000 68.8663
+  vertex -70.0000 400.0000 70.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.1413 0.3404
+  texcoord -1.1413 0.5000
+  texcoord -1.1413 2.0960
+  texcoord -1.1413 2.2556
+  texcoord -1.1413 -1.2556
+  texcoord -1.1412 -1.2555
+  texcoord -1.1412 -0.9363
+  texcoord -1.1412 2.2555
+  texcoord -1.1412 -0.9359
+  texcoord -0.9817 0.3404
+  texcoord -0.9817 0.5000
+  texcoord -0.9817 -1.2556
+  texcoord -0.9817 2.0960
+  texcoord -0.9817 2.2556
+  texcoord -0.8220 -0.9359
+  texcoord -0.8220 2.2555
+  texcoord 2.0503 -1.2555
+  texcoord 2.0503 -0.9363
+  #matref Cube.017_Cube.010 # group?_concrete_dark1366
+  matref concrete_dark1366
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 11 9 0 4
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 12 13
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 6 5 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 14 15 7 8
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 10 12
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 9 10 1 0
+  endface
+end
+mesh
+  name Cube.016_Cube.008
+  #8 vertices, 6 faces
+  vertex -90.0000 378.0000 74.0000
+  vertex -90.0000 378.0000 76.0000
+  vertex -90.0000 398.0000 74.0000
+  vertex -90.0000 398.0000 76.0000
+  vertex -70.0000 378.0000 74.0000
+  vertex -70.0000 378.0000 76.0000
+  vertex -70.0000 398.0000 74.0000
+  vertex -70.0000 398.0000 76.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.016_Cube.008 # group?_concrete_dark1365
+  matref concrete_dark1365
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Cube.015_Cube.007
+  #24 vertices, 22 faces
+  vertex -90.0000 379.0000 69.0000
+  vertex -90.0000 379.0000 74.0000
+  vertex -90.0000 398.0000 69.0000
+  vertex -90.0000 398.0000 74.0000
+  vertex -89.0000 379.0000 69.0000
+  vertex -89.0000 379.0000 74.0000
+  vertex -89.0000 398.0000 69.0000
+  vertex -89.0000 398.0000 74.0000
+  vertex -90.0000 378.0000 69.0000
+  vertex -90.0000 378.0000 74.0000
+  vertex -89.0000 378.0000 69.0000
+  vertex -89.0000 378.0000 74.0000
+  vertex -71.0000 379.0000 69.0000
+  vertex -71.0000 379.0000 74.0000
+  vertex -71.0000 378.0000 69.0000
+  vertex -71.0000 378.0000 74.0000
+  vertex -70.0000 379.0000 69.0000
+  vertex -70.0000 379.0000 74.0000
+  vertex -70.0000 378.0000 69.0000
+  vertex -70.0000 378.0000 74.0000
+  vertex -71.0000 398.0000 69.0000
+  vertex -71.0000 398.0000 74.0000
+  vertex -70.0000 398.0000 69.0000
+  vertex -70.0000 398.0000 74.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.0000
+  texcoord 0.3750 0.2500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 0.3750 1.0000
+  texcoord 0.6250 0.0000
+  texcoord 0.6250 0.2500
+  texcoord 0.6250 0.5000
+  texcoord 0.6250 0.7500
+  texcoord 0.6250 1.0000
+  texcoord 0.8750 0.5000
+  texcoord 0.8750 0.7500
+  #matref Cube.015_Cube.007 # group?_glass
+  matref glass
+  face
+    vertices 0 8 9 1
+    normals 2 31 35 7
+    texcoords 2 2 7 7
+  endface
+  face
+    vertices 1 3 2 0
+    normals 4 11 8 0
+    texcoords 7 8 3 2
+  endface
+  face
+    vertices 1 5 7 3
+    normals 6 21 29 13
+    texcoords 13 10 9 12
+  endface
+  face
+    vertices 1 9 11 5
+    normals 5 33 40 20
+    texcoords 13 13 10 10
+  endface
+  face
+    vertices 2 6 4 0
+    normals 10 26 15 1
+    texcoords 0 4 5 1
+  endface
+  face
+    vertices 3 7 6 2
+    normals 12 27 24 9
+    texcoords 8 9 4 3
+  endface
+  face
+    vertices 4 6 7 5
+    normals 14 25 28 19
+    texcoords 5 4 9 10
+  endface
+  face
+    vertices 4 10 8 0
+    normals 16 37 32 3
+    texcoords 5 5 1 1
+  endface
+  face
+    vertices 4 12 14 10
+    normals 18 45 55 39
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 5 13 12 4
+    normals 23 51 44 17
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 8 10 11 9
+    normals 30 36 41 34
+    texcoords 6 5 10 11
+  endface
+  face
+    vertices 10 14 15 11
+    normals 38 54 60 43
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 11 15 13 5
+    normals 42 58 49 22
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 12 16 18 14
+    normals 46 64 71 56
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 12 20 22 16
+    normals 48 78 84 65
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 13 21 20 12
+    normals 53 81 77 47
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 14 18 19 15
+    normals 57 72 75 61
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 15 19 17 13
+    normals 59 73 66 50
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 16 22 23 17
+    normals 63 82 85 68
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 17 19 18 16
+    normals 67 74 70 62
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 17 23 21 13
+    normals 69 87 80 52
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 21 23 22 20
+    normals 79 86 83 76
+    texcoords 10 10 5 5
+  endface
+end
+mesh
+  name Cube.014_Cube.005
+  #8 vertices, 6 faces
+  vertex -90.0000 378.0000 68.8692
+  vertex -90.0000 378.0000 69.0000
+  vertex -90.0000 398.0000 68.8692
+  vertex -90.0000 398.0000 69.0000
+  vertex -70.0000 378.0000 68.8692
+  vertex -70.0000 378.0000 69.0000
+  vertex -70.0000 398.0000 68.8692
+  vertex -70.0000 398.0000 69.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.014_Cube.005 # group?_glass
+  matref glass
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Cube.013_Cube.010
+  #8 vertices, 6 faces
+  vertex 70.0000 397.0000 68.8663
+  vertex 70.0000 397.0000 70.0000
+  vertex 70.0000 400.0000 68.8663
+  vertex 70.0000 400.0000 70.0000
+  vertex 90.0000 397.0000 68.8663
+  vertex 90.0000 397.0000 70.0000
+  vertex 90.0000 400.0000 68.8663
+  vertex 90.0000 400.0000 70.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.1413 0.3404
+  texcoord -1.1413 0.5000
+  texcoord -1.1413 2.0960
+  texcoord -1.1413 2.2556
+  texcoord -1.1413 -1.2556
+  texcoord -1.1412 -1.2555
+  texcoord -1.1412 -0.9363
+  texcoord -1.1412 2.2555
+  texcoord -1.1412 -0.9359
+  texcoord -0.9817 0.3404
+  texcoord -0.9817 0.5000
+  texcoord -0.9817 -1.2556
+  texcoord -0.9817 2.0960
+  texcoord -0.9817 2.2556
+  texcoord -0.8220 -0.9359
+  texcoord -0.8220 2.2555
+  texcoord 2.0503 -1.2555
+  texcoord 2.0503 -0.9363
+  #matref Cube.013_Cube.010 # group?_concrete_dark1364
+  matref concrete_dark1364
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 11 9 0 4
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 12 13
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 6 5 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 14 15 7 8
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 10 12
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 9 10 1 0
+  endface
+end
+mesh
+  name Cube.012_Cube.008
+  #8 vertices, 6 faces
+  vertex 70.0000 378.0000 74.0000
+  vertex 70.0000 378.0000 76.0000
+  vertex 70.0000 398.0000 74.0000
+  vertex 70.0000 398.0000 76.0000
+  vertex 90.0000 378.0000 74.0000
+  vertex 90.0000 378.0000 76.0000
+  vertex 90.0000 398.0000 74.0000
+  vertex 90.0000 398.0000 76.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.012_Cube.008 # group?_concrete_dark1363
+  matref concrete_dark1363
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Cube.011_Cube.007
+  #24 vertices, 22 faces
+  vertex 70.0000 379.0000 69.0000
+  vertex 70.0000 379.0000 74.0000
+  vertex 70.0000 398.0000 69.0000
+  vertex 70.0000 398.0000 74.0000
+  vertex 71.0000 379.0000 69.0000
+  vertex 71.0000 379.0000 74.0000
+  vertex 71.0000 398.0000 69.0000
+  vertex 71.0000 398.0000 74.0000
+  vertex 70.0000 378.0000 69.0000
+  vertex 70.0000 378.0000 74.0000
+  vertex 71.0000 378.0000 69.0000
+  vertex 71.0000 378.0000 74.0000
+  vertex 89.0000 379.0000 69.0000
+  vertex 89.0000 379.0000 74.0000
+  vertex 89.0000 378.0000 69.0000
+  vertex 89.0000 378.0000 74.0000
+  vertex 90.0000 379.0000 69.0000
+  vertex 90.0000 379.0000 74.0000
+  vertex 90.0000 378.0000 69.0000
+  vertex 90.0000 378.0000 74.0000
+  vertex 89.0000 398.0000 69.0000
+  vertex 89.0000 398.0000 74.0000
+  vertex 90.0000 398.0000 69.0000
+  vertex 90.0000 398.0000 74.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.0000
+  texcoord 0.3750 0.2500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 0.3750 1.0000
+  texcoord 0.6250 0.0000
+  texcoord 0.6250 0.2500
+  texcoord 0.6250 0.5000
+  texcoord 0.6250 0.7500
+  texcoord 0.6250 1.0000
+  texcoord 0.8750 0.5000
+  texcoord 0.8750 0.7500
+  #matref Cube.011_Cube.007 # group?_glass
+  matref glass
+  face
+    vertices 0 8 9 1
+    normals 2 31 35 7
+    texcoords 2 2 7 7
+  endface
+  face
+    vertices 1 3 2 0
+    normals 4 11 8 0
+    texcoords 7 8 3 2
+  endface
+  face
+    vertices 1 5 7 3
+    normals 6 21 29 13
+    texcoords 13 10 9 12
+  endface
+  face
+    vertices 1 9 11 5
+    normals 5 33 40 20
+    texcoords 13 13 10 10
+  endface
+  face
+    vertices 2 6 4 0
+    normals 10 26 15 1
+    texcoords 0 4 5 1
+  endface
+  face
+    vertices 3 7 6 2
+    normals 12 27 24 9
+    texcoords 8 9 4 3
+  endface
+  face
+    vertices 4 6 7 5
+    normals 14 25 28 19
+    texcoords 5 4 9 10
+  endface
+  face
+    vertices 4 10 8 0
+    normals 16 37 32 3
+    texcoords 5 5 1 1
+  endface
+  face
+    vertices 4 12 14 10
+    normals 18 45 55 39
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 5 13 12 4
+    normals 23 51 44 17
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 8 10 11 9
+    normals 30 36 41 34
+    texcoords 6 5 10 11
+  endface
+  face
+    vertices 10 14 15 11
+    normals 38 54 60 43
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 11 15 13 5
+    normals 42 58 49 22
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 12 16 18 14
+    normals 46 64 71 56
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 12 20 22 16
+    normals 48 78 84 65
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 13 21 20 12
+    normals 53 81 77 47
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 14 18 19 15
+    normals 57 72 75 61
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 15 19 17 13
+    normals 59 73 66 50
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 16 22 23 17
+    normals 63 82 85 68
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 17 19 18 16
+    normals 67 74 70 62
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 17 23 21 13
+    normals 69 87 80 52
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 21 23 22 20
+    normals 79 86 83 76
+    texcoords 10 10 5 5
+  endface
+end
+mesh
+  name Cube.010_Cube.005
+  #8 vertices, 6 faces
+  vertex 70.0000 378.0000 68.8692
+  vertex 70.0000 378.0000 69.0000
+  vertex 70.0000 398.0000 68.8692
+  vertex 70.0000 398.0000 69.0000
+  vertex 90.0000 378.0000 68.8692
+  vertex 90.0000 378.0000 69.0000
+  vertex 90.0000 398.0000 68.8692
+  vertex 90.0000 398.0000 69.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.010_Cube.005 # group?_glass
+  matref glass
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Cube.009_Cube.010
+  #8 vertices, 6 faces
+  vertex 150.0000 397.0000 68.8663
+  vertex 150.0000 397.0000 70.0000
+  vertex 150.0000 400.0000 68.8663
+  vertex 150.0000 400.0000 70.0000
+  vertex 170.0000 397.0000 68.8663
+  vertex 170.0000 397.0000 70.0000
+  vertex 170.0000 400.0000 68.8663
+  vertex 170.0000 400.0000 70.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.1413 0.3404
+  texcoord -1.1413 0.5000
+  texcoord -1.1413 2.0960
+  texcoord -1.1413 2.2556
+  texcoord -1.1413 -1.2556
+  texcoord -1.1412 -1.2555
+  texcoord -1.1412 -0.9363
+  texcoord -1.1412 2.2555
+  texcoord -1.1412 -0.9359
+  texcoord -0.9817 0.3404
+  texcoord -0.9817 0.5000
+  texcoord -0.9817 -1.2556
+  texcoord -0.9817 2.0960
+  texcoord -0.9817 2.2556
+  texcoord -0.8220 -0.9359
+  texcoord -0.8220 2.2555
+  texcoord 2.0503 -1.2555
+  texcoord 2.0503 -0.9363
+  #matref Cube.009_Cube.010 # group?_concrete_dark1362
+  matref concrete_dark1362
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 11 9 0 4
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 12 13
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 6 5 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 14 15 7 8
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 10 12
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 9 10 1 0
+  endface
+end
+mesh
+  name Cube.008
+  #8 vertices, 6 faces
+  vertex 150.0000 378.0000 74.0000
+  vertex 150.0000 378.0000 76.0000
+  vertex 150.0000 398.0000 74.0000
+  vertex 150.0000 398.0000 76.0000
+  vertex 170.0000 378.0000 74.0000
+  vertex 170.0000 378.0000 76.0000
+  vertex 170.0000 398.0000 74.0000
+  vertex 170.0000 398.0000 76.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.008 # group?_concrete_dark1361
+  matref concrete_dark1361
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Cube.007
+  #24 vertices, 22 faces
+  vertex 150.0000 379.0000 69.0000
+  vertex 150.0000 379.0000 74.0000
+  vertex 150.0000 398.0000 69.0000
+  vertex 150.0000 398.0000 74.0000
+  vertex 151.0000 379.0000 69.0000
+  vertex 151.0000 379.0000 74.0000
+  vertex 151.0000 398.0000 69.0000
+  vertex 151.0000 398.0000 74.0000
+  vertex 150.0000 378.0000 69.0000
+  vertex 150.0000 378.0000 74.0000
+  vertex 151.0000 378.0000 69.0000
+  vertex 151.0000 378.0000 74.0000
+  vertex 169.0000 379.0000 69.0000
+  vertex 169.0000 379.0000 74.0000
+  vertex 169.0000 378.0000 69.0000
+  vertex 169.0000 378.0000 74.0000
+  vertex 170.0000 379.0000 69.0000
+  vertex 170.0000 379.0000 74.0000
+  vertex 170.0000 378.0000 69.0000
+  vertex 170.0000 378.0000 74.0000
+  vertex 169.0000 398.0000 69.0000
+  vertex 169.0000 398.0000 74.0000
+  vertex 170.0000 398.0000 69.0000
+  vertex 170.0000 398.0000 74.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.0000
+  texcoord 0.3750 0.2500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 0.3750 1.0000
+  texcoord 0.6250 0.0000
+  texcoord 0.6250 0.2500
+  texcoord 0.6250 0.5000
+  texcoord 0.6250 0.7500
+  texcoord 0.6250 1.0000
+  texcoord 0.8750 0.5000
+  texcoord 0.8750 0.7500
+  #matref Cube.007 # group?_glass
+  matref glass
+  face
+    vertices 0 8 9 1
+    normals 2 31 35 7
+    texcoords 2 2 7 7
+  endface
+  face
+    vertices 1 3 2 0
+    normals 4 11 8 0
+    texcoords 7 8 3 2
+  endface
+  face
+    vertices 1 5 7 3
+    normals 6 21 29 13
+    texcoords 13 10 9 12
+  endface
+  face
+    vertices 1 9 11 5
+    normals 5 33 40 20
+    texcoords 13 13 10 10
+  endface
+  face
+    vertices 2 6 4 0
+    normals 10 26 15 1
+    texcoords 0 4 5 1
+  endface
+  face
+    vertices 3 7 6 2
+    normals 12 27 24 9
+    texcoords 8 9 4 3
+  endface
+  face
+    vertices 4 6 7 5
+    normals 14 25 28 19
+    texcoords 5 4 9 10
+  endface
+  face
+    vertices 4 10 8 0
+    normals 16 37 32 3
+    texcoords 5 5 1 1
+  endface
+  face
+    vertices 4 12 14 10
+    normals 18 45 55 39
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 5 13 12 4
+    normals 23 51 44 17
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 8 10 11 9
+    normals 30 36 41 34
+    texcoords 6 5 10 11
+  endface
+  face
+    vertices 10 14 15 11
+    normals 38 54 60 43
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 11 15 13 5
+    normals 42 58 49 22
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 12 16 18 14
+    normals 46 64 71 56
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 12 20 22 16
+    normals 48 78 84 65
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 13 21 20 12
+    normals 53 81 77 47
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 14 18 19 15
+    normals 57 72 75 61
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 15 19 17 13
+    normals 59 73 66 50
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 16 22 23 17
+    normals 63 82 85 68
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 17 19 18 16
+    normals 67 74 70 62
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 17 23 21 13
+    normals 69 87 80 52
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 21 23 22 20
+    normals 79 86 83 76
+    texcoords 10 10 5 5
+  endface
+end
+mesh
+  name Cube.006_Cube.005
+  #8 vertices, 6 faces
+  vertex 150.0000 378.0000 68.8692
+  vertex 150.0000 378.0000 69.0000
+  vertex 150.0000 398.0000 68.8692
+  vertex 150.0000 398.0000 69.0000
+  vertex 170.0000 378.0000 68.8692
+  vertex 170.0000 378.0000 69.0000
+  vertex 170.0000 398.0000 68.8692
+  vertex 170.0000 398.0000 69.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.006_Cube.005 # group?_glass
+  matref glass
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Cube.005_Cube.010
+  #8 vertices, 6 faces
+  vertex -10.0000 397.0000 68.8663
+  vertex -10.0000 397.0000 70.0000
+  vertex -10.0000 400.0000 68.8663
+  vertex -10.0000 400.0000 70.0000
+  vertex 10.0000 397.0000 68.8663
+  vertex 10.0000 397.0000 70.0000
+  vertex 10.0000 400.0000 68.8663
+  vertex 10.0000 400.0000 70.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.1413 0.3404
+  texcoord -1.1413 0.5000
+  texcoord -1.1413 2.0960
+  texcoord -1.1413 2.2556
+  texcoord -1.1413 -1.2556
+  texcoord -1.1412 -1.2555
+  texcoord -1.1412 -0.9363
+  texcoord -1.1412 2.2555
+  texcoord -1.1412 -0.9359
+  texcoord -0.9817 0.3404
+  texcoord -0.9817 0.5000
+  texcoord -0.9817 -1.2556
+  texcoord -0.9817 2.0960
+  texcoord -0.9817 2.2556
+  texcoord -0.8220 -0.9359
+  texcoord -0.8220 2.2555
+  texcoord 2.0503 -1.2555
+  texcoord 2.0503 -0.9363
+  #matref Cube.005_Cube.010 # group?_concrete_dark1360
+  matref concrete_dark1360
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 11 9 0 4
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 2 12 13
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 6 5 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 14 15 7 8
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 1 10 12
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 9 10 1 0
+  endface
+end
+mesh
+  name Cube.004_Cube.008
+  #8 vertices, 6 faces
+  vertex -10.0000 378.0000 74.0000
+  vertex -10.0000 378.0000 76.0000
+  vertex -10.0000 398.0000 74.0000
+  vertex -10.0000 398.0000 76.0000
+  vertex 10.0000 378.0000 74.0000
+  vertex 10.0000 378.0000 76.0000
+  vertex 10.0000 398.0000 74.0000
+  vertex 10.0000 398.0000 76.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.004_Cube.008 # group?_concrete_dark1359
+  matref concrete_dark1359
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Cube.002_Cube.007
+  #24 vertices, 22 faces
+  vertex -10.0000 379.0000 69.0000
+  vertex -10.0000 379.0000 74.0000
+  vertex -10.0000 398.0000 69.0000
+  vertex -10.0000 398.0000 74.0000
+  vertex -9.0000 379.0000 69.0000
+  vertex -9.0000 379.0000 74.0000
+  vertex -9.0000 398.0000 69.0000
+  vertex -9.0000 398.0000 74.0000
+  vertex -10.0000 378.0000 69.0000
+  vertex -10.0000 378.0000 74.0000
+  vertex -9.0000 378.0000 69.0000
+  vertex -9.0000 378.0000 74.0000
+  vertex 9.0000 379.0000 69.0000
+  vertex 9.0000 379.0000 74.0000
+  vertex 9.0000 378.0000 69.0000
+  vertex 9.0000 378.0000 74.0000
+  vertex 10.0000 379.0000 69.0000
+  vertex 10.0000 379.0000 74.0000
+  vertex 10.0000 378.0000 69.0000
+  vertex 10.0000 378.0000 74.0000
+  vertex 9.0000 398.0000 69.0000
+  vertex 9.0000 398.0000 74.0000
+  vertex 10.0000 398.0000 69.0000
+  vertex 10.0000 398.0000 74.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.0000
+  texcoord 0.3750 0.2500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 0.3750 1.0000
+  texcoord 0.6250 0.0000
+  texcoord 0.6250 0.2500
+  texcoord 0.6250 0.5000
+  texcoord 0.6250 0.7500
+  texcoord 0.6250 1.0000
+  texcoord 0.8750 0.5000
+  texcoord 0.8750 0.7500
+  #matref Cube.002_Cube.007 # group?_glass
+  matref glass
+  face
+    vertices 0 8 9 1
+    normals 2 31 35 7
+    texcoords 2 2 7 7
+  endface
+  face
+    vertices 1 3 2 0
+    normals 4 11 8 0
+    texcoords 7 8 3 2
+  endface
+  face
+    vertices 1 5 7 3
+    normals 6 21 29 13
+    texcoords 13 10 9 12
+  endface
+  face
+    vertices 1 9 11 5
+    normals 5 33 40 20
+    texcoords 13 13 10 10
+  endface
+  face
+    vertices 2 6 4 0
+    normals 10 26 15 1
+    texcoords 0 4 5 1
+  endface
+  face
+    vertices 3 7 6 2
+    normals 12 27 24 9
+    texcoords 8 9 4 3
+  endface
+  face
+    vertices 4 6 7 5
+    normals 14 25 28 19
+    texcoords 5 4 9 10
+  endface
+  face
+    vertices 4 10 8 0
+    normals 16 37 32 3
+    texcoords 5 5 1 1
+  endface
+  face
+    vertices 4 12 14 10
+    normals 18 45 55 39
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 5 13 12 4
+    normals 23 51 44 17
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 8 10 11 9
+    normals 30 36 41 34
+    texcoords 6 5 10 11
+  endface
+  face
+    vertices 10 14 15 11
+    normals 38 54 60 43
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 11 15 13 5
+    normals 42 58 49 22
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 12 16 18 14
+    normals 46 64 71 56
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 12 20 22 16
+    normals 48 78 84 65
+    texcoords 5 5 5 5
+  endface
+  face
+    vertices 13 21 20 12
+    normals 53 81 77 47
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 14 18 19 15
+    normals 57 72 75 61
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 15 19 17 13
+    normals 59 73 66 50
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 16 22 23 17
+    normals 63 82 85 68
+    texcoords 5 5 10 10
+  endface
+  face
+    vertices 17 19 18 16
+    normals 67 74 70 62
+    texcoords 10 10 5 5
+  endface
+  face
+    vertices 17 23 21 13
+    normals 69 87 80 52
+    texcoords 10 10 10 10
+  endface
+  face
+    vertices 21 23 22 20
+    normals 79 86 83 76
+    texcoords 10 10 5 5
+  endface
+end
+mesh
+  name Cube.003_Cube.005
+  #8 vertices, 6 faces
+  vertex -10.0000 378.0000 68.8692
+  vertex -10.0000 378.0000 69.0000
+  vertex -10.0000 398.0000 68.8692
+  vertex -10.0000 398.0000 69.0000
+  vertex 10.0000 378.0000 68.8692
+  vertex 10.0000 378.0000 69.0000
+  vertex 10.0000 398.0000 68.8692
+  vertex 10.0000 398.0000 69.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -1.7500 1.7499
+  texcoord -1.7500 0.5000
+  texcoord -1.7500 2.9999
+  texcoord -1.7500 -0.7500
+  texcoord -1.7499 -1.9999
+  texcoord -1.6250 -0.7500
+  texcoord -1.6250 0.5000
+  texcoord -1.6250 1.7499
+  texcoord -1.6250 -1.9999
+  texcoord -1.6250 2.9999
+  texcoord -1.1250 0.5000
+  texcoord -1.1250 1.7500
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 1.7500
+  texcoord 1.3750 0.5000
+  texcoord 1.3750 1.7500
+  texcoord 2.6250 0.5000
+  texcoord 2.6250 1.7500
+  #matref Cube.003_Cube.005 # group?_glass
+  matref glass
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 7 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 1 3 5 6
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 17 15 14 16
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 10 12 13 11
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 3 4 8 5
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 7 9 2 0
+  endface
+end
+mesh
+  name Plane
+  #8 vertices, 3 faces
+  vertex 200.0000 -500.0000 0.0000
+  vertex 200.0000 -500.0000 40.0000
+  vertex 200.0000 502.0000 -0.0000
+  vertex 200.0000 502.0000 40.0000
+  vertex -200.0000 -500.0000 0.0000
+  vertex -200.0000 -500.0000 40.0000
+  vertex -200.0000 500.0000 -0.0000
+  vertex -200.0000 500.0000 40.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 -0.0000 -0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 -0.0000 -0.0000
+  normal 1.0000 -0.0000 -0.0000
+  normal 1.0000 -0.0000 -0.0000
+  texcoord -61.3309 -0.5215
+  texcoord -61.3309 1.5215
+  texcoord -10.1554 -0.5215
+  texcoord -10.1554 1.5215
+  texcoord 10.2740 -0.5215
+  texcoord 10.2740 1.5215
+  texcoord 61.3476 -0.5214
+  texcoord 61.3476 1.5215
+  #matref Plane # group?_bricks
+  matref bricks
+  face
+    vertices 0 4 5 1
+    normals 1 6 8 3
+    texcoords 2 4 5 3
+  endface
+  face
+    vertices 1 3 2 0
+    normals 2 5 4 0
+    texcoords 3 1 0 2
+  endface
+  face
+    vertices 4 6 7 5
+    normals 7 10 11 9
+    texcoords 4 6 7 5
+  endface
+end
+mesh
+  name Cube.001_Cube.002
+  #8 vertices, 6 faces
+  vertex -200.0000 -410.0000 0.0000
+  vertex -200.0000 -410.0000 10.0000
+  vertex -200.0000 -400.0000 0.0000
+  vertex -200.0000 -400.0000 10.0000
+  vertex 200.0000 -410.0000 0.0000
+  vertex 200.0000 -410.0000 10.0000
+  vertex 200.0000 -400.0000 0.0000
+  vertex 200.0000 -400.0000 10.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -9.6238 15.4699
+  texcoord -9.6238 -4.2270
+  texcoord -9.6074 4.8124
+  texcoord -9.6073 -13.5691
+  texcoord -9.4996 0.4993
+  texcoord -9.4996 0.7432
+  texcoord -9.4995 -9.2559
+  texcoord -9.4995 -9.4998
+  texcoord -9.4992 -9.4994
+  texcoord -9.4992 -9.0117
+  texcoord -9.2557 0.7432
+  texcoord -9.2557 0.4993
+  texcoord -9.2557 -9.2559
+  texcoord -9.2557 -9.4998
+  texcoord -9.1479 4.8124
+  texcoord -9.1478 -13.5691
+  texcoord -9.1315 -4.2270
+  texcoord -9.1314 15.4699
+  texcoord 10.0106 -9.4994
+  texcoord 10.0106 -9.0116
+  texcoord 10.0118 10.0104
+  texcoord 10.0119 -9.4994
+  texcoord 10.4996 -9.4994
+  texcoord 10.4996 10.0104
+  #matref Cube.001_Cube.002 # group?_concrete_dark1358
+  matref concrete_dark1358
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 16 17 0 1
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 5 4 11 10
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 19 9 8 18
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 22 23 20 21
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 2 3 15 14
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 13 12 6 7
+  endface
+end
+mesh
+  name Cube_Cube.001
+  #8 vertices, 6 faces
+  vertex -200.0000 400.0000 -0.0000
+  vertex -200.0000 400.0000 70.0000
+  vertex -200.0000 502.0000 -0.0000
+  vertex -200.0000 502.0000 70.0000
+  vertex 200.0000 400.0000 -0.0000
+  vertex 200.0000 400.0000 70.0000
+  vertex 200.0000 502.0000 -0.0000
+  vertex 200.0000 502.0000 70.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal -1.0000 0.0000 0.0000
+  normal 0.0000 1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -1.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 -0.0000 -1.0000
+  normal 0.0000 1.0000 0.0000
+  normal 1.0000 0.0000 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord -24.9638 -1.2429
+  texcoord -24.9638 2.2429
+  texcoord -19.8844 -1.2429
+  texcoord -19.8844 2.2429
+  texcoord -14.4985 3.9522
+  texcoord -14.4985 -3.6971
+  texcoord 0.0349 -1.2429
+  texcoord 0.0349 2.2429
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 5.1143 2.2429
+  texcoord 5.1143 -1.2429
+  texcoord 15.4985 -3.6971
+  texcoord 15.4985 3.9522
+  texcoord 25.0336 -1.2429
+  texcoord 25.0336 2.2429
+  #matref Cube_Cube.001 # group?_bricks
+  matref bricks
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 2 6 7 3
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 3 1 0 2
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 8 10 11 9
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 17 12 13 16
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 6 13 12 7
+  endface
+  #matref Cube_Cube.001 # group?_concrete
+  matref concrete
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 15 4 5 14
+  endface
+end

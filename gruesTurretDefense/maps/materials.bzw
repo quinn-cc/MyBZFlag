@@ -1,0 +1,53 @@
+material
+	name GroundMaterial
+	texture http://quinncarmack.com/@/Files/_files/13/file.png
+	#texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/ground
+	diffuse 1 1 1 1
+end
+
+material
+  name bricks
+  diffuse 1 1 1 1
+  specular 0 0 0
+  shininess 0
+  texture http://quinncarmack.com/@/Files/_files/11/file.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/bricks_2
+end
+
+material
+  name concrete_dark
+  diffuse .2 .2 .2 1
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://quinncarmack.com/@/Files/_files/12/file.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete
+end
+
+material
+  name concrete
+  diffuse 1 1 1 1
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://quinncarmack.com/@/Files/_files/12/file.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete
+end
+
+material
+  name metal
+  diffuse 1 1 1 1
+  emission 0.0000 0.0000 0.0000
+  specular 0 0 0
+  shininess 0
+  texture http://quinncarmack.com/@/Files/_files/6/file.png
+  #texture /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete
+end
+
+material
+  name glass
+  diffuse 0.0000 0.3137 0.8000 0.05
+  emission 0 0 0
+  specular 0 0 0
+  shininess 0
+end

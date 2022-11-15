@@ -1,0 +1,374 @@
+#
+# 
+
+options 
+	###################
+	## 	  Plugins 	 ##
+	###################
+	
+	# Shot assigner, must be loaded before any custom flags
+	-loadplugin ../bzflag-grue/plugins/shotAssigner/.libs/shotAssigner.so
+
+	# Custom flags
+	-loadplugin ../bzflag-grue/plugins/grenadeFlag/.libs/grenadeFlag.so
+	-loadplugin ../bzflag-grue/plugins/verticalVelocityFlag/.libs/verticalVelocityFlag.so
+	-loadplugin ../bzflag-grue/plugins/annihilationFlag/.libs/annihilationFlag.so
+	-loadplugin ../bzflag-grue/plugins/gruesomeKillerFlag/.libs/gruesomeKillerFlag.so
+	-loadplugin ../bzflag-grue/plugins/tripleBarrelFlag/.libs/tripleBarrelFlag.so
+	-loadplugin ../bzflag-grue/plugins/fiftyPointFlag/.libs/fiftyPointFlag.so
+	-loadplugin ../bzflag-grue/plugins/fiftyFiftyFlag/.libs/fiftyFiftyFlag.so
+	-loadplugin ../bzflag-grue/plugins/airshotFlag/.libs/airshotFlag.so
+	-loadplugin ../bzflag-grue/plugins/avengerFlag/.libs/avengerFlag.so
+	-loadplugin ../bzflag-grue/plugins/skyfireFlag/.libs/skyfireFlag.so
+	-loadplugin ../bzflag-grue/plugins/dimensionDoorFlag/.libs/dimensionDoorFlag.so
+	
+	# Gameplay
+	-loadplugin ../bzflag-grue/plugins/teamFlagGeno/.libs/teamFlagGeno.so
+	-loadplugin ../bzflag-grue/plugins/ctfOverseer/.libs/ctfOverseer.so
+	-loadplugin ../bzflag-grue/plugins/ScoreRestorer-master/.libs/ScoreRestorer.so
+	-loadplugin ../bzflag-grue/plugins/shotLimitZone-master/.libs/shotLimitZone.so
+	-loadplugin ../bzflag-grue/plugins/playHistoryTracker/.libs/playHistoryTracker.so
+	-loadplugin ../bzflag-grue/plugins/scarwallServerMessages/.libs/scarwallServerMessages.so
+	-loadplugin ../bzflag-grue/plugins/autoFlagReset/.libs/autoFlagReset.so,15i
+	-loadplugin ../bzflag-grue/plugins/VPNBlocker-release/.libs/VPNBlocker.so,../bzflag-grue/plugins/VPNBlocker-release/VPNBlocker.config.json
+
+	
+	#####################
+	## Server Settings ##
+	#####################
+	-c   						# CTF mode
+	+r   						# Enable Ricochet
+	-j   						# Enable Jumping
+	-ms 5						# Max number of shots
+	-mp 0,40,40,0,0,10  		# rogue,red,green,blue,purple,observer
+	-a 50 38
+	-fb  						# Allows flags to spawn on boxes/surfaces
+	-sb							# Allows tanks to spawn on boxes/surfaces
+	-autoTeam  					# Automatically assigns to a team
+	-noTeamKills
+	-synclocation
+	-synctime
+	-set _disableBots 1			# No bots allowed/no autopilot
+	-set _explodeTime 3			# How long the tank is dead for
+	#-set _maxFlagGrabs 4		# Max amount of times you can grab the same flag before it respawns.
+	-set _tankSpeed 32
+	#-set _gravity -15
+	#-set _jumpVelocity 24
+	-set _spawnSafeRadMod 5
+	-set _scoreSaveTime 300		# 5 mins of score saved (300 seconds)
+	-set _flagHeight -1
+	-set _genoPotatoRatio 0.25
+	-set _genoCooldownTime 30
+	-set _noClimb 0
+	
+	-jitterdrop 3				# 3 jitter warnings before kicked
+	## TEST
+	-maxidle 99999					# 90 seconds of idle before kicked
+	-lagdrop 3					# 3 lag warnings before kicked
+	
+	
+	
+	#-admsg "**********************************************************"
+	#-admsg "****************     CASTLE SCARWALL     *****************"
+	#-admsg "**********************************************************"
+	#-admsg "*           Welcome to Castle Scarwall by Grue!          *"
+	#-admsg "* A classic two team capture the flag with lots of fancy *"
+	#-admsg "* plugins and new flags to make bzflag all the more fun! *"
+	#-admsg "*                                                        *"
+	#-admsg "* - The plugin teamflaggeno is in use, so there is no    *"
+	#-admsg "*   flag Genocide. Instead, your own team flag acts as   *"
+	#-admsg "*   geno! Type /teamflaggeno for more help.              *"
+	#-admsg "* - In addition, there are a few new CUSTOM FLAGS added  *"
+	#-admsg "*   to the server for more fun! Type /customflags to     *"
+	#-admsg "*   learn about them.                                    *"
+	#-admsg "*                                                        *"
+	#-admsg "* This server is still in the testing phase, so if there *"
+	#-admsg "* are any server crashes, bugs, or ideas you would like  *"
+	#-admsg "* to suggest, please use the /report command.            *"
+	#-admsg "**********************************************************"
+	
+	#####################
+	##      Flags      ##
+	#####################
+	+f A{6}
+	+f BU{6}
+	+f CL{6}
+	# no G
+	+f GM{3}
+	+f V{6}
+	+f ID{6}
+	+f IB{6}
+	+f L{3}
+	+f MG{6}
+	# no MQ
+	+f N{6}
+ 	+f OO{6}
+ 	+f PZ{6}
+ 	+f QT{6}
+ 	+f F{6}
+ 	+f SE{6}
+ 	+f SH{6}
+ 	+f SW{6}
+ 	+f ST{6}
+ 	+f SR{6}
+ 	+f SB{6}
+ 	+f TH{6}
+ 	+f T{6}
+ 	# no US
+ 	+f WG{4}
+ 	+f GN{5}
+ 	+f VV{6}
+ 	+f AN{1}
+ 	+f GK{6}
+ 	+f TB{6}
+ 	+f FP{1}
+ 	+f FF{3}
+ 	+f AT{6}
+ 	+f AV{5}
+ 	+f SF{5}
+ 	+f DD{6}
+	
+	###################
+	## 		Fog 	 ##
+	###################
+	-set _fogMode exp1 			# linear, exp, or exp2
+	-set _fogDensity 0.0003		# Used for exp and exp2 fog modes.
+	-set _fogNoSky 1			# 1 will turn off fog drawing on the sky. The default is fog everywhere.
+
+	###################
+	## Flag: Agility ##
+	###################
+	-set _agilityAdVel 2.4		# Multiplies this by normal speed to determine agility speed
+	-set _agilityTimeWindow 3
+	#-set _agilityVelDelta 0.3		# How fast the agility accelerates to speed
+	
+	######################
+	## Flag: Quick Turn ##
+	######################
+	-set _angularAd 1.8				# Multiplies by normal turn speed
+	
+	##################
+	## Flag: Burrow ##
+	##################
+	-set _burrowDepth -1.32
+	-set _burrowSpeedAd 1.5			# Multiply by normal speed to determine burrow speed
+	-set _burrowAngularAd .9		# Multiply by turn speed
+	
+	##########################
+	## Flag: Guided Missile ##
+	##########################
+	#-set _gmActivationTime 0.5		# Amount of time before missile is active
+	#-set _gmAdLife 0.95			# Multiplied by _shotRange to determine the distance guided missiles will go.
+	-set _gmSize 5					# The size (in WU) of the GM missile shown for players with good graphics settings.
+	#-set _gmTurnAngle 0.628319		# The angle at which a Guided Missile will turn to follow its target. (Measured in radians)
+	#-set _lockOnAngle 0.15			# Angle (in radians) in relation to tanks heading (positive or negative) that will allow a Guided Missile to lock onto a target.
+	
+	#################
+	## Flag: Laser ##
+	#################
+	#-set _laserAdVel 1000			# The length of each laser shot
+	-set _laserAdRate .1			# Multiplied by _rFireAdRate to determine the firing rate for a laser.
+	#-set _laserAdLife 0.1			# The amount of time (in seconds) that a laser remains after being fired.
+	
+	##########################
+	##   Flag: Machine Gun  ##
+	##########################
+	-set _mGunAdVel 15				# The speed of the machine gun's bullets.
+	-set _mGunAdRate 40				# _reloadTime divided by _mGunAdRate gives how long machine gun bullets take to reload.
+	
+	##########################
+	##   Flag: Rapid Fire   ##
+	##########################
+	-set _rFireAdVel 2				# Multiplied by _shotSpeed to determine the speed of the rapid fire bullets.
+	-set _rFireAdRate 2				# The reload time (in seconds) for rapid fire bullets.
+	
+	#####################
+	##   Flag: Shield  ##
+	#####################
+	-set _shieldFlight .05			# The amount of time (in seconds) that a shield flag floats in the air (after you drop it) before coming down again.
+
+	##########################
+	##   Flag: Shock Wave   ##
+	##########################
+	-set _shockAdLife .3			# The amount of time (in seconds) that a shockwave lasts.
+	-set _shockInRadius 15			# _tankLength	The starting radius of the shockwave. Negative values will make the shockwave shrink and expand.
+	-set _shockOutRadius 50
+	
+	###########################
+	##   Flag: Steamroller   ##
+	###########################
+	-set _srRadiusMult 5			# Radius of steamroller effect
+	
+	####################
+	##   Flag: Thief  ##
+	####################
+	 -set _thiefAdLife	0.2			# The amount of time (in seconds) that a thief shot lasts.
+	# -set _thiefAdRate	12			# The amount of time (in seconds) that the Thief "shot" reloads.
+	# -set _thiefAdShotVel 8		# The speed of thief.
+	# -set _thiefTinyFactor	0.5		# Multiplied by the normal tank size to shrink a tank carrying the thief flag.
+	-set _thiefVelAd 2.3			# Multiplied by _tankSpeed to determine how fast tanks holding the thief goes.
+	
+	###################
+	##   Flag: Tiny  ##
+	###################
+	-set _tinyFactor 0.2			# Multiplied by the normal tank size to shrink a tank carrying the tiny flag.
+	
+	##########################
+	##   Flag: High Speed   ##
+	##########################
+	-set _velocityAd 1.6			# Multiplies _tankSpeed to determine the speed of a tank carrying the high speed (V) flag
+	
+	####################
+	##   Flag: Wings  ##
+	####################
+	#-set _wingsGravity	_gravity		# How much gravity affects tanks with the WG flag.
+	-set _wingsJumpCount 5				# The number of jumps a tank with the wings flag can do before returning to the ground.
+	#-set _wingsJumpVelocity _jumpVelocity		# The initial velocity of a jump with wings, in world units/sec.
+	-set _wingsSlideTime 1				# When in the air, the tanks will slide for this long.
+	
+	######################
+	##   Flag: Grenade  ##
+	######################
+	-set _grenadeVerticalVelocity 1
+	-set _grenadeSpeedAdVel 2
+	-set _grenadeAccuracy 0.14
+	-set _grenadeLifetime 1.5
+	-set _grenadeExplosionLifetime 12
+	
+	################################
+	##   Flag: Vertical Velocity  ##
+	################################
+	-set _verticalVelocityWidth 2.5
+	
+	##########################
+	##   Flag: Fifty Point  ##
+	##########################
+	-sl fp 1
+	
+	###########################
+	##   Flag: Annihilation  ##
+	###########################
+	-set _annihilationEligibleRatio 1
+	-set _annihilationFXSWCount 150
+	-set _annihilationFXSWMinHeight 46
+	-set _annihilationFXSWMaxHeight 90
+	
+	######################
+	##   Flag: Airshot  ##
+	######################
+	# -set _airshotAngle 0.10
+	
+	###########################
+	##   Flag: Phantom Zone  ##
+	###########################
+	-sl PZ 1
+	
+	######################
+	##   Flag: Skyfire  ##
+	######################
+	-set _skyfireHeight 150
+	-set _skyfireRadius 70
+	-set _skyfireCount 15
+	-set _skyfireVertSpeedAdVel 1.7
+	-set _skyfireHorizSpeedAdVel 1
+	
+	##############################
+	##   Flag: Gruesome Killer  ##
+	##############################
+	-set _gruesomeKillerBlossomCount 12
+	-set _gruesomeKillerShockwaveLifetime 2
+	-set _gruesomeKillerShrapnelLifetime 5
+	
+	##############################
+	##   Flag: Dimension Door  ##
+	##############################
+	-set _dimensionDoorAdVel 4
+	-set _dimensionDoorVerticalVelocity 1
+	-set _dimensionDoorWidth 2
+	
+
+	#################################
+	## Experimental world settings ##
+	#################################
+	#-set _jumpVelocity 40
+	#-set _gravity -20
+  
+end 
+
+world
+	name Scarwall
+	freeCtfSpawns
+	size 500
+end
+
+base
+	position 0 30 23.000001
+	rotation 0
+	size 15 15 2
+	color 2
+end
+base
+	position 0 -30 23.000001
+	rotation 0
+	size 15 15 2
+	color 1
+end
+
+
+include mapfiles/materials.bzw
+include mapfiles/main.bzw
+include mapfiles/main_ground.bzw
+include mapfiles/pyramids.bzw
+include mapfiles/protectors.bzw
+include mapfiles/teleporters.bzw
+include mapfiles/catwalk_flourescents.bzw
+define debris_group
+	include mapfiles/debris.bzw
+enddef
+group debris_group
+	rotation 0
+end
+group debris_group
+	rotation 180
+end
+include mapfiles/ground_reflectors.bzw
+include mapfiles/zones.bzw
+
+
+
+# custom flags
+zone
+	position 20 10 0
+	size 1 1 1
+	rotation 0
+	
+	#zoneflag GN 1
+	#zoneflag AN 1
+	#zoneflag AT 1
+	#zoneflag GK 10
+	#zoneflag TB 1
+	#zoneflag FP 1
+	#zoneflag FF 1
+	#zoneflag AS 1
+	#zoneflag AV 1
+end
+
+# built-in flags
+zone
+	position 20 -10 0
+	size 1 1 1
+	rotation 0
+	#zoneflag OO 10
+	#zoneflag WG 1
+	#zoneflag MG 1
+	#zoneflag V 1
+	#zoneflag BU 5
+	#zoneflag T 1
+	#zoneflag SH 1
+	#zoneflag F 1
+	#zoneflag GM 1
+end
+
+
+
+

@@ -1,0 +1,9 @@
+**********************************************************
+*                     Dimension Door   		             *
+*                                                        *
+* The first shot fires the 'portal'. The location of     *
+* the portal is represented by two phantom zoned shots.  *
+* The second shot teleports you to the position of the   *
+* portal. Careful not to get stuck in any buildings! If  *
+* you do, press [delete] to self-destruct.  	         *
+**********************************************************

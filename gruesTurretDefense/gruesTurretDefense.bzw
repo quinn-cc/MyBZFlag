@@ -1,0 +1,189 @@
+options 
+	###################
+	## 	  Plugins 	 ##
+	###################
+	
+	# Gameplay
+	-loadplugin /home/quinn/Documents/bzflag-2.4.25/bzflag-2.4/plugins/ScoreRestorer-master/.libs/ScoreRestorer.so
+	-loadplugin /home/quinn/Documents/bzflag-2.4.25/bzflag-2.4/plugins/gruesTurretDefenseMaster/.libs/gruesTurretDefenseMaster.so
+	
+	#####################
+	## Server Settings ##
+	#####################
+	-c   						# CTF mode
+	-j   						# Enable Jumping
+	-ms 0						# Max number of shots
+	-mp 0,10,0,10,0,10  		# rogue,red,green,blue,purple,observer
+	-a 50 38
+	-fb  						# Allows flags to spawn on boxes/surfaces
+	-sb							# Allows tanks to spawn on boxes/surfaces
+	+s 1
+	-f bad
+	-autoTeam  					# Automatically assigns to a team
+	-set _disableBots 1			# No bots allowed/no autopilot
+	-set _explodeTime 3			# How long the tank is dead for
+	-set _scoreSaveTime 300		# 5 mins of score saved (300 seconds)
+	-noTeamKills
+	-set _shotSpeed 300
+	-set _shotRange 1200
+	-set _maxFlagGrabs 1
+	
+	
+	-set _turretMinAngle 1.25
+	-set _turretMaxAngle 1.555
+	-set _defenseTime 90
+	-set _turretReloadTime 0.20
+	-set _turretBMReloadMult 7
+	-set _turretBMSpeedMult .8
+	-set _turretAccuracy 0.003
+	
+	-set _shockAdLife 1
+	-set _shockOutRadius 20
+	-set _shotRadius .8
+	-set _gmSize 10
+	-set _gmAdLife 1
+	
+end 
+
+
+world
+	name Grue's Turret Defense
+	size 800
+	noWalls
+end
+
+turretSpawnZone
+	position 0 450 70
+	size 200 50 10
+end
+
+invaderSpawnZone
+	position 0 -750 0
+	size 300 50 10
+end
+
+winZone
+	position 0 475 0
+	size 200 25 0
+end
+
+turretZone
+	position -170 386 69
+	size 10 10 5
+	index 0
+	firePosition 67.5
+end
+turretZone
+	position -127.5 386 69
+	size 10 10 5
+	index 1
+	firePosition 67.5
+end
+turretZone
+	position -85 386 69
+	size 10 10 5
+	index 2
+	firePosition 67.5
+end
+turretZone
+	position -42.5 386 69
+	size 10 10 5
+	index 3
+	firePosition 67.5
+end
+turretZone
+	position 0 386 69
+	size 10 10 5
+	index 4
+	firePosition 67.5
+end
+turretZone
+	position 42.5 386 69
+	size 10 10 5
+	index 5
+	firePosition 67.5
+end
+turretZone
+	position 85 386 69
+	size 10 10 5
+	index 6
+	firePosition 67.5
+end
+turretZone
+	position 127.5 386 69
+	size 10 10 5
+	index 7
+	firePosition 67.5
+end
+turretZone
+	position 170 386 69
+	size 10 10 5
+	index 8
+	firePosition 67.5
+end
+
+
+base
+	position 200 0 100
+	rotation 45
+	size 30 30 2
+	color 3
+end
+base
+	position -200 0 100
+	rotation 45
+	size 30 30 2
+	color 1
+end
+
+# turret flags
+zone
+	position 0 450 70
+	size 10 10 10
+	zoneflag GK 1
+	zoneflag MG 1
+	zoneflag BM 1
+	zoneflag DB 1
+	zoneflag SE 1
+	zoneflag SB 1
+	zoneflag IB 1
+	zoneflag R 1
+	zoneflag TB 1
+end
+
+# invader flags
+zone
+	position 0 0 0
+	size 200 300 1
+	zoneflag ST 4
+	zoneflag N 1
+	zoneflag V 2
+	zoneflag SH 4
+	zoneflag CL 1
+end
+
+# invader flags
+zone
+	position 0 -750 0
+	size 300 50 10
+	zoneflag V 1
+	zoneflag ST 1
+	zoneflag SH 1
+	zoneflag N 1
+	zoneflag BU 1
+	zoneflag A 1
+	zoneflag CL 1
+	zoneflag OO 1
+	zoneflag T 1
+	zoneflag WG 1
+	zoneflag QT 1
+	zoneflag ID 1
+end
+
+include maps/materials.bzw
+include maps/version-2.bzw
+
+
+
+
+

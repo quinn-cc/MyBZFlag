@@ -1,0 +1,7 @@
+**********************************************************
+*                         Skyfire                        *
+*                                                        *
+* Firing causes a hail of missiles to rain down in front *
+* of the tank. Your tank's velocity also controls how    *
+* far the missiles go.                                   *
+**********************************************************

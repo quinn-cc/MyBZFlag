@@ -1,0 +1,142 @@
+# Blender MTL File: 'version-2.blend'
+# Material Count: 13
+
+newmtl base_brick_siding
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/bzflag-maps/textures_cc/base_brick_siding.png
+
+newmtl brick
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/bzflag-maps/textures_cc/bricks_2.png
+
+newmtl concrete_dark
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/bzflag-maps/textures/concrete.png
+
+newmtl concrete_green
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/bzflag-maps/textures/concrete_green.png
+
+newmtl concrete_grey
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/bzflag-maps/textures/concrete_grey.png
+
+newmtl concrete_red
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/bzflag-maps/textures/concrete_red.png
+
+newmtl glass_blue
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.313988 0.799103
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.188976
+illum 9
+map_Kd /home/quinn/Documents/bzflag-maps/textures/scarwall_logo.png
+
+newmtl green_glow
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.027876 0.800000 0.040975
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl lamppost_glow
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.231894 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl metal
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd /home/quinn/Documents/bzflag-maps/textures/metal.png
+
+newmtl red_glow
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.000000 0.001135
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl rock
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/bzflag-maps/textures_cc/rock.png
+
+newmtl wood
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/bzflag-maps/textures_cc/wood.png

@@ -1,0 +1,6 @@
+**********************************************************
+*                  Vertical Velocity   		             *
+*                                                        *
+* Tank shoots an extra two shots that travel with		 *
+* vertical velocity 						             *
+**********************************************************

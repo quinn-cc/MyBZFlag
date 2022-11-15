@@ -1,0 +1,147 @@
+options 
+	###################
+	## 	  Plugins 	 ##
+	###################
+	
+	# Gameplay
+	-loadplugin /home/quinn/Documents/bzflag-maps/bzflag/plugins/ScoreRestorer-master/.libs/ScoreRestorer.so
+	-loadplugin /home/quinn/Documents/bzflag-maps/bzflag/plugins/playHistoryTracker/.libs/playHistoryTracker.so
+	-loadplugin /home/quinn/Documents/bzflag-maps/bzflag/plugins/autoFlagReset/.libs/autoFlagReset.so,15i
+	-loadplugin /home/quinn/Documents/bzflag-maps/bzflag/plugins/slowMotionAffector/.libs/slowMotionAffector
+	
+	#####################
+	## Server Settings ##
+	#####################
+	+r   						# Enable Ricochet
+	-j   						# Enable Jumping
+	-ms 5						# Max number of shots
+	-mp 40,0,0,0,0,10  			# rogue,red,green,blue,purple,observer
+	-a 50 38
+	-fb  						# Allows flags to spawn on boxes/surfaces
+	-sb							# Allows tanks to spawn on boxes/surfaces
+	-sa							# Antidote flag
+	-autoTeam  					# Automatically assigns to a team
+	-set _disableBots 1			# No bots allowed/no autopilot
+	-set _explodeTime 3			# How long the tank is dead for
+	#-set _maxFlagGrabs 4		# Max amount of times you can grab the same flag before it respawns.
+	#-set _tankSpeed 35
+	#-set _gravity -15
+	#-set _jumpVelocity 24
+	-set _spawnSafeRadMod 5
+	-set _scoreSaveTime 300		# 5 mins of score saved (300 seconds)
+	-set _friction .1
+	
+	#####################
+	##      Flags      ##
+	#####################
+	+s 80
+	-f bad
+	-f OO
+	-f MQ
+	-f PZ
+ 	
+	###################
+	## Flag: Agility ##
+	###################
+	-set _agilityAdVel 2.4		# Multiplies this by normal speed to determine agility speed
+	-set _agilityTimeWindow 3
+	#-set _agilityVelDelta 0.3		# How fast the agility accelerates to speed
+	
+	######################
+	## Flag: Quick Turn ##
+	######################
+	-set _angularAd 1.8				# Multiplies by normal turn speed
+	
+	##################
+	## Flag: Burrow ##
+	##################
+	-set _burrowDepth -1.32
+	-set _burrowSpeedAd 1.1			# Multiply by normal speed to determine burrow speed
+	-set _burrowAngularAd .9		# Multiply by turn speed
+	
+	##########################
+	## Flag: Guided Missile ##
+	##########################
+	#-set _gmActivationTime 0.5		# Amount of time before missile is active
+	#-set _gmAdLife 0.95			# Multiplied by _shotRange to determine the distance guided missiles will go.
+	-set _gmSize 5					# The size (in WU) of the GM missile shown for players with good graphics settings.
+	#-set _gmTurnAngle 0.628319		# The angle at which a Guided Missile will turn to follow its target. (Measured in radians)
+	#-set _lockOnAngle 0.15			# Angle (in radians) in relation to tanks heading (positive or negative) that will allow a Guided Missile to lock onto a target.
+	
+	#################
+	## Flag: Laser ##
+	#################
+	#-set _laserAdVel 1000			# The length of each laser shot
+	-set _laserAdRate .2			# Multiplied by _rFireAdRate to determine the firing rate for a laser.
+	#-set _laserAdLife 0.1			# The amount of time (in seconds) that a laser remains after being fired.
+	
+	##########################
+	##   Flag: Machine Gun  ##
+	##########################
+	-set _mGunAdVel 15				# The speed of the machine gun's bullets.
+	-set _mGunAdRate 40				# _reloadTime divided by _mGunAdRate gives how long machine gun bullets take to reload.
+	
+	##########################
+	##   Flag: Rapid Fire   ##
+	##########################
+	-set _rFireAdVel 2				# Multiplied by _shotSpeed to determine the speed of the rapid fire bullets.
+	-set _rFireAdRate 2				# The reload time (in seconds) for rapid fire bullets.
+	
+	#####################
+	##   Flag: Shield  ##
+	#####################
+	-set _shieldFlight .05			# The amount of time (in seconds) that a shield flag floats in the air (after you drop it) before coming down again.
+
+	##########################
+	##   Flag: Shock Wave   ##
+	##########################
+	-set _shockAdLife .3			# The amount of time (in seconds) that a shockwave lasts.
+	-set _shockInRadius 20			# _tankLength	The starting radius of the shockwave. Negative values will make the shockwave shrink and expand.
+	-set _shockOutRadius 50
+	
+	###########################
+	##   Flag: Steamroller   ##
+	###########################
+	-set _srRadiusMult 5			# Radius of steamroller effect
+	
+	####################
+	##   Flag: Thief  ##
+	####################
+	 -set _thiefAdLife	0.2			# The amount of time (in seconds) that a thief shot lasts.
+	# -set _thiefAdRate	12			# The amount of time (in seconds) that the Thief "shot" reloads.
+	# -set _thiefAdShotVel 8		# The speed of thief.
+	# -set _thiefTinyFactor	0.5		# Multiplied by the normal tank size to shrink a tank carrying the thief flag.
+	-set _thiefVelAd 2.3			# Multiplied by _tankSpeed to determine how fast tanks holding the thief goes.
+	
+	###################
+	##   Flag: Tiny  ##
+	###################
+	-set _tinyFactor 0.2			# Multiplied by the normal tank size to shrink a tank carrying the tiny flag.
+	
+	##########################
+	##   Flag: High Speed   ##
+	##########################
+	-set _velocityAd 1.6			# Multiplies _tankSpeed to determine the speed of a tank carrying the high speed (V) flag
+	
+	####################
+	##   Flag: Wings  ##
+	####################
+	#-set _wingsGravity	_gravity		# How much gravity affects tanks with the WG flag.
+	-set _wingsJumpCount 5				# The number of jumps a tank with the wings flag can do before returning to the ground.
+	#-set _wingsJumpVelocity _jumpVelocity		# The initial velocity of a jump with wings, in world units/sec.
+	-set _wingsSlideTime .5				# When in the air, the tanks will slide for this long.
+	
+
+	#################################
+	## Experimental world settings ##
+	#################################
+	#-set _jumpVelocity 40
+	#-set _gravity -20
+  
+end 
+
+
+world
+	name Slo-mo
+	size 200
+end

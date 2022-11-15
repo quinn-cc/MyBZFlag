@@ -1,0 +1,1044 @@
+# BZW Exporter by Thomas Daede
+material
+name Material
+diffuse 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+end
+material
+name Material.001
+diffuse 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+end
+material
+name Material.002
+diffuse 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+end
+material
+name None
+diffuse 0.800000011920929 0.800000011920929 0.800000011920929 1.0
+end
+mesh
+name Cube.001
+matref Material.002
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex -200.00000 10.00000 200.00000 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -300.00000 10.00000 200.00000 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -300.00000 10.00000 300.00000 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.00000 10.00000 300.00000 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.00000 0.00000 300.00000 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -300.00000 0.00000 300.00000 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -300.00000 0.00000 200.00000 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex -200.00000 0.00000 200.00000 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 4 3 2 5 
+normals 4 3 2 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 2 1 6 
+normals 5 2 1 6 
+texcoords 8 9 10 11 
+endface
+face
+vertices 6 7 4 5 
+normals 6 7 4 5 
+texcoords 12 13 14 15 
+endface
+face
+vertices 7 0 3 4 
+normals 7 0 3 4 
+texcoords 16 17 18 19 
+endface
+face
+vertices 6 1 0 7 
+normals 6 1 0 7 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.002
+matref Material.001
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex 300.00000 10.00000 -300.00000 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.00000 10.00000 -300.00000 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.00000 10.00000 -200.00000 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 300.00000 10.00000 -200.00000 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 300.00000 0.00000 -200.00000 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex 200.00000 0.00000 -200.00000 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex 200.00000 0.00000 -300.00000 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex 300.00000 0.00000 -300.00000 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 4 3 2 5 
+normals 4 3 2 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 2 1 6 
+normals 5 2 1 6 
+texcoords 8 9 10 11 
+endface
+face
+vertices 6 7 4 5 
+normals 6 7 4 5 
+texcoords 12 13 14 15 
+endface
+face
+vertices 7 0 3 4 
+normals 7 0 3 4 
+texcoords 16 17 18 19 
+endface
+face
+vertices 6 1 0 7 
+normals 6 1 0 7 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.003
+matref Material.002
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex -200.00000 10.00000 -300.00000 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -300.00000 10.00000 -300.00000 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -300.00000 10.00000 -200.00000 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.00000 10.00000 -200.00000 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.00000 0.00000 -200.00000 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -300.00000 0.00000 -200.00000 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -300.00000 0.00000 -300.00000 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex -200.00000 0.00000 -300.00000 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 4 3 2 5 
+normals 4 3 2 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 2 1 6 
+normals 5 2 1 6 
+texcoords 8 9 10 11 
+endface
+face
+vertices 6 7 4 5 
+normals 6 7 4 5 
+texcoords 12 13 14 15 
+endface
+face
+vertices 7 0 3 4 
+normals 7 0 3 4 
+texcoords 16 17 18 19 
+endface
+face
+vertices 6 1 0 7 
+normals 6 1 0 7 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.004
+matref Material.002
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex -200.00000 20.00000 200.00000 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -250.00000 20.00000 200.00000 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -250.00000 20.00000 250.00000 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.00000 20.00000 250.00000 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.00000 10.00000 250.00000 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -250.00000 10.00000 250.00000 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -250.00000 10.00000 200.00000 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex -200.00000 10.00000 200.00000 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 4 3 2 5 
+normals 4 3 2 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 2 1 6 
+normals 5 2 1 6 
+texcoords 8 9 10 11 
+endface
+face
+vertices 6 7 4 5 
+normals 6 7 4 5 
+texcoords 12 13 14 15 
+endface
+face
+vertices 7 0 3 4 
+normals 7 0 3 4 
+texcoords 16 17 18 19 
+endface
+face
+vertices 6 1 0 7 
+normals 6 1 0 7 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.005
+matref Material.002
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex 250.00000 20.00000 200.00000 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.00000 20.00000 200.00000 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.00000 20.00000 250.00000 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 250.00000 20.00000 250.00000 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 250.00000 10.00000 250.00000 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex 200.00000 10.00000 250.00000 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex 200.00000 10.00000 200.00000 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex 250.00000 10.00000 200.00000 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 4 3 2 5 
+normals 4 3 2 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 2 1 6 
+normals 5 2 1 6 
+texcoords 8 9 10 11 
+endface
+face
+vertices 6 7 4 5 
+normals 6 7 4 5 
+texcoords 12 13 14 15 
+endface
+face
+vertices 7 0 3 4 
+normals 7 0 3 4 
+texcoords 16 17 18 19 
+endface
+face
+vertices 6 1 0 7 
+normals 6 1 0 7 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.006
+matref Material.002
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex -200.00000 20.00000 -250.00000 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -250.00000 20.00000 -250.00000 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -250.00000 20.00000 -200.00000 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.00000 20.00000 -200.00000 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.00000 10.00000 -200.00000 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -250.00000 10.00000 -200.00000 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -250.00000 10.00000 -250.00000 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex -200.00000 10.00000 -250.00000 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 4 3 2 5 
+normals 4 3 2 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 2 1 6 
+normals 5 2 1 6 
+texcoords 8 9 10 11 
+endface
+face
+vertices 6 7 4 5 
+normals 6 7 4 5 
+texcoords 12 13 14 15 
+endface
+face
+vertices 7 0 3 4 
+normals 7 0 3 4 
+texcoords 16 17 18 19 
+endface
+face
+vertices 6 1 0 7 
+normals 6 1 0 7 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.007
+matref Material.002
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex 250.00000 20.00000 -250.00000 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.00000 20.00000 -250.00000 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.00000 20.00000 -200.00000 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 250.00000 20.00000 -200.00000 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 250.00000 10.00000 -200.00000 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex 200.00000 10.00000 -200.00000 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex 200.00000 10.00000 -250.00000 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex 250.00000 10.00000 -250.00000 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 4 3 2 5 
+normals 4 3 2 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 2 1 6 
+normals 5 2 1 6 
+texcoords 8 9 10 11 
+endface
+face
+vertices 6 7 4 5 
+normals 6 7 4 5 
+texcoords 12 13 14 15 
+endface
+face
+vertices 7 0 3 4 
+normals 7 0 3 4 
+texcoords 16 17 18 19 
+endface
+face
+vertices 6 1 0 7 
+normals 6 1 0 7 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.008
+matref None
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex -207.88942 18.00000 218.49606 
+normal 0.0 -0.5773491859436035 0.8164921998977661 
+vertex -207.88942 20.00000 218.49606 
+normal 0.0 0.5773491859436035 0.8164921998977661 
+vertex -218.49602 20.00000 207.88947 
+normal -0.8164921998977661 0.5773491859436035 0.0 
+vertex -218.49602 18.00000 207.88947 
+normal -0.8164921998977661 -0.5773491859436035 0.0 
+vertex 207.88942 20.00000 -218.49606 
+normal 0.0 0.5773491859436035 -0.8164921998977661 
+vertex 207.88942 18.00000 -218.49606 
+normal 0.0 -0.5773491859436035 -0.8164921998977661 
+vertex 218.49603 20.00000 -207.88945 
+normal 0.8164921998977661 0.5773491859436035 0.0 
+vertex 218.49603 18.00000 -207.88945 
+normal 0.8164921998977661 -0.5773491859436035 0.0 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 3 2 4 5 
+normals 3 2 4 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 4 6 7 
+normals 5 4 6 7 
+texcoords 8 9 10 11 
+endface
+face
+vertices 7 6 1 0 
+normals 7 6 1 0 
+texcoords 12 13 14 15 
+endface
+face
+vertices 3 5 7 0 
+normals 3 5 7 0 
+texcoords 16 17 18 19 
+endface
+face
+vertices 4 2 1 6 
+normals 4 2 1 6 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.009
+matref None
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex -235.00000 18.00000 200.05005 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -235.00000 20.00000 200.05005 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -250.00000 20.00000 200.05008 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -250.00000 18.00000 200.05008 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -250.00000 20.00000 -200.05005 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -250.00000 18.00000 -200.05005 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex -234.99997 20.00000 -200.05006 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -234.99997 18.00000 -200.05006 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 3 2 4 5 
+normals 3 2 4 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 4 6 7 
+normals 5 4 6 7 
+texcoords 8 9 10 11 
+endface
+face
+vertices 7 6 1 0 
+normals 7 6 1 0 
+texcoords 12 13 14 15 
+endface
+face
+vertices 3 5 7 0 
+normals 3 5 7 0 
+texcoords 16 17 18 19 
+endface
+face
+vertices 4 2 1 6 
+normals 4 2 1 6 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.010
+matref Material.001
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex 300.00000 10.00000 200.00000 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.00000 10.00000 200.00000 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.00000 10.00000 300.00000 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 300.00000 10.00000 300.00000 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 300.00000 0.00000 300.00000 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex 200.00000 0.00000 300.00000 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex 200.00000 0.00000 200.00000 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex 300.00000 0.00000 200.00000 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 4 3 2 5 
+normals 4 3 2 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 2 1 6 
+normals 5 2 1 6 
+texcoords 8 9 10 11 
+endface
+face
+vertices 6 7 4 5 
+normals 6 7 4 5 
+texcoords 12 13 14 15 
+endface
+face
+vertices 7 0 3 4 
+normals 7 0 3 4 
+texcoords 16 17 18 19 
+endface
+face
+vertices 6 1 0 7 
+normals 6 1 0 7 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.011
+matref None
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex -200.05003 18.00000 -235.00003 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -200.05003 20.00000 -235.00003 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.05006 20.00000 -250.00002 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -200.05006 18.00000 -250.00002 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex 200.05006 20.00000 -249.99997 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.05006 18.00000 -249.99997 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex 200.05008 20.00000 -234.99997 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 200.05008 18.00000 -234.99997 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 3 2 4 5 
+normals 3 2 4 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 4 6 7 
+normals 5 4 6 7 
+texcoords 8 9 10 11 
+endface
+face
+vertices 7 6 1 0 
+normals 7 6 1 0 
+texcoords 12 13 14 15 
+endface
+face
+vertices 3 5 7 0 
+normals 3 5 7 0 
+texcoords 16 17 18 19 
+endface
+face
+vertices 4 2 1 6 
+normals 4 2 1 6 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.012
+matref None
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex 200.05003 18.00000 235.00003 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex 200.05003 20.00000 235.00003 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 200.05006 20.00000 250.00003 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 200.05006 18.00000 250.00003 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -200.05006 20.00000 249.99995 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex -200.05006 18.00000 249.99995 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex -200.05006 20.00000 234.99995 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex -200.05006 18.00000 234.99995 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 3 2 4 5 
+normals 3 2 4 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 4 6 7 
+normals 5 4 6 7 
+texcoords 8 9 10 11 
+endface
+face
+vertices 7 6 1 0 
+normals 7 6 1 0 
+texcoords 12 13 14 15 
+endface
+face
+vertices 3 5 7 0 
+normals 3 5 7 0 
+texcoords 16 17 18 19 
+endface
+face
+vertices 4 2 1 6 
+normals 4 2 1 6 
+texcoords 20 21 22 23 
+endface
+end
+mesh
+name Cube.013
+matref None
+scale 1.0 1.0 1.0 
+spin 90.000 1 0 0
+spin -0.000 0 1 0
+spin 0.000 0 0 1
+shift 0.0 0.0 0.0 
+vertex 235.00000 18.00000 -200.05005 
+normal -0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex 235.00000 20.00000 -200.05005 
+normal -0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 250.00000 20.00000 -200.05008 
+normal 0.5773491859436035 0.5773491859436035 -0.5773491859436035 
+vertex 250.00000 18.00000 -200.05008 
+normal 0.5773491859436035 -0.5773491859436035 -0.5773491859436035 
+vertex 250.00000 20.00000 200.05005 
+normal 0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 250.00000 18.00000 200.05005 
+normal 0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+vertex 235.00000 20.00000 200.05005 
+normal -0.5773491859436035 0.5773491859436035 0.5773491859436035 
+vertex 235.00000 18.00000 200.05005 
+normal -0.5773491859436035 -0.5773491859436035 0.5773491859436035 
+texcoord 0.375 0.0 
+texcoord 0.625 0.0 
+texcoord 0.625 0.25 
+texcoord 0.375 0.25 
+texcoord 0.375 0.25 
+texcoord 0.625 0.25 
+texcoord 0.625 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.5 
+texcoord 0.625 0.5 
+texcoord 0.625 0.75 
+texcoord 0.375 0.75 
+texcoord 0.375 0.75 
+texcoord 0.625 0.75 
+texcoord 0.625 1.0 
+texcoord 0.375 1.0 
+texcoord 0.125 0.5 
+texcoord 0.375 0.5 
+texcoord 0.375 0.75 
+texcoord 0.125 0.75 
+texcoord 0.625 0.5 
+texcoord 0.875 0.5 
+texcoord 0.875 0.75 
+texcoord 0.625 0.75 
+face
+vertices 0 1 2 3 
+normals 0 1 2 3 
+texcoords 0 1 2 3 
+endface
+face
+vertices 3 2 4 5 
+normals 3 2 4 5 
+texcoords 4 5 6 7 
+endface
+face
+vertices 5 4 6 7 
+normals 5 4 6 7 
+texcoords 8 9 10 11 
+endface
+face
+vertices 7 6 1 0 
+normals 7 6 1 0 
+texcoords 12 13 14 15 
+endface
+face
+vertices 3 5 7 0 
+normals 3 5 7 0 
+texcoords 16 17 18 19 
+endface
+face
+vertices 4 2 1 6 
+normals 4 2 1 6 
+texcoords 20 21 22 23 
+endface
+end

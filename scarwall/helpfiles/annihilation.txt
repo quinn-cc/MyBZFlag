@@ -1,0 +1,6 @@
+**********************************************************
+*                       Annihilation                     *
+*                                                        *
+* Shooting yourself causes everyone on the map to die,   *
+* including teammates!                                   *
+**********************************************************

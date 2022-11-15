@@ -1,0 +1,105 @@
+
+teleporter front1
+	position 277 0 0
+	size .125 7 10
+	rotation 0
+	border 0
+end
+teleporter right1
+	position 311.81 41.657 0
+	size .125 10 10
+	rotation -45
+	border 0
+end
+teleporter left1
+	position 311.81 -41.657 0
+	size .125 10 10
+	rotation 45
+	border 0
+end
+
+
+
+teleporter front2
+	position -277 0 0
+	size .125 7 10
+	rotation 180
+	border 0
+end
+teleporter left2
+	position -311.81 41.657 0
+	size .125 10 10
+	rotation 45
+	border 0
+end
+teleporter right2
+	position -311.81 -41.657 0
+	size .125 10 10
+	rotation -45
+	border 0
+end
+
+
+
+teleporter corner1
+	position 314.59 389.18 0
+	size .125 10 15
+	rotation 56
+	border 1
+end
+teleporter corner2
+	position -314.59 -389.18 0
+	size .125 10 15
+	rotation -124
+	border 1
+end
+
+link
+	from corner1:f
+	to corner2:b
+end
+link
+	from corner1:b
+	to corner2:b
+end
+link
+	from corner2:f
+	to corner1:b
+end
+link
+	from corner2:b
+	to corner1:b
+end
+	
+link
+	from front1:b
+	to front2:b
+end
+link
+	from right1:b
+	to left1:b
+end
+link
+	from left1:b
+	to right1:b
+end
+
+
+
+
+
+
+
+	
+link
+	from front2:b
+	to front1:b
+end
+link
+	from left2:f
+	to right2:f
+end
+link
+	from right2:f
+	to left2:f
+end

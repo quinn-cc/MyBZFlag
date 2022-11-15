@@ -1,0 +1,101 @@
+#(-338, -186): -187
+#(-313, 246): -205
+#(-431, 350): -175
+#(-290, 397): -253
+#(110, 110): 0
+#(-110, 110): 0
+#(110, -110): 0
+#(-110, -110): 0
+
+define debris_pyramids
+	pyramid
+		position -338 -186 0
+		size 10 10 10
+		rotation -187
+		matref metal
+	end
+	pyramid
+		position -313 246 0
+		size 10 10 10
+		rotation -205
+		matref metal
+	end
+	pyramid
+		position -431 350 0
+		size 10 10 10
+		rotation -175
+		matref metal
+	end
+	pyramid
+		position -290 397 0
+		size 10 10 10
+		rotation -253
+		matref metal
+	end
+enddef
+
+group debris_pyramids
+	rotation 0
+end
+group debris_pyramids
+	rotation 180
+end
+
+pyramid
+	position 110 110 0
+	size 10 10 10
+	rotation 0
+	matref metal
+end
+pyramid
+	position -110 110 0
+	size 10 10 10
+	rotation 0
+	matref metal
+end
+pyramid
+	position 110 -110 0
+	size 10 10 10
+	rotation 0
+	matref metal
+end
+pyramid
+	position -110 -110 0
+	size 10 10 10
+	rotation 0
+	matref metal
+end
+
+######################
+## Pyramid tops, for killing
+####################
+physics
+	name spike
+	death No button jumping
+end
+
+box
+	position -110 -110 10
+	size .1 .1 .1
+	matref protector
+	phydrv spike
+end
+box
+	position -110 110 10
+	size .1 .1 .1
+	matref protector
+	phydrv spike
+end
+box
+	position 110 -110 10
+	size .1 .1 .1
+	matref protector
+	phydrv spike
+end
+box
+	position 110 110 10
+	size .1 .1 .1
+	matref protector
+	phydrv spike
+end
+

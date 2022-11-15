@@ -1,0 +1,8 @@
+**********************************************************
+*                         Grenade   		             *
+*                                                        *
+* The first shot fires the 'grenade'. The location of    *
+* the grenade is represented by two phantom zoned shots. *
+* The second shot detonates the grenade, creating a      *
+* shock wave in the position of the grenade.             *
+**********************************************************

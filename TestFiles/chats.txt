@@ -1,0 +1,463 @@
+
+
+
+Player ERGOM [1] -> All: sw is lame
+Player WHAMMO! [0] -> All: i can increase radius if you want
+Player [7] accept() from 5.189.146.149:40682 on 14
+Player [7] submitted reverse resolve query
+Player [7] resolved to vmd20397.contaboserver.net
+Player  [7] removed at 2022-08-18 22:20:02: Disconnected
+Player [7] accept() from 149.28.248.53:45892 on 14
+Player [7] submitted reverse resolve query
+Player [7] resolved to 149.28.248.53.vultrusercontent.com
+Player  [7] removed at 2022-08-18 22:20:05: Disconnected
+Player Buckaroo Banzai [6] -> All: I want
+isActive: 0
+isActive: 1
+Player U812 [4] shot id 0 duplicated
+Player WHAMMO! [0] -> All: ok just a second
+isActive: 0
+isActive: 1
+Player U812 [4] shot id 0 duplicated
+Player WHAMMO! [0] -> All: /set _shockOutRadius 70
+set executed by WHAMMO!, setvar=1, setall=1
+Player WHAMMO! [0] -> All: ok try it now
+isActive: 0
+isActive: 1
+Player WHAMMO! [0] -> All: that may be too big
+Player ERGOM [1] -> Team: mid
+Player WHAMMO! [0] -> All: do it
+Player WHAMMO! [0] -> All: fire sw slarti
+Player WHAMMO! [0] -> All: /flag give #0 sw
+Player ERGOM [1] -> All: pfft
+Player WHAMMO! [0] -> All: too big
+Player WHAMMO! [0] -> All: /set _shockOutRadius 60
+set executed by WHAMMO!, setvar=1, setall=1
+Player ERGOM [1] -> Team: /lagstats
+isActive: 0
+isActive: 1
+Player U812 [4] removed at 2022-08-18 22:23:17: left
+Queuing ADD message to list server
+Player WHAMMO! [0] -> All: is tommy playing?
+Player Tommy The Gun [8] -> All: im over here
+Player ERGOM [1] -> All: skippers suck
+Player WHAMMO! [0] -> All: ahoy mate
+Player cidentan50 [3] -> Team: /lagstats
+
+
+
+Player Tommy The Gun [8] -> All: didnt know you can do that
+Player guy next door [4] -> All: that kicks me ass
+Player Tommy The Gun [8] -> All: i thought it just gave me a 50
+Player [5] accept() from 5.189.146.149:50820 on 12
+Player [5] resolved to vmd20397.contaboserver.net
+Player  [5] removed at 2022-08-18 22:35:03: Disconnected
+Player Tommy The Gun [8] -> All: not take away
+Player [5] accept() from 149.28.248.53:48760 on 12
+Player [5] submitted reverse resolve query
+
+
+layer [5] resolved to 149.28.248.53.vultrusercontent.com
+Player  [5] removed at 2022-08-18 22:35:06: Disconnected
+Player StanDMan [1] -> All: fa fuk with the damn GN
+Player guy next door [4] -> All: word ;)
+Player Tommy The Gun [8] -> All: wth
+Player cidentan50 [3] -> All: There's the Fifty Point flag and there's Fifty Fifty. They're not the same.
+Player cidentan50 [3] -> All: Fifty fifty gives you plus or minus 20 points.
+Player Tommy The Gun [8] -> All: right, but i shot you both and got a 100
+Player Tommy The Gun [8] -> All: and took 50 each from you
+Player guy next door [4] -> All: i hate this flag
+Player cidentan50 [3] -> All: You had FP\
+Player war-driver [2] shot id 0 duplicated
+Player Tommy The Gun [8] -> All: yeah
+
+euing ADD message to list server
+Peer 144.217.83.100 connection timeout with data ""
+Player Pesky_UK [4] -> Team: where rf?
+Player r2d1 [9] -> All: finally a lottery flag
+Player [0] accept() from 95.145.7.234:54257 on 7
+Player [0] submitted reverse resolve query
+Player [0] failed to resolve: error 
+
+-------------------------------
+layer the annoying cat [12] has joined from 90.37.245.55 at 2022-08-18 15:39:04 with token "NONE"
+Queuing ADD message to list server
+Got: UNK: the annoying cat[12]
+Queuing ADD message to list server
+Player the annoying cat [12] -> All: :(((((
+------------------------------------------
+
+
+Player the annoying cat [2] -> All: this map bores me so much
+Player  [5] removed at 2022-08-18 15:45:03: Disconnectedh...... :(
+
+Player r2d1 [9] -> All: i know... no pz no wg...
+
+!!!!!!!!!!!!! ------------   12:33:45  ----------------!!!!!!!!!!!!!    275 -> 266 -> 160 -> 199 -> 116 in 15-20sec
+
+Peer 144.217.83.100 connection timeout with data ""
+Player the annoying cat [2] -> All: on the contrary it is much too full of special flags, too full of tricks, too large, no real skills play...  
+Player the annoying cat [2] -> All: :(
+P
+Player the annoying cat [2] -> All: and gn are even more annoying here......... 
+Player Squirrel G [4] -> All: yes gn are
+Player Squirrel G [4] -> All: super weapon
+Player Squirrel G [4] -> All: spawn cap
+P
+
+
+Player r2d1 [9] -> All: on apoc there are a few let's say "extremely lucky" players
+
+
+Queuing ADD message to list server
+Player the annoying cat [2] -> All: and the ugly fish is even more ugly
+Player Hogfish [1] -> All: just cat hate, its a fish thing
+Player Hogfish [1] -> Player the annoying cat [2]: not really, love ya
+Player logdog [6] removed at 2022-08-18 15:52:02: left
+Queuing ADD message to list server
+Peer 144.217.83.100 connection timeout with data ""
+Player the annoying cat [2] -> Player Hogfish [1]: meow
+Player Hogfish [1] -> Player the annoying cat [2]: our secret
+Player Squirrel G [4] (Red Team) might have tried to capture Green Team flag without reaching their own base. (Player position: -1.520000 -46.800003 25.000000)
+Player the annoying cat [2] -> Player Hogfish [1]: lol
+Player r2d1 [9] -> All: one of the things i miss though is the useles flag
+Player r2d1 [9] trying to stop a mismatched shot id 3
+Player the annoying cat [2] -> All: and again
+
+
+layer citsilluB [10] removed at 2022-08-18 15:53:30: left
+Queuing ADD message to list server
+Player the annoying cat [2] -> All: i miss a game of skilled moves
+Player Hogfish [1] -> All: its not here cat
+Player biom [0] -> All: agreed, all the unearned bonuses and kill-all flags detract from skill
+Player Tux [12] removed at 2022-08-18 15:54:41: left
+Queuing ADD message to list server
+Player  [3] removed at 2022-08-18 15:54:41: ECONNRESET/EPIPE
+
+yer e-merge [6] removed at 2022-08-18 15:56:55: left
+Queuing ADD message to list server
+Player r2d1 [9] -> All: better sad than salad
+Player biom [0] -> All: too much geno
+Player Hogfish [1] -> All: you saying I'm too hard on you? 
+Player the annoying cat [2] -> All: too much of useless things and no enough of real play ;(
+Player Paladin [8] removed at 2022-08-18 15:57:46: left
+Queuing ADD message to list server
+Player biom [0] -> All: no, im saying spawn/die/spawn/die is not satisfying gameply
+Player [6] accept() from 73.103.164.52:46968 on 13
+Player [6] submitted reverse resolve query
+Player [6] resolved to c-73-103-164-52.hsd1.in.comcast.net
+Player slot 6 inbound UDP up 73.103.164.52:46968 actual 46968
+Player 6 outbound UDP up
+
+
+Player Gyb [12] removed at 2022-08-18 16:02:33: left
+Queuing ADD message to list server
+Player the annoying cat [2] -> All: sw and gn are too fast... you can't escape them
+Player the annoying cat [2] -> All: stupid map settings
+Player biom [0] -> All: GN is too fast yes, sw is too slow
+Player Pistacho [11] -> All: stupid map
+Player r2d1 [9] -> All: the whining cat :)
+Player the annoying cat [2] -> All: :(
+Player baconbits [10] shot id 0 duplicated
+Player baconbits [10] shot id 0 duplicated
+Player baconbits [10] shot id 0 duplicated
+Player [12] accept() from 162.248.150.3:53710 on 18
+Player [12] submitted reverse resolve query
+
+Player [12] resolved to stp-tkowh-162-248-150-3.stjohncable.com
+Player slot 12 inbound UDP up 162.248.150.3:53710 actual 53710
+Player biom [0] -> All: it's SUCH a valid point to call considered criticism "whining". Really helps the debate...
+Player 12 outbound UDP up
+Player The Grinch [3] -> Team: nice
+Player baconbits [10] removed at 2022-08-18 16:03:56: left
+Queuing ADD message to list server
+Player r2d1 [9] -> All: au
+Player Cluny the Scourge [12] sent version string: 2.4.2.20121024-MAINT-darwin10.8.0-SDL
+Player Cluny the Scourge [12] has joined from 162.248.150.3 at 2022-08-18 16:03:57 with token "650581220"
+Queuing ADD message to list server
+Got: TOKGOOD: Cluny the Scourge:[12]
+Identify CLUNY THE SCOURGE
+Set player (Cluny the Scourge [12]) bzId to (58049)
+Queuing ADD message to list server
+Player Degetica [8] -> All:  face bine
+Player [10] accept() from 88.161.183.35:1900 on 15
+Player [10] submitted reverse resolve query
+Player slot 10 inbound UDP up 88.161.183.35:4061 actual 4061
+Player 10 outbound UDP up
+Player [10] resolved to mex01-1_migr-88-161-183-35.fbx.proxad.net
+
+
+
+
+
+layer Jeff_DSI [3] trying to update an unexistent shot id 0
+Player GRUEsome [10] trying to stop a mismatched shot id 0
+Player GRUEsome [10] trying to stop a mismatched shot id 1
+Player quantum dot [13] -> All: hi
+Player GEP [1] -> Team: Hi qd
+Player K29-Vzla [20] -> All: hiya quantum :))
+Player quantum dot [13] -> All: it seems everyone has forgot Apoc
+Player WHAMMO! [0] -> All: lol
+Player KnottyMan [ILF] [2] -> All: I have not
+ Player Tommy The Gun [14] shot id 0 duplicated
+Player Tommy The Gun [14] shot id 1 duplicated
+Player Tommy The Gun [14] shot id 2 duplicated
+Player Tommy The Gun [14] shot id 0 duplicated
+Player Tommy The Gun [14] shot id 1 duplicated
+Player Tommy The Gun [14] shot id 0 duplicated
+Player K29-Vzla [20] -> Team: Apoc, paso de moda jajajajaja
+Player Tommy The Gun [14] shot id 0 duplicated
+
+
+eer 144.217.83.100 connection timeout with data ""
+Player [19] accept() from 189.34.224.45:1030 on 26
+Player [19] submitted reverse resolve query
+Player [19] resolved to bd22e02d.virtua.com.br
+Player slot 19 inbound UDP up 189.34.224.45:1031 actual 1031
+Player 19 outbound UDP up
+Player something in my drawers [6] -> All: argumentative, ban
+Player Nhonho [19] sent version string: 2.4.18.20181229-MAINT-linux-gnu-SDL
+Player Nhonho [19] has joined from 189.34.224.45 at 2022-08-19 00:21:04 with token "NONE"
+Queuing ADD message to list server
+Got: UNK: Nhonho[19]
+Queuing ADD message to list server
+Player KnottyMan [ILF] [2] -> All: right?
+Player kung pao shicken [5] removed at 2022-08-19 00:21:19: left
+Queuing ADD message to list server
+Player KnottyMan [ILF] [2] -> Team: th me
+Player something in my drawers [6] -> All: hypocrite
+Player georgia peach [13] -> Team: who's argumentative
+Player paparozzi [16] -> All: WHAMMO, what happened to the apocalypse in action?
+Player KnottyMan [ILF] [2] -> All: that's the joke
+Player WHAMMO! [0] -> All: good question
+Player KnottyMan [ILF] [2] -> All: it's there.  this is the new hotness looks like
+Player KnottyMan [ILF] [2] -> Team: OURS
+Player Tommy The Gun [14] (Red Team) might have tried to capture Green Team flag without reaching their own base. (Player position: -9.420000 -46.779999 25.000000)
+Player KnottyMan [ILF] [2] -> Team: th
+Player WHAMMO! [0] -> Team: gj
+Player [5] accept() from 50.158.131.240:61362 on 12
+Player [5] submitted reverse resolve query
+Player [5] resolved to ip50-158-131-240.lv.lv.cox.net
+Player slot 5 inbound UDP up 50.158.131.240:61362 actual 61362
+Player 5 outbound UDP up
+
+
+Player KnottyMan [ILF] [2] shot id 3 duplicated
+Player KnottyMan [ILF] [2] shot id 4 duplicated
+Player KnottyMan [ILF] [2] shot id 1 duplicated
+Player paparozzi [16] -> All: is this map designed so that Whammo can score all the points?
+Player WHAMMO! [0] -> All: i have to keep these young guns in line K29
+Player WHAMMO! [0] -> All: :D
+Player K29-Vzla [20] -> All: :))
+Player WHAMMO! [0] -> All: only thing i did on this map was the skyfire flag
+Player [22] accept() from 73.156.63.56:64974 on 29
+Player [22] submitted reverse resolve query
+Player [22] resolved to c-73-156-63-56.hsd1.fl.comcast.net
+Player slot 22 inbound UDP up 73.156.63.56:64974 actual 64974
+Player 22 outbound UDP up
+Player Floridaa Fighter2 [22] sent version string: 2.4.22.20210227-MAINT-Win32VC14-SDL2
+Player Floridaa Fighter2 [22] has joined from 73.156.63.56 at 2022-08-19 00:28:00 with token "NONE"
+Queuing ADD message to list server
+Got: UNK: Floridaa Fighter2[22]
+Queuing ADD message to list server
+Player vTv [5] removed at 2022-08-19 00:28:04: left
+Queuing ADD message to list server
+Peer 144.217.83.100 connection timeout with data ""
+Player WHAMMO! [0] -> All: it was done by a highschool kid
+Player WHAMMO! [0] -> All: best map in decades
+Player georgia peach [13] -> Team: oh geez
+Player K29-Vzla [20] -> Team: ducati :)=))
+Player devtank [17] shot id 1 duplicated
+Player paparozzi [16] -> All: back to sleep greens i need time to get used to the shit
+Player [5] accept() from 67.158.225.130:10824 on 12
+Player [5] submitted reverse resolve query
+
+
+
+
+Player Objologist [5] removed at 2022-08-19 00:30:06: left
+Queuing ADD message to list server
+Player kerchunk [24] -> All: hide it in a drawer
+Player kierra [12] -> Team: lol
+Player WHAMMO! [0] trying to stop a mismatched shot id 2
+Player devtank [17] shot id 2 duplicated
+Player K29-Vzla [20] -> Team: kierra :)))
+Player kierra [12] -> Team: que, k29
+Player ducatiwannabe [7] -> Team: hi kierra :)
+Player kierra [12] -> Team: hi dw
+Player something in my drawers [6] -> All: nice firing macro, dthreead
+Player ducatiwannabe [7] -> All: /msg kierra did you see that :P
+Player JackDerby [3] -> All: crazy game with so many players!..    great game!  Later!!
+Player kierra [12] -> Player ducatiwannabe [7]: see what
+Player JackDerby [3] removed at 2022-08-19 00:30:37: left
+Queuing ADD message to list server
+Player ducatiwannabe [7] -> Player kierra [12]: me forgetting how to look myself up lol
+Player kierra [12] -> Player ducatiwannabe [7]: ?
+Player ducatiwannabe [7] -> Player kierra [12]:  tried /lookup ducatiwannabe and it didn't work
+Player ducatiwannabe [7] -> Player kierra [12]: wondered if you could see it hehe
+Player WHAMMO! [0] shot id 1 duplicated
+Player LolZ [15] shot id 3 duplicated
+Player LolZ [15] shot id 2 duplicated
+Player WHAMMO! [0] shot id 1 duplicated
+Player WHAMMO! [0] shot id 4 duplicated
+Player WHAMMO! [0] shot id 1 duplicated
+Player kierra [12] -> Player ducatiwannabe [7]: grue doesn't have that plugin
+Player kierra [12] -> Player ducatiwannabe [7]: his admins have no perms
+Player WHAMMO! [0] trying to stop the unexistent shot id 2
+Player WHAMMO! [0] shot id 0 duplicated
+Player kierra [12] -> Player ducatiwannabe [7]: we're window dressing
+Player georgia peach [13] removed at 2022-08-19 00:31:27: idling
+
+icked player georgia peach [13] for idling (thresh = 90.000000)
+Player ducatiwannabe [7] -> Player kierra [12]: ohh
+Player paparozzi [16] -> All: aha
+Player kierra [12] -> Player ducatiwannabe [7]: cant even see admin chat
+isActive: 0
+isActive: 1
+
+ot: UNK: Dead Again[3]
+Queuing ADD message to list server
+Player kierra [12] -> All: /viewreports
+WARNING: Network message being sent is too long! (message is 129, cutoff at 128)
+WARNING: Network message being sent is too long! (message is 140, cutoff at 128)
+WARNING: Network message being sent is too long! (message is 136, cutoff at 128)
+WARNING: Network message being sent is too long! (message is 148, cutoff at 128)
+WARNING: Network message being sent is too long! (message is 132, cutoff at 128)
+WARNING: Network message being sent is too long! (message is 150, cutoff at 128)
+Peer 144.217.83.100 connection timeout with data ""
+Player WHAMMO! [0] -> All: is knotty still here?
+Player kierra [12] -> Player ducatiwannabe [7]: i can /viewreports
+Player KnottyMan [ILF] [2] -> All: yis
+Player kierra [12] -> Player ducatiwannabe [7]: thats it
+Player Tommy The Gun [14] -> All: wow
+Player ducatiwannabe [7] -> Player kierra [12]: haha
+Player ducatiwannabe [7] -> Player kierra [12]: we look fancy tho
+Player [5] accept() from 217.180.192.255:4558 on 19
+Player [5] submitted reverse resolve query
+Player slot 5 inbound UDP up 217.180.192.255:4102 actual 4102
+Player 5 outbound UDP up
+Player [5] failed to resolve: error 4
+Player georgia peach [5] sent version string: 2.4.22.20210227-MAINT-Win32VC14-SDL2
+Player georgia peach [5] has joined from 217.180.192.255 at 2022-08-19 00:32:12 with token "NONE"
+Queuing ADD message to list server
+Got: UNK: georgia peach[5]
+Queuing ADD message to list server
+Player Tommy The Gun [14] -> All: dont do knotty like that
+
+
+Identify CRUNCHY NEWT
+Set player (crunchy newt [6]) bzId to (60256)
+Queuing ADD message to list server
+Player K29-Vzla [20] -> Team: ah ok :))
+Player Dead Again [3] removed at 2022-08-19 00:33:53: left
+Queuing ADD message to list server
+Player Tommy The Gun [14] shot flag mismatch TH G*
+Player KnottyMan [ILF] [2] -> Team: OURS 
+Player Nhonho [19] shot flag mismatch TH SW
+Player ducatiwannabe [7] -> Team: running out of gn shots! :D
+Player K29-Vzla [20] -> Team: este mapa se ha vuelto muy popular :)
+Player the annoying cat [21] -> All: .....
+Player kerchunk [24] trying to stop the unexistent shot id 0
+Player ducatiwannabe [7] -> Player GRUEsome [10]: whew lucky rico
+Player kerchunk [24] shot id 1 duplicated
+Player Nhonho [19] removed at 2022-08-19 00:34:56: left
+Queuing ADD message to list server
+Player kerchunk [24] shot id 0 duplicated
+Player kerchunk [24] shot id 1 duplicated
+
+
+ueuing ADD message to list server
+Got: TOKGOOD: quantum dot:AHS3.ADMIN:ALLEJO.ADMIN[13]
+Identify QUANTUM DOT
+Set player (quantum dot [13]) bzId to (634)
+Queuing ADD message to list server
+Player ducatiwannabe [7] -> All: ty
+Player ducatiwannabe [7] -> Player GRUEsome [10]: ow
+Player ducatiwannabe [7] -> All: qd!
+Player Jeff_DSI [3] trying to update an unexistent shot id 0
+Player GRUEsome [10] trying to stop a mismatched shot id 0
+Player GRUEsome [10] trying to stop a mismatched shot id 1
+Player quantum dot [13] -> All: hi
+Player GEP [1] -> Team: Hi qd
+Player K29-Vzla [20] -> All: hiya quantum :))
+Player quantum dot [13] -> All: it seems everyone has forgot Apoc
+Player WHAMMO! [0] -> All: lol
+Player KnottyMan [ILF] [2] -> All: I have not
+ Player Tommy The Gun [14] shot id 0 duplicated
+Player Tommy The Gun [14] shot id 1 duplicated
+Player Tommy The Gun [14] shot id 2 duplicated
+Player Tommy The Gun [14] shot id 0 duplicated
+Player Tommy The Gun [14] shot id 1 duplicated
+Player Tommy The Gun [14] shot id 0 duplicated
+Player K29-Vzla [20] -> Team: Apoc, paso de moda jajajajaja
+Player Tommy The Gun [14] shot id 0 duplicated
+Player Tommy The Gun [14] shot id 1 duplicated
+
+Player 15 outbound UDP up
+Player Laserbeak [15] sent version string: 2.4.22.20210721-MAINT-linux-gnu-SDL2
+Player Laserbeak [15] has joined from 172.11.229.43 at 2022-08-19 00:52:53 with token "503642397"
+Queuing ADD message to list server
+Got: TOKGOOD: Laserbeak:[15]
+Identify LASERBEAK
+Set player (Laserbeak [15]) bzId to (59374)
+Queuing ADD message to list server
+Player K29-Vzla [6] -> All: K grrrrrrrrr
+Player K29-Vzla [6] -> All: my ST :((
+Player KnottyMan [ILF] [2] -> All: aw, was that you?
+Player ducatiwannabe [7] -> Team: red th!
+Player K29-Vzla [6] -> All: :(
+Player ducatiwannabe [7] -> Team: nvm :P
+Player D3ad Turtle [8] -> Team: gj
+Player WHAMMO! [0] -> Player MADRUNBADRUN [11]: bro u huntin me?
+Player K29-Vzla [6] -> All: hiya Laser :))
+Player ducatiwannabe [7] -> Team: gj
+Player Laserbeak [15] -> All: hey
+Player Tommy The Gun [14] -> All: its laggy in here 
+Player ducatiwannabe [7] -> Team: will try to cover u knotty
+Player GEP [1] -> Team: come
+Player KnottyMan [ILF] [2] -> Team: uneven
+Player ducatiwannabe [7] -> Team: 8v6 tho
+Player GEP [1] -> Team: oh
+Player K29-Vzla [6] -> All: ha
+Player GEP [1] -> Team: /lagstats
+Player KnottyMan [ILF] [2] -> All: K needs me!
+Player georgia peach [5] -> Team: give me apoc any day
+Player KnottyMan [ILF] [2] removed at 2022-08-19 00:54:19: left
+Queuing ADD message to list server
+Player K29-Vzla [6] -> All: grrr k
+Player [2] accept() from 66.165.15.219:4367 on 9
+Player [2] submitted reverse resolve query
+Player [2] resolved to 66-165-15-219.byvw.hsi.whidbey.net
+
+Player WHAMMO! [0] shot id 1 duplicated
+Player K29-Vzla [6] -> All: ST MID
+Player HarmlezzKitty [16] -> Player GEP [1]: hiya!
+Player ducatiwannabe [7] -> All: shhh
+Player GEP [1] -> Player HarmlezzKitty [16]: Hiya there
+Player K29-Vzla [6] -> All: hey meow :))
+Player KnottyMan [ILF] [2] shot over speed 176.799850 132.000000
+Player ducatiwannabe [7] -> All: eep
+Player plunge [4] removed at 2022-08-19 00:55:34: left
+Queuing ADD message to list server
+Player HarmlezzKitty [16] -> Player ducatiwannabe [7]: hi
+Player ducatiwannabe [7] -> Player HarmlezzKitty [16]: hi :D
+Player ducatiwannabe [7] -> Player HarmlezzKitty [16]: how are you?
+Player K29-Vzla [6] -> All: BAD BU MID
+Player georgia peach [5] -> Team: what is airshot
+Player GEP [1] shot id 1 duplicated
+Player ducatiwannabe [7] -> Team: it's so cool shoot it :D
+isActive: 0
+isActive: 1
+layer quantum dot [13] shot id 0 duplicated
+Player quantum dot [13] shot id 1 duplicated
+Player HarmlezzKitty [16] -> Player ducatiwannabe [7]: good. hope u r as well
+Player HarmlezzKitty [16] -> Player K29-Vzla [6]: meow
+Player ducatiwannabe [7] -> Team: great for jumping and shooting people off bridges and stuff
+Player GEP [1] -> Team: someone come get rf
+Player K29-Vzla [6] -> All: my GM :((
+Player ducatiwannabe [7] -> Player HarmlezzKitty [16]: I am ty :D
+Player HarmlezzKitty [16] -> Player ducatiwannabe [7]: :)
+
+
+
+

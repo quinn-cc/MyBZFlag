@@ -1,0 +1,10 @@
+**********************************************************
+*                   The Rules of Scarwall                *
+*                                                        *
+* Rules here are honestly pretty simple. We're all       *
+* trying to have a good time, don't be crazy, don't      *
+* harass other players, etc.                             *
+*                                                        *
+* Team Flag Geno and custom flags are in use. Type	     *
+* /help teamFlagGeno and /help flags for more.           *
+**********************************************************

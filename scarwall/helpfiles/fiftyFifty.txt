@@ -1,0 +1,6 @@
+**********************************************************
+*                      Fifty Fifty   		             *
+*                                                        *
+* Each shot has a fifty-fifty chance of earning you 20   *
+* points or losing you 20 points. For gamblers only!     *
+**********************************************************

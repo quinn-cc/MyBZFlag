@@ -1,0 +1,6 @@
+**********************************************************
+*                      Triple Barrel   		             *
+*                                                        *
+* Your tank fires a spread of three shots instead of     *
+* one. Easier to hit enemies.				             *
+**********************************************************

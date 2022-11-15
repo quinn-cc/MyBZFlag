@@ -1,0 +1,27 @@
+Wed Aug 10 23:45:30 2022
+Reported by Agatha: suggest more obstacles on field to provide cover and make L spam more dangerous to wielder
+
+Wed Aug 10 23:46:00 2022
+Reported by Agatha: suggest pyramids have 45 deg slope; more standard and encourages vertical shots
+
+Wed Aug 10 23:46:36 2022
+Reported by Agatha: possible to jump from support in map center up to deck.  Difficult, but could be mastered; allows quick cap.
+
+Thu Aug 11 00:06:27 2022
+Reported by Agatha: WG and GM are still just as spawnkilly as on Apoc :V
+
+Thu Aug 11 09:43:04 2022
+Reported by Misadventure: it's possible to drop team flag into the 4 white pyramids around pads. could be nice, but not retrievable with OO
+
+Thu Aug 11 18:21:38 2022
+Reported by Misadventure: might want to look at autokick of idle/paused players. some here over an hour
+
+Thu Aug 11 18:23:03 2022
+Reported by Misadventure: I see I'm @ here today. Thanks. I notice Z channel and server messages are not feeding back. not seen that b4
+
+Fri Aug 12 05:52:38 2022
+Reported by ERGOM: bug located at [328 201 0] while holding gfeen flag, path is blocked
+
+Fri Aug 12 22:54:24 2022
+Reported by kerchunk: got stuck in a wall
+

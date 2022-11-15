@@ -1,0 +1,23 @@
+# Blender MTL File: 'catwalk_flourescents.blend'
+# Material Count: 2
+
+newmtl glow_green
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.007351 0.800000 0.000000
+Ks 0.519685 0.519685 0.519685
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd /home/quinn/Documents/bzflag-2.4.25/textures_cc/flourescent.png
+
+newmtl glow_red
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2

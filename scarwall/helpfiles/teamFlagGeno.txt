@@ -1,0 +1,9 @@
+**********************************************************
+*                     Team Flag Geno   		             *
+*                                                        *
+* Instead of there being a "Genocide" flag, your own	 *
+* team flag acts as genocide! Be careful not to hit      *
+* someone holding the Avenger flag while you have geno,  *
+* as it will cause your team to blow up instead of       *
+* theirs! See /help avenger for more on the Avenger flag *
+**********************************************************

@@ -1,0 +1,8 @@
+**********************************************************
+*                         Avenger                        *
+*                                                        *
+* If you die holding the Avenger flag, then your killer  *
+* also dies if they are holding *any* flag. If your      *
+* killer is packing genocide, then their team dies       *
+* instead of yours!                                      *
+**********************************************************
