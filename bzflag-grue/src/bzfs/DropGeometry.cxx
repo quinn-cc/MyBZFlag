@@ -56,13 +56,22 @@ static int compareDescending(const void* a, const void* b);
 static bool isDeathLanding(const Obstacle* landing);
 static bool isOpposingTeam(const Obstacle* obs, int team);
 static bool isValidLanding(const Obstacle* obs);
+
+
 static bool isValidClearance(const float pos[3], float radius,
                              float height, int team);
+                             
 static bool dropIt(float pos[3], float minZ, float maxZ,
                    float radius, float height, int team);
 
 
 /******************************************************************************/
+
+bool DropGeometry::isValidSpawn(const float pos[3], float radius, float height)
+{
+    return isValidClearance(pos, radius, height, -1);
+}
+
 
 bool DropGeometry::dropPlayer(float pos[3], float minZ, float maxZ)
 {

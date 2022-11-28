@@ -196,7 +196,7 @@ AUTOCONF = ${SHELL} /home/quinn/Documents/MyBZFlag/bzflag-grue/misc/missing auto
 AUTOHEADER = ${SHELL} /home/quinn/Documents/MyBZFlag/bzflag-grue/misc/missing autoheader
 AUTOMAKE = ${SHELL} /home/quinn/Documents/MyBZFlag/bzflag-grue/misc/missing automake-1.16
 AWK = gawk
-BUILD_DATE = 2022-11-15
+BUILD_DATE = 2022-11-28
 BZFLAG_DATA = /usr/local/share/bzflag
 CC = gcc
 CCACHE = 
@@ -210,7 +210,7 @@ CONF_CXXFLAGS =  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -p
 CPP = gcc -E
 CPPFLAGS = 
 CURSES_LIB = 
-CUSTOM_PLUGIN_LIST = teamFlagGeno
+CUSTOM_PLUGIN_LIST = grenadeFlag
 CXX = g++ -std=gnu++11
 CXXCPP = g++ -std=gnu++11 -E
 CXXDEPMODE = depmode=gcc3
@@ -391,7 +391,7 @@ SUBDIRS = \
 	timedctf \
 	TimeLimit \
 	wwzones \
-	teamFlagGeno
+	grenadeFlag
 
 DIST_SUBDIRS = \
 	$(SUBDIRS)

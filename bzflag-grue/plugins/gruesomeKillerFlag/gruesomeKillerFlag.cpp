@@ -109,7 +109,8 @@ void GruesomeKillerFlag::Event(bz_EventData *eventData)
  	if (eventData->eventType == bz_ePlayerDieEvent)
  	{
    		bz_PlayerDieEventData_V2* data = (bz_PlayerDieEventData_V2*) eventData;
-    	
+    	uint32_t shotGUID = bz_getShotGUID(data->shotID, BZ_SERVER);
+
     	if (data->flagKilledWith == "GK")
 		{
 			bz_ApiString flagHeldWhenKilled = bz_getFlagName(data->flagHeldWhenKilled);

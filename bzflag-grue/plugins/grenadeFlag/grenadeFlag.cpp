@@ -236,9 +236,10 @@ void GrenadeFlag::Event(bz_EventData *eventData)
 				// Otherwise, detonate it.
 				else
 				{
-					float vel[3] = { 10, 10, 10 };
+					float vel[3] = { 0, 0, 0 };
 					float* pos = grenadeMap[data->playerID]->getPosition();
-					
+					//float* pos = bz_getServerShotPos(grenadeMap[data->playerID]->getPZShots()[0]);
+
 					bz_fireServerShotAsPlayer("SW", pos, vel, "GN", player->playerID,
 						bz_getBZDBDouble("_grenadeExplosionLifetime"));
 

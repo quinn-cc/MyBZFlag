@@ -22,7 +22,7 @@ class ScarwallServerMessages : public bz_Plugin {
 
     virtual const char* Name()
     {
-        return "ScarwallServerMessages";
+        return "Scarwall Server Messages";
     }
 
     virtual void Init(const char*);

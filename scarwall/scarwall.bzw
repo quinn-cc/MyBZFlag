@@ -41,7 +41,7 @@ options
 	-j   						# Enable Jumping
 	-ms 5						# Max number of shots
 	-mp 0,40,40,0,0,10  		# rogue,red,green,blue,purple,observer
-	-a 50 38
+	-a 0 0
 	-fb  						# Allows flags to spawn on boxes/surfaces
 	-sb							# Allows tanks to spawn on boxes/surfaces
 	-autoTeam  					# Automatically assigns to a team
@@ -62,8 +62,7 @@ options
 	-set _noClimb 0
 	
 	-jitterdrop 3				# 3 jitter warnings before kicked
-	## TEST
-	-maxidle 99999					# 90 seconds of idle before kicked
+	-maxidle 90					# 90 seconds of idle before kicked
 	-lagdrop 3					# 3 lag warnings before kicked
 	
 	

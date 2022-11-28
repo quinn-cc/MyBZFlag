@@ -86,6 +86,8 @@ void Portal::init(float* pos, float* vel, uint32_t pz1, uint32_t pz2)
 
 void Portal::clear()
 {
+	bz_endServerShot(pzShots[0], false);
+	bz_endServerShot(pzShots[1], false);
 	active = false;
 	locked = false;
 }
@@ -145,10 +147,11 @@ float* Portal::calculatePosition()
 bool Portal::isExpired()
 {
 	bool expired = false;
+	float* pos = calculatePosition();
 
-	// If the shot is below the ground or has exceeded its lieftime, then it is
-	// expired.
-	if (calculatePosition()[2] <= 0 ||
+	// If the shot is below the ground or has exceeded its lifetime, or is
+	// beyond the world boundary, then it is expired.
+	if (pos[2] <= 0 ||
 		bz_getCurrentTime() - initialTime > bz_getBZDBDouble("_dimensionDoorLifetime"))
 		expired = true;
 	
@@ -270,6 +273,11 @@ void DimensionDoorFlag::Event(bz_EventData *eventData)
 						bz_sendTextMessage(BZ_SERVER, data->playerID, "You cannot teleport outside the map.");
 						portalMap[data->playerID]->clear();
 					}
+					else if (!bz_isValidSpawnPoint(pos))
+					{
+						bz_sendTextMessage(BZ_SERVER, data->playerID, "You cannot teleport inside an object.");
+						portalMap[data->playerID]->clear();
+					}
 					else
 					{
 						bz_killPlayer(data->playerID, false, BZ_SERVER, "DD");
@@ -308,7 +316,6 @@ void DimensionDoorFlag::Event(bz_EventData *eventData)
 				{
 					portalMap[data->playerID]->clear();
 					bz_givePlayerFlag(data->playerID, "DD", true);
-					bz_sendTextMessage(BZ_SERVER, data->playerID, "If you have teleported inside a building, press [delete] to self-destruct.");
 				}
 			}
 		} break;

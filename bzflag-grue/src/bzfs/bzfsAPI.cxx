@@ -4862,6 +4862,30 @@ BZF_API bool bz_isPlayer(int playerID)
     return bz_getPlayerByIndex(playerID);
 }
 
+BZF_API bool bz_isValidSpawnPoint(float* pos)
+{
+    return DropGeometry::isValidSpawn(pos, 2, 1);
+}
+
+BZF_API float* bz_getServerShotPos(uint32_t shotID)
+{
+    if (ShotManager.FindShot(shotID))
+    {
+        float* pos = new float[3];
+
+        
+        //pos[0] = ShotManager.FindShot(shotID)->LastUpdatePosition.x;
+        //pos[1] = ShotManager.FindShot(shotID)->LastUpdatePosition.y;
+        //pos[2] = ShotManager.FindShot(shotID)->LastUpdatePosition.z;
+        
+
+        pos = ShotManager.FindShot(shotID)->Info.shot.pos;
+        return pos;
+    }
+    else
+        return NULL;
+}
+
 /*
 BZF_API std::string bz_ltrim (std::string _str, const char* trim = " ")
 {

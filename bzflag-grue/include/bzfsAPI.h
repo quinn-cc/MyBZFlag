@@ -2460,6 +2460,8 @@ BZF_API bool bz_changeTeam(int playerID, bz_eTeamType _team);
 BZF_API const char* bz_getFlagFromTeam(bz_eTeamType _team);
 BZF_API bz_ApiString bz_getPlayerFlagAbbr(int playerID);
 BZF_API bool bz_isPlayer(int playerID);
+BZF_API bool bz_isValidSpawnPoint(float* pos);
+BZF_API float* bz_getServerShotPos(uint32_t shotID);
 
 
 #endif //_BZFS_API_H_

@@ -42,25 +42,25 @@ group debris_pyramids
 end
 
 pyramid
-	position 110 110 0
+	position 115 115 0
 	size 10 10 10
 	rotation 0
 	matref metal
 end
 pyramid
-	position -110 110 0
+	position -115 115 0
 	size 10 10 10
 	rotation 0
 	matref metal
 end
 pyramid
-	position 110 -110 0
+	position 115 -115 0
 	size 10 10 10
 	rotation 0
 	matref metal
 end
 pyramid
-	position -110 -110 0
+	position -115 -115 0
 	size 10 10 10
 	rotation 0
 	matref metal
@@ -75,25 +75,25 @@ physics
 end
 
 box
-	position -110 -110 10
+	position -115 -115 10
 	size .1 .1 .1
 	matref protector
 	phydrv spike
 end
 box
-	position -110 110 10
+	position -115 115 10
 	size .1 .1 .1
 	matref protector
 	phydrv spike
 end
 box
-	position 110 -110 10
+	position 115 -115 10
 	size .1 .1 .1
 	matref protector
 	phydrv spike
 end
 box
-	position 110 110 10
+	position 115 115 10
 	size .1 .1 .1
 	matref protector
 	phydrv spike
