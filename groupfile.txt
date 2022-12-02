@@ -1,0 +1,6 @@
+EVERYONE: report vote
+
+BZGRUE.OWNER: masterban modcount packetlosswarn record replay shutdownServer superkill unban
+BZGRUE.ADMIN: adminMessageReceive adminMessageSend actionMessage ban banlist clientquery date flagHistory flagMaster flagMod idlestats jitterwarn kick kill lagstats lagwarn listPlugins masterban modcount mute packetlosswarn playerList plugins poll pollBan pollFlagReset pollKick pollKill pollSet sendHelp setAll setVar showOthers superkill unban unmute veto viewReports
+AHS3.ADMIN: *BZGRUE.ADMIN -listPlugins -modcount -masterban
+ALLEJO.ADMIN: *AHS3.ADMIN

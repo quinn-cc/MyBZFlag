@@ -6,6 +6,9 @@ options
 	## 	  Plugins 	 ##
 	###################
 	
+	# Fast Map
+	-loadplugin ../bzflag-grue/plugins/fastmap/.libs/fastmap.so
+
 	# Shot assigner, must be loaded before any custom flags
 	-loadplugin ../bzflag-grue/plugins/shotAssigner/.libs/shotAssigner.so
 
@@ -31,6 +34,8 @@ options
 	-loadplugin ../bzflag-grue/plugins/scarwallServerMessages/.libs/scarwallServerMessages.so
 	-loadplugin ../bzflag-grue/plugins/autoFlagReset/.libs/autoFlagReset.so,15i
 	-loadplugin ../bzflag-grue/plugins/VPNBlocker-release/.libs/VPNBlocker.so,../bzflag-grue/plugins/VPNBlocker-release/VPNBlocker.config.json
+	-loadplugin ../bzflag-grue/plugins/lookup/.libs/lookup.so
+	-loadplugin ../bzflag-grue/plugins/observerHandler/.libs/observerHandler.so
 
 	
 	#####################
@@ -60,9 +65,10 @@ options
 	-set _genoPotatoRatio 0.25
 	-set _genoCooldownTime 30
 	-set _noClimb 0
+	-set _disableSpeedChecks 1	# Don't kick for moving too fast
 	
 	-jitterdrop 3				# 3 jitter warnings before kicked
-	-maxidle 90					# 90 seconds of idle before kicked
+	-maxidle 90					# 90 seconds, if not caught by the plugin before
 	-lagdrop 3					# 3 lag warnings before kicked
 	
 	
@@ -115,16 +121,15 @@ options
  	+f T{6}
  	# no US
  	+f WG{4}
- 	+f GN{5}
+ 	+f GN{2}
  	+f VV{6}
- 	+f AN{1}
  	+f GK{6}
  	+f TB{6}
  	+f FP{1}
  	+f FF{3}
  	+f AT{6}
  	+f AV{5}
- 	+f SF{5}
+ 	+f SF{6}
  	+f DD{6}
 	
 	###################
@@ -228,10 +233,11 @@ options
 	######################
 	##   Flag: Grenade  ##
 	######################
+	-sl gn 14
 	-set _grenadeVerticalVelocity 1
-	-set _grenadeSpeedAdVel 3
-	-set _grenadeAccuracy 0.14
-	-set _grenadeLifetime 1
+	-set _grenadeSpeedAdVel 2
+	-set _grenadeAccuracy 0.2
+	-set _grenadeLifetime 1.2
 	-set _grenadeExplosionLifetime 15
 	
 	################################
@@ -332,42 +338,3 @@ group debris_group
 end
 include mapfiles/ground_reflectors.bzw
 include mapfiles/zones.bzw
-
-
-
-# custom flags
-zone
-	position 20 10 0
-	size 1 1 1
-	rotation 0
-	
-	#zoneflag GN 1
-	#zoneflag AN 1
-	#zoneflag AT 1
-	#zoneflag GK 10
-	#zoneflag TB 1
-	#zoneflag FP 1
-	#zoneflag FF 1
-	#zoneflag AS 1
-	#zoneflag AV 1
-end
-
-# built-in flags
-zone
-	position 20 -10 0
-	size 1 1 1
-	rotation 0
-	#zoneflag OO 10
-	#zoneflag WG 1
-	#zoneflag MG 1
-	#zoneflag V 1
-	#zoneflag BU 5
-	#zoneflag T 1
-	#zoneflag SH 1
-	#zoneflag F 1
-	#zoneflag GM 1
-end
-
-
-
-

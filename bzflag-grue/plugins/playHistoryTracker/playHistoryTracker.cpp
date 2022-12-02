@@ -69,7 +69,7 @@ void PlayHistoryTracker::Event(bz_EventData *eventData)
 
 				// Being the avenged geno, getting annihilated, and using
 				// Dimension Door does not trigger the spree to end.
-		    	bool isAvengedGeno = flagHeldWhenKilled == "AV" && bz_isTeamFlag(flagHeldWhenKilled.c_str());
+		    	bool isAvengedGeno = flagHeldWhenKilled == "AV" && bz_isTeamFlag(flagKilledWith.c_str());
 		    	bool isAnnihilation = flagHeldWhenKilled == "AN" && data->playerID == data->killerID;
 				bool isDimensionDoor = flagHeldWhenKilled == "DD" && data->killerID == BZ_SERVERPLAYER;
 		    	

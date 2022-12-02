@@ -194,7 +194,13 @@ lookup_la-lookup.lo: lookup.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/9/bits/regex_compiler.tcc \
  /usr/include/c++/9/bits/regex.h /usr/include/c++/9/bits/regex.tcc \
  /usr/include/c++/9/bits/regex_executor.h \
- /usr/include/c++/9/bits/regex_executor.tcc
+ /usr/include/c++/9/bits/regex_executor.tcc /usr/include/c++/9/iostream \
+ /usr/include/c++/9/fstream \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
+ /usr/include/c++/9/bits/fstream.tcc /usr/include/c++/9/thread \
+ /usr/include/c++/9/chrono /usr/include/c++/9/ratio \
+ /usr/include/c++/9/bits/parse_numbers.h
 
 /usr/include/stdc-predef.h:
 
@@ -697,3 +703,21 @@ lookup_la-lookup.lo: lookup.cpp /usr/include/stdc-predef.h \
 /usr/include/c++/9/bits/regex_executor.h:
 
 /usr/include/c++/9/bits/regex_executor.tcc:
+
+/usr/include/c++/9/iostream:
+
+/usr/include/c++/9/fstream:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
+
+/usr/include/c++/9/bits/fstream.tcc:
+
+/usr/include/c++/9/thread:
+
+/usr/include/c++/9/chrono:
+
+/usr/include/c++/9/ratio:
+
+/usr/include/c++/9/bits/parse_numbers.h:
