@@ -47,7 +47,7 @@ void ObserverHandler::Init (const char*)
     Register(bz_ePlayerPartEvent);
     bz_registerCustomSlashCommand("join", &observerHandlerCommands);
     bz_registerCustomBZDBBool("_noPausing", true);
-    bz_registerCustomBZDBDouble("_idleThresholdToObserver", 5);
+    bz_registerCustomBZDBDouble("_idleTimeToObserver", 5);
 }
 
 void ObserverHandler::Event(bz_EventData* eventData)
@@ -75,7 +75,7 @@ void ObserverHandler::Event(bz_EventData* eventData)
             for (auto pair : lastPlayerActivity)
             {
                 if (bz_getPlayerTeam(pair.first) != eObservers && 
-                    bz_getCurrentTime() - lastPlayerActivity[pair.first] > bz_getBZDBDouble("_idleThresholdToObserver"))
+                    bz_getCurrentTime() - lastPlayerActivity[pair.first] > bz_getBZDBDouble("_idleTimeToObserver"))
                 {
                     bz_changeTeam(pair.first, eObservers);
                     bz_sendTextMessage(BZ_SERVER, pair.first, "This is a high-stakes game, do not remain idle for long. You have been switched to Observer.");

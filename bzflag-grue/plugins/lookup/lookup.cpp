@@ -52,7 +52,7 @@ void Lookup::Init(const char*)
     Register(bz_eTickEvent);
     bz_registerCustomSlashCommand("lookup", &lookupCommand);
     bz_registerCustomSlashCommand("clearLookupCache", &lookupCommand);
-    bz_registerCustomBZDBDouble("_lookupCacheInterval", 15); // In minutes
+    bz_registerCustomBZDBDouble("_lookupCacheInterval", 60); // In minutes
 
     ifstream file("/home/quinn/Documents/MyBZFlag/bzflag-grue/plugins/lookup/lookup.txt");
     string line;
@@ -129,7 +129,6 @@ bool LookupCommand::SlashCommand (int playerID, bz_ApiString command, bz_ApiStri
             
                 for (auto pair : lookupMap[playerRecord->ipAddress])
                 {
-                    bz_debugMessage(0, pair.first.c_str());
                     bz_sendTextMessagef(BZ_SERVER, playerID, "- %s (%d)", pair.first.c_str(), pair.second);
                 }
             }

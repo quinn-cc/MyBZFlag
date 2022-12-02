@@ -173,7 +173,7 @@ CONF_CXXFLAGS =  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -p
 CPP = gcc -E
 CPPFLAGS = 
 CURSES_LIB = 
-CUSTOM_PLUGIN_LIST = lookup
+CUSTOM_PLUGIN_LIST = observerHandler
 CXX = g++ -std=gnu++11
 CXXCPP = g++ -std=gnu++11 -E
 CXXDEPMODE = depmode=gcc3
