@@ -30,7 +30,7 @@ class Lookup : public bz_Plugin {
 
     virtual void Init(const char*);
     virtual void Event(bz_EventData*);
-    ~Lookup();
+    ~Lookup() {};
 
     virtual void Cleanup(void)
     {
@@ -84,7 +84,14 @@ void Lookup::Init(const char*)
 void writeLookupMap()
 {
     ofstream file;
-    file.open("/home/quinn/Documents/MyBZFlag/bzflag-grue/plugins/lookup/lookup.txt");
+    file.open("../plugins/lookup/lookup.txt");
+
+    if (!file)
+    {
+        bz_debugMessage(0, "Failed to find file 'lookup.txt'");
+        return;
+    }
+
     file.clear();
 
     for (auto ipPair : lookupMap)
@@ -99,11 +106,9 @@ void writeLookupMap()
             file << "\n";
         }
     }
-
+    
     file.close();
 }
-
-Lookup::~Lookup() {}
 
 bool LookupCommand::SlashCommand (int playerID, bz_ApiString command, bz_ApiString, bz_APIStringList* params)
 {
@@ -153,8 +158,7 @@ bool LookupCommand::SlashCommand (int playerID, bz_ApiString command, bz_ApiStri
         if (bz_hasPerm(playerID, "shutdownServer"))
         {
             lookupMap.clear();
-            thread t(writeLookupMap);
-            t.detach();
+            writeLookupMap();
             lastLookupWriteTime = bz_getCurrentTime();
         }
         else
@@ -188,11 +192,10 @@ void Lookup::Event(bz_EventData *eventData)
             if (bz_getCurrentTime() - lastLookupWriteTime > bz_getBZDBDouble("_lookupCacheInterval") * 60)
             {
                 bz_debugMessage(1, "The lookup cache has been logged to lookup.txt");
-                thread t(writeLookupMap);
-                t.detach();
+                writeLookupMap();
                 lastLookupWriteTime = bz_getCurrentTime();
             }
-        }
+        } break;
         default:
             break;
     }

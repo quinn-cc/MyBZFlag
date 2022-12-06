@@ -20,7 +20,7 @@
  * 
  * Requires:
  * - Grue's BZFS
- * - ShotAssigner plugin
+ * - ShotAssigner
  * 
  * Copyright 2022 Quinn Carmack
  * May be redistributed under either the LGPL or MIT licenses.
@@ -31,6 +31,7 @@
 #include "bzfsAPI.h"
 #include <math.h>
 #include <map>
+#include <queue>
 using namespace std;
 
 /*
@@ -131,6 +132,12 @@ uint32_t* Grenade::getPZShots()
 	return pzShots;
 }
 
+struct GrenadeExplosion
+{
+	double time;
+	uint32_t shotGUID;
+};
+
 class GrenadeFlag : public bz_Plugin
 {
 	virtual const char* Name()
@@ -149,24 +156,31 @@ class GrenadeFlag : public bz_Plugin
 private:
 	// Stores a map between each player and a singular Grenade object.
     map<int, Grenade*> grenadeMap;
+	// Stores a map of all grenade SW explosions and their explosion time
+	queue<GrenadeExplosion> explosionQueue;
 };
 
 BZ_PLUGIN(GrenadeFlag)
 
 void GrenadeFlag::Init(const char*)
 {
-	bz_RegisterCustomFlag("GN", "Grenade", "First shot fires the grenade, second shot detonates.", 0, eGoodFlag);
+	bz_RegisterCustomFlag("GN", "Grenade", "First shot fires the grenade, second shot detonates it.", 0, eGoodFlag);
 	
 	bz_registerCustomBZDBDouble("_grenadeSpeedAdVel", 4.0);
 	bz_registerCustomBZDBDouble("_grenadeLifetime", 1.5);
 	bz_registerCustomBZDBDouble("_grenadeVerticalVelocity", true);
 	bz_registerCustomBZDBDouble("_grenadeWidth", 2.0);
 	bz_registerCustomBZDBDouble("_grenadeAccuracy", 0.02);
-	bz_registerCustomBZDBDouble("_grenadeExplosionLifetime", 8.0);
+	bz_registerCustomBZDBDouble("_grenadeExplosionLifetime", 10);
+	bz_registerCustomBZDBDouble("_grenadeExplosionLifetimeEndShort", 1.5);
 	
 	Register(bz_eShotFiredEvent);
 	Register(bz_ePlayerJoinEvent);
 	Register(bz_ePlayerPartEvent);
+	Register(bz_eTickEvent);
+
+	if (MaxWaitTime > 0.5)
+		MaxWaitTime = 0.5;
 }
 
 void GrenadeFlag::Event(bz_EventData *eventData)
@@ -240,8 +254,13 @@ void GrenadeFlag::Event(bz_EventData *eventData)
 					float* pos = grenadeMap[data->playerID]->getPosition();
 					//float* pos = bz_getServerShotPos(grenadeMap[data->playerID]->getPZShots()[0]);
 
-					bz_fireServerShotAsPlayer("SW", pos, vel, "GN", player->playerID,
+					uint32_t shotGUID = bz_fireServerShotAsPlayer("SW", pos, vel, "GN", player->playerID,
 						bz_getBZDBDouble("_grenadeExplosionLifetime"));
+
+					GrenadeExplosion explosion;
+					explosion.shotGUID = shotGUID;
+					explosion.time = bz_getCurrentTime();
+					explosionQueue.push(explosion);
 
 					// End the PZ shots in a firey explosion
 					bz_endServerShot(grenadeMap[data->playerID]->getPZShots()[0]);
@@ -252,6 +271,15 @@ void GrenadeFlag::Event(bz_EventData *eventData)
 			}
 		
 			bz_freePlayerRecord(player);
+		} break;
+		case bz_eTickEvent:
+		{
+			while (explosionQueue.size() > 0 &&
+					bz_getCurrentTime() - explosionQueue.front().time > bz_getBZDBDouble("_grenadeExplosionLifetimeEndShort"))
+			{
+				bz_endServerShot(explosionQueue.front().shotGUID, false);
+				explosionQueue.pop();
+			}
 		} break;
 		case bz_ePlayerJoinEvent:
 		{

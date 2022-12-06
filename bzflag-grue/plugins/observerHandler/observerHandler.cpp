@@ -15,7 +15,6 @@ public:
     virtual bool SlashCommand (int playerID, bz_ApiString command, bz_ApiString message, bz_APIStringList *param);
 };
 
-map<int, int> lastPlayerActivity;
 ObserverHandlerCommands observerHandlerCommands;
 
 class ObserverHandler : public bz_Plugin {
@@ -41,13 +40,11 @@ BZ_PLUGIN(ObserverHandler)
 void ObserverHandler::Init (const char*)
 {
     Register(bz_ePlayerPausedEvent);
-    Register(bz_ePlayerUpdateEvent);
     Register(bz_eTickEvent);
     Register(bz_ePlayerJoinEvent);
-    Register(bz_ePlayerPartEvent);
     bz_registerCustomSlashCommand("join", &observerHandlerCommands);
     bz_registerCustomBZDBBool("_noPausing", true);
-    bz_registerCustomBZDBDouble("_idleTimeToObserver", 5);
+    bz_registerCustomBZDBDouble("_idleTimeToObserver", 60);
 }
 
 void ObserverHandler::Event(bz_EventData* eventData)
@@ -65,36 +62,30 @@ void ObserverHandler::Event(bz_EventData* eventData)
                 bz_sendTextMessage(BZ_SERVER, data->playerID, "You may join back in the game anytime by typing /join");
             }
         } break;
-        case bz_ePlayerUpdateEvent:
-        {
-            bz_PlayerUpdateEventData_V1* data = (bz_PlayerUpdateEventData_V1*) eventData;
-            lastPlayerActivity[data->playerID] = bz_getCurrentTime();
-        } break;
         case bz_eTickEvent:
         {
-            for (auto pair : lastPlayerActivity)
+            bz_APIIntList* playerList = bz_getPlayerIndexList();
+
+            for (int i = 0; i < playerList->size(); i++)
             {
-                if (bz_getPlayerTeam(pair.first) != eObservers && 
-                    bz_getCurrentTime() - lastPlayerActivity[pair.first] > bz_getBZDBDouble("_idleTimeToObserver"))
+                int playerID = playerList->get(i);
+
+                if (bz_getIdleTime(playerID) > bz_getBZDBDouble("_idleTimeToObserver"))
                 {
-                    bz_changeTeam(pair.first, eObservers);
-                    bz_sendTextMessage(BZ_SERVER, pair.first, "This is a high-stakes game, do not remain idle for long. You have been switched to Observer.");
-                    bz_sendTextMessage(BZ_SERVER, pair.first, "You may join back in the game anytime by typing /join");
+                    bz_changeTeam(playerID, eObservers);
+                    bz_sendTextMessage(BZ_SERVER, playerID, "This is a high-stakes game, do not remain idle for long. You have been switched to Observer.");
+                    bz_sendTextMessage(BZ_SERVER, playerID, "You may join back in the game anytime by typing /join");
                 }
             }
+
+            delete playerList;
         } break;
         case bz_ePlayerJoinEvent:
 		{
 			bz_PlayerJoinPartEventData_V1* data = (bz_PlayerJoinPartEventData_V1*) eventData;
-		    lastPlayerActivity[data->playerID] = bz_getCurrentTime();
 
             if (bz_getPlayerTeam(data->playerID) == eObservers)
                 bz_sendTextMessage(BZ_SERVER, data->playerID, "Welcome to Observer! Feel free to join the game anytime by typing /join");
-		} break;
-		case bz_ePlayerPartEvent:
-		{
-			bz_PlayerJoinPartEventData_V1* data = (bz_PlayerJoinPartEventData_V1*) eventData;
-		    lastPlayerActivity.erase(data->playerID);
 		} break;
         default:
             break;
@@ -107,7 +98,6 @@ bool ObserverHandlerCommands::SlashCommand (int playerID, bz_ApiString command, 
     {
         if (bz_getPlayerTeam(playerID) == eObservers)
         {
-            lastPlayerActivity[playerID] = bz_getCurrentTime();
             bz_eTeamType team;
 
             if (bz_getTeamCount(eGreenTeam) < bz_getTeamCount(eRedTeam))

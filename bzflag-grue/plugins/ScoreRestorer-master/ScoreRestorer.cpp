@@ -109,22 +109,22 @@ void ScoreRestorer::Event (bz_EventData *eventData)
                     // Verify their identity by checking the IP address
                     if (joinData->record->ipAddress == record.ipAddress)
                     {
+                        bz_setPlayerWins(joinData->playerID, record.wins);
+                        bz_setPlayerLosses(joinData->playerID, record.losses);
+                        bz_setPlayerTKs(joinData->playerID, record.teamKills);
+
                         if (joinData->record->team == eObservers)
                         {
                             bz_sendTextMessage(BZ_SERVER, joinData->playerID, "Your score record will be saved while you are in observer mode.");
                         }
                         else
                         {
-                            bz_setPlayerWins(joinData->playerID, record.wins);
-                            bz_setPlayerLosses(joinData->playerID, record.losses);
-                            bz_setPlayerTKs(joinData->playerID, record.teamKills);
-
                             bz_sendTextMessage(BZ_SERVER, joinData->playerID, "Your score has been restored.");
-
-                            // Erase the record because we've used it. When this player leaves, a new record will be
-                            // saved for them.
-                            savedRecords.erase(playerCallsign);
                         }
+
+                        // Erase the record because we've used it. When this player leaves, a new record will be
+                        // saved for them.
+                        savedRecords.erase(playerCallsign);
                     }
                 }
                 else
