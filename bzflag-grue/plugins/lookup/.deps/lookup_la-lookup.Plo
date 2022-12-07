@@ -198,9 +198,7 @@ lookup_la-lookup.lo: lookup.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/9/fstream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
- /usr/include/c++/9/bits/fstream.tcc /usr/include/c++/9/thread \
- /usr/include/c++/9/chrono /usr/include/c++/9/ratio \
- /usr/include/c++/9/bits/parse_numbers.h
+ /usr/include/c++/9/bits/fstream.tcc
 
 /usr/include/stdc-predef.h:
 
@@ -713,11 +711,3 @@ lookup_la-lookup.lo: lookup.cpp /usr/include/stdc-predef.h \
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
 
 /usr/include/c++/9/bits/fstream.tcc:
-
-/usr/include/c++/9/thread:
-
-/usr/include/c++/9/chrono:
-
-/usr/include/c++/9/ratio:
-
-/usr/include/c++/9/bits/parse_numbers.h:

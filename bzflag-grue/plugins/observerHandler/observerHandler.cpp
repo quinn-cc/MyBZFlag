@@ -30,6 +30,7 @@ class ObserverHandler : public bz_Plugin {
     virtual void Cleanup(void)
     {
         bz_removeCustomSlashCommand("join");
+        bz_removeCustomSlashCommand("leave");
         Flush();
     }
     void sendPlayerToObserver(int playerID);
@@ -43,6 +44,7 @@ void ObserverHandler::Init (const char*)
     Register(bz_eTickEvent);
     Register(bz_ePlayerJoinEvent);
     bz_registerCustomSlashCommand("join", &observerHandlerCommands);
+    bz_registerCustomSlashCommand("leave", &observerHandlerCommands);
     bz_registerCustomBZDBBool("_noPausing", true);
     bz_registerCustomBZDBDouble("_idleTimeToObserver", 60);
 }
@@ -86,6 +88,8 @@ void ObserverHandler::Event(bz_EventData* eventData)
 
             if (bz_getPlayerTeam(data->playerID) == eObservers)
                 bz_sendTextMessage(BZ_SERVER, data->playerID, "Welcome to Observer! Feel free to join the game anytime by typing /join");
+            else
+                bz_sendTextMessage(BZ_SERVER, data->playerID, "If you want a break, type /leave to switch to Observer.");
 		} break;
         default:
             break;
@@ -113,6 +117,31 @@ bool ObserverHandlerCommands::SlashCommand (int playerID, bz_ApiString command, 
         else
         {
             bz_sendTextMessage(BZ_SERVER, playerID, "You are already in the game!");
+        }
+
+        return true;
+    }
+    else if (command == "leave")
+    {
+        if (bz_getPlayerTeam(playerID) != eObservers)
+        {
+            bz_BasePlayerRecord* record = bz_getPlayerByIndex(playerID);
+
+            if (record->spawned)
+            {
+                bz_sendTextMessage(BZ_SERVER, playerID, "You must be dead to leave to observer.");
+            }
+            else
+            {
+                bz_changeTeam(playerID, eObservers);
+                bz_sendTextMessage(BZ_SERVER, playerID, "You have switched to Observer. Feel free to jump back in by typing /join");
+            }
+
+            bz_freePlayerRecord(record);
+        }
+        else
+        {
+            bz_sendTextMessage(BZ_SERVER, playerID, "You aren't in the game to begin with!");
         }
 
         return true;

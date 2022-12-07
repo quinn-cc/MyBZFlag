@@ -66,6 +66,7 @@ options
 	-set _genoCooldownTime 30
 	-set _noClimb 0
 	-set _disableSpeedChecks 1	# Don't kick for moving too fast
+	-set _lookupPath ../lookup.txt
 	
 	-jitterdrop 3				# 3 jitter warnings before kicked
 	-maxidle 90					# 90 seconds, if not caught by the plugin before

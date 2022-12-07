@@ -1,5 +1,5 @@
 /*
- * 
+ * Must keep a file called lookup.txt
  *
  * ./configure --enable-custom-plugins=lookup
  */
@@ -8,7 +8,7 @@
 #include <regex>
 #include <iostream>
 #include <fstream>
-#include <thread>
+#include <string>
 
 using namespace std;
 
@@ -36,6 +36,7 @@ class Lookup : public bz_Plugin {
     {
     	bz_removeCustomSlashCommand("lookup");
         bz_removeCustomSlashCommand("clearLookupCache");
+        bz_removeCustomSlashCommand("cacheLookup");
         Flush();
     }
 };
@@ -50,41 +51,18 @@ void Lookup::Init(const char*)
 {
     Register(bz_ePlayerJoinEvent);
     Register(bz_eTickEvent);
+    Register(bz_eWorldFinalized);
     bz_registerCustomSlashCommand("lookup", &lookupCommand);
     bz_registerCustomSlashCommand("clearLookupCache", &lookupCommand);
+    bz_registerCustomSlashCommand("cacheLookup", &lookupCommand);
     bz_registerCustomBZDBDouble("_lookupCacheInterval", 60); // In minutes
-
-    ifstream file("/home/quinn/Documents/MyBZFlag/bzflag-grue/plugins/lookup/lookup.txt");
-    string line;
-    string ipAddress = "";
-
-    while (getline(file, line))
-    {
-        if (line.length() > 2)
-        {
-            string header = line.substr(0,3);
-
-            if (strcmp(header.c_str(), "IP:") == 0)
-            {
-                ipAddress = line.substr(3, line.length() - 3);
-            }
-            else
-            {
-                string callsign = line.substr(0, line.find_last_of(":"));
-                int num = stoi(line.substr(line.find_last_of(":") + 1, line.length()));
-
-                lookupMap[ipAddress][callsign] = num;
-            }
-        }
-    }
-    
-    file.close();
+    bz_registerCustomBZDBString("_lookupPath", "lookup.txt");
 }
 
 void writeLookupMap()
 {
     ofstream file;
-    file.open("../plugins/lookup/lookup.txt");
+    file.open(bz_getBZDBString("_lookupPath"));
 
     if (!file)
     {
@@ -108,6 +86,9 @@ void writeLookupMap()
     }
     
     file.close();
+    lastLookupWriteTime = bz_getCurrentTime();
+
+    bz_debugMessage(1, "The lookup cache has been logged to lookup.txt");
 }
 
 bool LookupCommand::SlashCommand (int playerID, bz_ApiString command, bz_ApiString, bz_APIStringList* params)
@@ -159,13 +140,27 @@ bool LookupCommand::SlashCommand (int playerID, bz_ApiString command, bz_ApiStri
         {
             lookupMap.clear();
             writeLookupMap();
-            lastLookupWriteTime = bz_getCurrentTime();
+            bz_sendTextMessage(BZ_SERVER, playerID, "The lookup has been cleared.");
         }
         else
         {
             bz_sendTextMessage(BZ_SERVER, playerID, "You are not authorized to use this command.");
         }
         
+        return true;
+    }
+    else if (command == "cacheLookup")
+    {
+        if (bz_hasPerm(playerID, "shutdownServer"))
+        {
+            writeLookupMap();
+            bz_sendTextMessage(BZ_SERVER, playerID, "The lookup has been cached.");
+        }
+        else
+        {
+            bz_sendTextMessage(BZ_SERVER, playerID, "You are not authorized to use this command.");
+        }
+
         return true;
     }
 	
@@ -176,6 +171,34 @@ void Lookup::Event(bz_EventData *eventData)
 {
     switch (eventData->eventType)
 	{
+        case bz_eWorldFinalized:
+        {
+            ifstream file(bz_getBZDBString("_lookupPath"));
+            string line;
+            string ipAddress = "";
+
+            while (getline(file, line))
+            {
+                if (line.length() > 2)
+                {
+                    string header = line.substr(0,3);
+
+                    if (strcmp(header.c_str(), "IP:") == 0)
+                    {
+                        ipAddress = line.substr(3, line.length() - 3);
+                    }
+                    else
+                    {
+                        string callsign = line.substr(0, line.find_last_of(":"));
+                        int num = stoi(line.substr(line.find_last_of(":") + 1, line.length()));
+
+                        lookupMap[ipAddress][callsign] = num;
+                    }
+                }
+            }
+            
+            file.close();
+        } break;
 		case bz_ePlayerJoinEvent:
 		{
             bz_PlayerJoinPartEventData_V1* data = (bz_PlayerJoinPartEventData_V1*) eventData;
@@ -191,9 +214,7 @@ void Lookup::Event(bz_EventData *eventData)
         {
             if (bz_getCurrentTime() - lastLookupWriteTime > bz_getBZDBDouble("_lookupCacheInterval") * 60)
             {
-                bz_debugMessage(1, "The lookup cache has been logged to lookup.txt");
                 writeLookupMap();
-                lastLookupWriteTime = bz_getCurrentTime();
             }
         } break;
         default:
