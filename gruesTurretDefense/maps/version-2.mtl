@@ -1,8 +1,8 @@
 # Blender MTL File: 'version-2.blend'
-# Material Count: 5
+# Material Count: 9
 
-newmtl bricks
-Ns 250.000000
+newmtl brick
+Ns 225.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.000000 0.000000 0.000000
@@ -10,21 +10,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd /home/quinn/Documents/bzflag-2.4.25/textures_cc/bricks_2.png
-
-newmtl concrete
-Ns 250.000000
-Ka 1.000000 1.000000 1.000000
-Kd 0.800000 0.800000 0.800000
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.450000
-d 1.000000
-illum 1
-map_Kd /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete.png
+map_Kd /home/quinn/Documents/textures_cc/bricks_2.png
 
 newmtl concrete_dark
-Ns 359.999993
+Ns 323.999994
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.000000 0.000000 0.000000
@@ -32,12 +21,53 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd /home/quinn/Documents/bzflag-2.4.25/textures_cc/concrete.png
+map_Kd /home/quinn/Documents/textures_cc/concrete.png
 
-newmtl glass
-Ns 250.000000
+newmtl concrete_grey
+Ns 225.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/textures_cc/concrete.png
+
+newmtl gemstone_blue
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.469952 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl gemstone_purple
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.280450 0.000000 0.288294
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl glass_blue
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.668884 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl glow_lamppost
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.231894 0.000000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.450000
@@ -45,7 +75,7 @@ d 1.000000
 illum 2
 
 newmtl metal
-Ns 250.000000
+Ns 225.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -53,4 +83,15 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /home/quinn/Documents/bzflag-2.4.25/textures/metal.png
+map_Kd /home/quinn/Documents/textures_cc/concrete.png
+
+newmtl rock
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd /home/quinn/Documents/textures_cc/rock.png

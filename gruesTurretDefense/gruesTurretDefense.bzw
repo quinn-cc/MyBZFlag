@@ -22,7 +22,7 @@ options
 	-f bad
 	-autoTeam  					# Automatically assigns to a team
 	-set _disableBots 1			# No bots allowed/no autopilot
-	-set _explodeTime 3			# How long the tank is dead for
+	-set _explodeTime .5			# How long the tank is dead for
 	-set _scoreSaveTime 300		# 5 mins of score saved (300 seconds)
 	-noTeamKills
 	-set _shotSpeed 300
@@ -30,8 +30,8 @@ options
 	-set _maxFlagGrabs 1
 	
 	
-	-set _turretMinAngle 1.25
-	-set _turretMaxAngle 1.555
+	-set _turretMinAngle 1
+	-set _turretMaxAngle 1.6
 	-set _defenseTime 90
 	-set _turretReloadTime 0.20
 	-set _turretReloadMultBM 7
@@ -48,7 +48,7 @@ end
 
 
 world
-	name Grue's Turret Defense
+	name Grue's Tower Defense
 	size 800
 	noWalls
 end
@@ -182,7 +182,7 @@ zone
 end
 
 include maps/materials.bzw
-include maps/version-2.bzw
+include maps/version-3.bzw
 
 
 
