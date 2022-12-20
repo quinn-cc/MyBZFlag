@@ -4886,6 +4886,20 @@ BZF_API float* bz_getServerShotPos(uint32_t shotID)
         return NULL;
 }
 
+BZF_API bz_eTeamType bz_getUnbalancedTeam(bz_eTeamType team1, bz_eTeamType team2)
+{
+    bz_eTeamType team;
+
+    if (bz_getTeamCount(team1) < bz_getTeamCount(team2))
+        team = team1;
+    else if (bz_getTeamCount(team1) > bz_getTeamCount(team2))
+        team = team2;
+    else
+        team = bz_randFloatBetween(0,1) < 0.5 ? team1 : team2;
+
+    return team;
+}
+
 /*
 BZF_API std::string bz_ltrim (std::string _str, const char* trim = " ")
 {

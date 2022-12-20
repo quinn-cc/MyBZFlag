@@ -1,4 +1,9 @@
-
+teleporter top1
+	position 368 0 30.00001
+	size .125 10 15
+	rotation 0
+	border 1
+end
 teleporter front1
 	position 277 0 0
 	size .125 7 10
@@ -19,7 +24,12 @@ teleporter left1
 end
 
 
-
+teleporter top2
+	position -368 0 30.00001
+	size .125 10 15
+	rotation 0
+	border 1
+end
 teleporter front2
 	position -277 0 0
 	size .125 7 10
@@ -70,10 +80,15 @@ link
 	from corner2:b
 	to corner1:b
 end
-	
+
+
+link
+	from top1:*
+	to front1:b
+end
 link
 	from front1:b
-	to front2:b
+	to top1:b
 end
 link
 	from right1:b
@@ -84,16 +99,13 @@ link
 	to right1:b
 end
 
-
-
-
-
-
-
-	
+link
+	from top2:*
+	to front2:b
+end
 link
 	from front2:b
-	to front1:b
+	to top2:f
 end
 link
 	from left2:f
@@ -103,3 +115,10 @@ link
 	from right2:f
 	to left2:f
 end
+
+
+
+
+
+
+

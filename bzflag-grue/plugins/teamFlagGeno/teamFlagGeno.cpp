@@ -93,7 +93,11 @@ void TeamFlagGeno::Event(bz_EventData *eventData)
 			{
 	 			// Don't cover the case of shooting yourself
 	 			if (data->playerID == data->killerID)
-	 				return;   	
+	 				return;
+
+				// Geno doesn't work on rogues.
+				if (bz_getPlayerTeam(data->playerID) == eRogueTeam)
+					return;   	
 				
 				// This grabs a list of all the players on the server.
 				bz_APIIntList* playerList = bz_getPlayerIndexList();

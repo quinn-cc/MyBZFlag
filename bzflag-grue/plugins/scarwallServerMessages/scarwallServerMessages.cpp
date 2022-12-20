@@ -22,7 +22,7 @@ class ScarwallServerMessages : public bz_Plugin {
 
     virtual const char* Name()
     {
-        return "Scarwall Server Messages";
+        return "Scarwall Specific Features";
     }
 
     virtual void Init(const char*);
@@ -93,6 +93,19 @@ void ScarwallServerMessages::Event(bz_EventData *ed)
 		{
 			bz_sendTextMessage(BZ_SERVER, data->playerID, "Treading alone I see... don't get eaten by a grue...");
 		}
+
+		if (bz_getPlayerTeam(data->playerID) == eRogueTeam)
+		{
+			bz_eTeamType team = bz_getUnbalancedTeam(eRedTeam, eGreenTeam);
+
+			bz_sendTextMessagef(
+				data->playerID, data->playerID,
+				"Rogue team was unavailable, you were joined to the %s Team",
+				bz_eTeamTypeLiteral(team)
+			);
+
+			bz_changeTeam(data->playerID, team);
+		}
     }
 }
 
@@ -134,8 +147,9 @@ bool HelpCommands::SlashCommand (int playerID, bz_ApiString command, bz_ApiStrin
 		"*   vertical velocity. That means, if your tank is       *\n"
 		"*   travelling upward when you shoot, so do those shots. *\n"
 		"*                                                        *\n"
-		"* - Annihilation (AN): Shooting yourself with this flag  *\n"
-		"*   causes everyone to blow up, including teammates!     *\n"
+		"* - Annihilation (AN): You go rogue when you grab this   *\n"
+		"*   flag! Shooting anyone will make the whole map blow   *\n"
+		"*   up!                                                  *\n"
 		"*                                                        *\n"
 		"* - Gruesome Killer (GK): Your kills blow up in a shock  *\n"
 		"*   wave and bullets, including the kills done by those  *\n"
@@ -164,6 +178,9 @@ bool HelpCommands::SlashCommand (int playerID, bz_ApiString command, bz_ApiStrin
 		"*  'portal', the second shot teleports you there.        *\n"
 		"*  Careful not to get stuck in any buildings! If you do, *\n"
 		"*  press [delete] to self-destruct.				      *\n"
+		"*                                                        *\n"
+		"* - Torpedo (TO): Tank fires an extra two Super Bullet   *\n"
+		"*   shots at ground level.          				      *\n"
 		"*       												  *\n"
 		"**********************************************************";
 		broadcastMessage(lines, playerID);

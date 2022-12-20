@@ -24,6 +24,7 @@ options
 	-loadplugin ../bzflag-grue/plugins/avengerFlag/.libs/avengerFlag.so
 	-loadplugin ../bzflag-grue/plugins/skyfireFlag/.libs/skyfireFlag.so
 	-loadplugin ../bzflag-grue/plugins/dimensionDoorFlag/.libs/dimensionDoorFlag.so
+	-loadplugin ../bzflag-grue/plugins/torpedoFlag/.libs/torpedoFlag.so
 	
 	# Gameplay
 	-loadplugin ../bzflag-grue/plugins/teamFlagGeno/.libs/teamFlagGeno.so
@@ -45,7 +46,7 @@ options
 	+r   						# Enable Ricochet
 	-j   						# Enable Jumping
 	-ms 5						# Max number of shots
-	-mp 0,40,40,0,0,10  		# rogue,red,green,blue,purple,observer
+	-mp 2,40,40,0,0,10  		# rogue,red,green,blue,purple,observer
 	-a 0 0
 	-fb  						# Allows flags to spawn on boxes/surfaces
 	-sb							# Allows tanks to spawn on boxes/surfaces
@@ -132,6 +133,8 @@ options
  	+f AV{5}
  	+f SF{6}
  	+f DD{6}
+	+f TO{6}
+	+f AN{2}
 	
 	###################
 	## 		Fog 	 ##
@@ -172,7 +175,7 @@ options
 	## Flag: Laser ##
 	#################
 	#-set _laserAdVel 1000			# The length of each laser shot
-	-set _laserAdRate .1			# Multiplied by _rFireAdRate to determine the firing rate for a laser.
+	-set _laserAdRate .15			# Multiplied by _rFireAdRate to determine the firing rate for a laser.
 	#-set _laserAdLife 0.1			# The amount of time (in seconds) that a laser remains after being fired.
 	
 	##########################
@@ -195,7 +198,7 @@ options
 	##########################
 	##   Flag: Shock Wave   ##
 	##########################
-	-set _shockAdLife .3			# The amount of time (in seconds) that a shockwave lasts.
+	-set _shockAdLife .2			# The amount of time (in seconds) that a shockwave lasts.
 	-set _shockInRadius 10			# _tankLength	The starting radius of the shockwave. Negative values will make the shockwave shrink and expand.
 	-set _shockOutRadius 45
 	
@@ -237,8 +240,9 @@ options
 	-set _grenadeVerticalVelocity 1
 	-set _grenadeSpeedAdVel 2
 	-set _grenadeAccuracy 0.1
-	-set _grenadeLifetime 1.2
-	-set _grenadeExplosionLifetime 15
+	-set _grenadeLifetime 10
+	-set _grenadeExplosionLifetime 4
+	-set _grenadeExplosionLifetimeEndShort 0.5
 	
 	################################
 	##   Flag: Vertical Velocity  ##
@@ -253,7 +257,6 @@ options
 	###########################
 	##   Flag: Annihilation  ##
 	###########################
-	-set _annihilationEligibleRatio 1
 	-set _annihilationFXSWCount 150
 	-set _annihilationFXSWMinHeight 46
 	-set _annihilationFXSWMaxHeight 90
@@ -290,6 +293,11 @@ options
 	-set _dimensionDoorAdVel 4
 	-set _dimensionDoorVerticalVelocity 1
 	-set _dimensionDoorWidth 2
+
+	##############################
+	##   Flag: Torpedo          ##
+	##############################
+	# settings here...
 	
 
 	#################################

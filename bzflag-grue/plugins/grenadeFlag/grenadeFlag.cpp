@@ -179,8 +179,8 @@ void GrenadeFlag::Init(const char*)
 	Register(bz_ePlayerPartEvent);
 	Register(bz_eTickEvent);
 
-	if (MaxWaitTime > 0.5)
-		MaxWaitTime = 0.5;
+	if (MaxWaitTime > 0.01)
+		MaxWaitTime = 0.01;
 }
 
 void GrenadeFlag::Event(bz_EventData *eventData)

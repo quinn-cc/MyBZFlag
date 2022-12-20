@@ -102,15 +102,7 @@ bool ObserverHandlerCommands::SlashCommand (int playerID, bz_ApiString command, 
     {
         if (bz_getPlayerTeam(playerID) == eObservers)
         {
-            bz_eTeamType team;
-
-            if (bz_getTeamCount(eGreenTeam) < bz_getTeamCount(eRedTeam))
-                team = eGreenTeam;
-            else if (bz_getTeamCount(eGreenTeam) > bz_getTeamCount(eRedTeam))
-                team = eRedTeam;
-            else
-                team = bz_randFloatBetween(0,1) < 0.5 ? eGreenTeam : eRedTeam;
-
+            bz_eTeamType team = bz_getUnbalancedTeam(eRedTeam, eGreenTeam);
             bz_changeTeam(playerID, team);
             bz_sendTextMessagef(BZ_SERVER, playerID, "You have joined the %s team", bz_eTeamTypeLiteral(team));
         }

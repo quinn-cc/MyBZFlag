@@ -7,6 +7,7 @@ options
 	-loadplugin ../bzflag-grue/plugins/shotAssigner/.libs/shotAssigner.so
 	-loadplugin ../bzflag-grue/plugins/ScoreRestorer-master/.libs/ScoreRestorer.so
 	-loadplugin ../bzflag-grue/plugins/gruesTurretDefenseMaster/.libs/gruesTurretDefenseMaster.so
+	-loadplugin ../bzflag-grue/plugins/serverSidePlayerSample/.libs/serverSidePlayerSample.so
 	
 	#####################
 	## Server Settings ##
