@@ -240,8 +240,8 @@ options
 	-set _grenadeVerticalVelocity 1
 	-set _grenadeSpeedAdVel 2
 	-set _grenadeAccuracy 0.1
-	-set _grenadeLifetime 10
-	-set _grenadeExplosionLifetime 4
+	-set _grenadeLifetime 4
+	-set _grenadeExplosionLifetime 8
 	-set _grenadeExplosionLifetimeEndShort 0.5
 	
 	################################

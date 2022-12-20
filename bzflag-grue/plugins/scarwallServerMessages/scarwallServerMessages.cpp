@@ -35,6 +35,9 @@ class ScarwallServerMessages : public bz_Plugin {
     	bz_removeCustomSlashCommand("customflags");
         Flush();
     }
+
+	string mode = "";
+	void refreshGameMode(int, int);
 };
 
 BZ_PLUGIN(ScarwallServerMessages)
@@ -43,6 +46,8 @@ BZ_PLUGIN(ScarwallServerMessages)
 void ScarwallServerMessages::Init(const char* arg)
 {
     Register(bz_ePlayerJoinEvent);
+    Register(bz_eTickEvent);
+	Register(bz_ePlayerDieEvent);
     bz_registerCustomSlashCommand("teamflaggeno", &helpCommands);
     bz_registerCustomSlashCommand("customflags", &helpCommands);
     
@@ -61,52 +66,102 @@ void broadcastMessage(const std::string& msg, int playerID)
     }
 }
 
+void ScarwallServerMessages::refreshGameMode(int redCount, int greenCount)
+{
+	string lastMode = mode;
+
+	if (redCount == 1 && greenCount == 1)
+		mode = "1v1";
+	else if (redCount == 2 && greenCount == 1)
+		mode = "red";
+	else if (redCount == 1 && greenCount == 2)
+		mode = "green";
+	else
+		mode = "";
+
+	// If there was a change in game mode...
+	if (lastMode != mode)
+	{
+		if (mode == "1v1")
+			bz_sendTextMessage(BZ_SERVER, BZ_ALLUSERS, "1 v 1 mode: Your flag will be dropped after you shoot someone.");
+		else if (mode == "red")
+			bz_sendTextMessage(BZ_SERVER, BZ_ALLUSERS, "2 v 1 mode: Players on the Red Team will drop their flag after they shoot the Green player.");
+		else if (mode == "green")
+			bz_sendTextMessage(
+				BZ_SERVER, BZ_ALLUSERS,
+				"2 v 1 mode: Players on the Green Team will drop their flag after they shoot the Red player."
+			);
+	}
+}
+
 void ScarwallServerMessages::Event(bz_EventData *ed)
 {
-    if (ed->eventType == bz_ePlayerJoinEvent)
-    {
-        bz_PlayerJoinPartEventData_V1 *data = (bz_PlayerJoinPartEventData_V1*) ed;
-        
-		std::string lines =
-		"**********************************************************\n"
-		"****************     CASTLE SCARWALL     *****************\n"
-		"**********************************************************\n"
-		"*           Welcome to Castle Scarwall by Grue!          *\n"
-		"* A classic two team capture the flag with lots of fancy *\n"
-		"* plugins and new flags to make bzflag all the more fun! *\n"
-		"*                                                        *\n"
-		"* - The plugin teamflaggeno is in use, so there is no    *\n"
-		"*   flag Genocide. Instead, your own team flag acts as   *\n"
-		"*   geno! Type /teamflaggeno for more help.              *\n"
-		"* - In addition, there are a few new CUSTOM FLAGS added  *\n"
-		"*   to the server for more fun! Type /customflags to     *\n"
-		"*   learn about them.                                    *\n"
-		"*                                                        *\n"
-		"* This server is still in the testing phase, so if there *\n"
-		"* are any server crashes, bugs, or ideas you would like  *\n"
-		"* to suggest, please use the /report command.            *\n"
-		"**********************************************************\n"
-		"Have fun! And always bring a lantern...";
-		broadcastMessage(lines, data->playerID);
-		
-		if (bz_getPlayerCount() == 1)
+	switch (ed->eventType)
+	{
+		case bz_ePlayerJoinEvent:
 		{
-			bz_sendTextMessage(BZ_SERVER, data->playerID, "Treading alone I see... don't get eaten by a grue...");
-		}
+			bz_PlayerJoinPartEventData_V1 *data = (bz_PlayerJoinPartEventData_V1*) ed;
+			
+			std::string lines =
+			"**********************************************************\n"
+			"****************     CASTLE SCARWALL     *****************\n"
+			"**********************************************************\n"
+			"*           Welcome to Castle Scarwall by Grue!          *\n"
+			"* A classic two team capture the flag with lots of fancy *\n"
+			"* plugins and new flags to make bzflag all the more fun! *\n"
+			"*                                                        *\n"
+			"* - The plugin teamflaggeno is in use, so there is no    *\n"
+			"*   flag Genocide. Instead, your own team flag acts as   *\n"
+			"*   geno! Type /teamflaggeno for more help.              *\n"
+			"* - In addition, there are a few new CUSTOM FLAGS added  *\n"
+			"*   to the server for more fun! Type /customflags to     *\n"
+			"*   learn about them.                                    *\n"
+			"*                                                        *\n"
+			"* This server is still in the testing phase, so if there *\n"
+			"* are any server crashes, bugs, or ideas you would like  *\n"
+			"* to suggest, please use the /report command.            *\n"
+			"**********************************************************\n"
+			"Have fun! And always bring a lantern...";
+			broadcastMessage(lines, data->playerID);
+			
+			if (bz_getPlayerCount() == 1)
+			{
+				bz_sendTextMessage(BZ_SERVER, data->playerID, "Treading alone I see... don't get eaten by a grue...");
+			}
 
-		if (bz_getPlayerTeam(data->playerID) == eRogueTeam)
+			if (bz_getPlayerTeam(data->playerID) == eRogueTeam)
+			{
+				bz_eTeamType team = bz_getUnbalancedTeam(eRedTeam, eGreenTeam);
+
+				bz_sendTextMessagef(
+					data->playerID, data->playerID,
+					"Rogue team was unavailable, you were joined to the %s Team",
+					bz_eTeamTypeLiteral(team)
+				);
+
+				bz_changeTeam(data->playerID, team);
+			}
+		} break;
+		case bz_ePlayerDieEvent:
 		{
-			bz_eTeamType team = bz_getUnbalancedTeam(eRedTeam, eGreenTeam);
-
-			bz_sendTextMessagef(
-				data->playerID, data->playerID,
-				"Rogue team was unavailable, you were joined to the %s Team",
-				bz_eTeamTypeLiteral(team)
-			);
-
-			bz_changeTeam(data->playerID, team);
-		}
-    }
+			bz_PlayerDieEventData_V2* data = (bz_PlayerDieEventData_V2*) ed;
+			
+			if (mode == "1v1" ||
+				(mode == "red" && bz_getPlayerTeam(data->killerID) == eRedTeam) ||
+				(mode == "green" && bz_getPlayerTeam(data->killerID) == eGreenTeam))
+			{
+				if (!bz_isTeamFlag(bz_getPlayerFlagAbbr(data->killerID).c_str()))
+					bz_resetFlag(bz_getPlayerFlagID(data->killerID));
+			}
+		} break;
+		case bz_eTickEvent:
+		{
+			refreshGameMode(bz_getTeamCount(eRedTeam), bz_getTeamCount(eGreenTeam));
+		} break;
+		default:
+			break;
+	}
+    
 }
 
 bool HelpCommands::SlashCommand (int playerID, bz_ApiString command, bz_ApiString message,
