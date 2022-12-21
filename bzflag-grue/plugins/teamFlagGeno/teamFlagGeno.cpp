@@ -96,7 +96,7 @@ void TeamFlagGeno::Event(bz_EventData *eventData)
 	 				return;
 
 				// Geno doesn't work on rogues.
-				if (bz_getPlayerTeam(data->playerID) == eRogueTeam)
+				if (strcmp(bz_getFlagName(data->flagHeldWhenKilled).c_str(), "AN") == 0)
 					return;   	
 				
 				// This grabs a list of all the players on the server.
