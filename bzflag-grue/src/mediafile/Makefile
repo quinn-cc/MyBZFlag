@@ -229,7 +229,7 @@ CONF_CXXFLAGS =  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -p
 CPP = gcc -E
 CPPFLAGS = 
 CURSES_LIB = 
-CUSTOM_PLUGIN_LIST = scarwallServerMessages
+CUSTOM_PLUGIN_LIST = annihilationFlag
 CXX = g++ -std=gnu++11
 CXXCPP = g++ -std=gnu++11 -E
 CXXDEPMODE = depmode=gcc3

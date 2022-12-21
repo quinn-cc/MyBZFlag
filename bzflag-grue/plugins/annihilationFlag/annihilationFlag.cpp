@@ -30,6 +30,13 @@
 
 using namespace std;
 
+struct PlayerState
+{
+	float* pos;
+	float rot;
+	bool toRogue;
+};
+
 class AnnihilationFlag : public bz_Plugin {
 
     virtual const char* Name()
@@ -47,6 +54,8 @@ class AnnihilationFlag : public bz_Plugin {
     }
 
 	map<int, bz_eTeamType> originalPlayerTeam;
+	map<int, PlayerState> playerLocMap;
+	map<int, double> playerNeedsANTime;
 };
 
 BZ_PLUGIN(AnnihilationFlag)
@@ -60,8 +69,10 @@ void AnnihilationFlag::Init(const char*)
     bz_registerCustomBZDBInt("_annihilationFXSWMaxHeight", 20);
 	bz_registerCustomBZDBBool("_annihilationBUImmune", true);
     Register(bz_eFlagGrabbedEvent);
-	Register(bz_ePlayerDieEvent);
 	Register(bz_eFlagDroppedEvent);
+	Register(bz_eGetPlayerSpawnPosEvent);
+	Register(bz_eTickEvent);
+	Register(bz_ePlayerDieEvent);
 }
 
 void AnnihilationFlag::Event(bz_EventData *eventData)
@@ -72,7 +83,7 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 		{
 			bz_FlagGrabbedEventData_V1 *data = (bz_FlagGrabbedEventData_V1*) eventData;
 
-			if (strcmp(data->flagType, "AN") == 0)
+			if (strcmp(data->flagType, "AN") == 0 && bz_getPlayerTeam(data->playerID) != eRogueTeam)
 			{
 				originalPlayerTeam[data->playerID] = bz_getPlayerTeam(data->playerID);
 
@@ -82,21 +93,87 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 					bz_getPlayerCallsign(data->playerID)
 				);
 
+				PlayerState state;
+				bz_BasePlayerRecord* record = bz_getPlayerByIndex(data->playerID);
+				state.pos = new float[3];
+				state.pos[0] = record->lastKnownState.pos[0];
+				state.pos[1] = record->lastKnownState.pos[1];
+				state.pos[2] = record->lastKnownState.pos[2];
+				state.rot = record->lastKnownState.rotation;
+				state.toRogue = true;
+				bz_freePlayerRecord(record);
+				playerLocMap[data->playerID] = state;
+
+				
+				bz_killPlayer(data->playerID, false);
 				bz_changeTeam(data->playerID, eRogueTeam);
+				bz_forcePlayerSpawn(data->playerID);
 			}
 		} break;
 		case bz_eFlagDroppedEvent:
 		{
 			bz_FlagGrabbedEventData_V1 *data = (bz_FlagGrabbedEventData_V1*) eventData;
 
-			if (strcmp(data->flagType, "AN") == 0)
+			if (strcmp(data->flagType, "AN") == 0 &&
+				originalPlayerTeam.find(data->playerID) != originalPlayerTeam.end() &&
+				playerLocMap.find(data->playerID) == playerLocMap.end())
 			{
 				bz_eTeamType team = originalPlayerTeam[data->playerID];
+				originalPlayerTeam.erase(data->playerID);
+
+				/*
+				 * pack info into the player state struct
+				*/
+				PlayerState state;
+				bz_BasePlayerRecord* record = bz_getPlayerByIndex(data->playerID);
+				state.pos = new float[3];
+				state.pos[0] = record->lastKnownState.pos[0];
+				state.pos[1] = record->lastKnownState.pos[1];
+				state.pos[2] = record->lastKnownState.pos[2];
+				state.rot = record->lastKnownState.rotation;
+				state.toRogue = false;
+				bz_freePlayerRecord(record);
+				playerLocMap[data->playerID] = state;
+
+				bz_killPlayer(data->playerID, false);
 				bz_changeTeam(data->playerID, team);
+				bz_forcePlayerSpawn(data->playerID);
 
 				// Reset the flag into the world
 				bz_resetFlag(data->flagID);
 			}
+		} break;
+		case bz_eGetPlayerSpawnPosEvent:
+		{
+			bz_GetPlayerSpawnPosEventData_V1* data = (bz_GetPlayerSpawnPosEventData_V1*) eventData;
+			
+			if (playerLocMap.find(data->playerID) != playerLocMap.end())
+			{
+				data->pos[0] = playerLocMap[data->playerID].pos[0];
+				data->pos[1] = playerLocMap[data->playerID].pos[1];
+				data->pos[2] = playerLocMap[data->playerID].pos[2];
+				data->rot = playerLocMap[data->playerID].rot;
+				
+
+				if (playerLocMap[data->playerID].toRogue)
+					playerNeedsANTime[data->playerID] = bz_getCurrentTime();
+
+				playerLocMap.erase(data->playerID);
+			}
+		} break;
+		case bz_eTickEvent:
+		{
+			int playerID = -1;
+			for(auto pair : playerNeedsANTime)
+			{
+				if (bz_getCurrentTime() - pair.second > 0.5)
+				{
+					bz_givePlayerFlag(pair.first, "AN", true);
+					playerID = pair.first;
+				}
+			}
+			if (playerID != -1)
+				playerNeedsANTime.erase(playerID);
 		} break;
 		case bz_ePlayerDieEvent:
 		{
@@ -114,18 +191,18 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 					bz_BasePlayerRecord* player = bz_getPlayerByIndex(playerList->get(i));
 					
 					// If the player is alive, kill them.
-					if (player && data->playerID != player->playerID && player->spawned)
+					if (player && player->spawned)
 					{
 						// If the burrow immune setting is on, make sure they dont
 						// have Burrow.
 						if (!(bz_getBZDBBool("_annihilationBUImmune") && bz_getPlayerFlagAbbr(player->playerID) == "BU"))
 						{
-							bz_killPlayer(playerList->get(i), false, data->playerID);
+							bz_killPlayer(playerList->get(i), false, data->killerID, "");
 							// bz_killPlayer automatically decrements their score,
 							// so this adds it back.
 							bz_incrementPlayerLosses(playerList->get(i), -1);
 							
-							if (playerList->get(i) != data->playerID)
+							if (playerList->get(i) != data->killerID)
 							{
 								bz_sendTextMessagef(
 									playerList->get(i), playerList->get(i),
@@ -139,7 +216,14 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 					bz_freePlayerRecord(player);
 				}
 
-				bz_killPlayer(data->playerID, false);
+				/*int flagID = bz_getPlayerFlagID(data->killerID);
+				bz_eTeamType team = originalPlayerTeam[data->killerID];
+				originalPlayerTeam.erase(data->killerID);
+				bz_changeTeam(data->killerID, team);
+
+				// Reset the flag into the world
+				bz_resetFlag(flagID);*/
+				//bz_killPlayer(data->killerID, false);
 				
 				// Special effects (shock waves)
 				if (bz_getBZDBBool("_annihilationUseFX"))

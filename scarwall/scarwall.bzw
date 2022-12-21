@@ -63,8 +63,8 @@ options
 	-set _spawnSafeRadMod 5
 	-set _scoreSaveTime 300		# 5 mins of score saved (300 seconds)
 	-set _flagHeight -1
-	-set _genoPotatoRatio 0.25
-	-set _genoCooldownTime 30
+	#-set _genoPotatoRatio 0.25
+	#-set _genoCooldownTime 30
 	-set _noClimb 0
 	-set _disableSpeedChecks 1	# Don't kick for moving too fast
 	-set _lookupPath ../lookup.txt
@@ -123,17 +123,17 @@ options
  	+f T{6}
  	# no US
  	+f WG{4}
- 	+f GN{2}
- 	+f VV{6}
- 	+f GK{6}
- 	+f TB{6}
- 	+f FP{1}
- 	+f FF{3}
- 	+f AT{6}
- 	+f AV{5}
- 	+f SF{6}
- 	+f DD{6}
-	+f TO{6}
+ 	#+f GN{2}
+ 	#+f VV{6}
+ 	#+f GK{6}
+ 	#+f TB{6}
+ 	#+f FP{1}
+ 	#+f FF{3}
+ 	#+f AT{6}
+ 	#+f AV{5}
+ 	#+f SF{6}
+ 	#+f DD{6}
+	#+f TO{6}
 	+f AN{2}
 	
 	###################
@@ -264,7 +264,7 @@ options
 	######################
 	##   Flag: Airshot  ##
 	######################
-	# -set _airshotAngle 0.10
+	 -set _airshotAngle 0.10
 	
 	###########################
 	##   Flag: Phantom Zone  ##
