@@ -123,17 +123,17 @@ options
  	+f T{6}
  	# no US
  	+f WG{4}
- 	#+f GN{2}
- 	#+f VV{6}
- 	#+f GK{6}
- 	#+f TB{6}
- 	#+f FP{1}
- 	#+f FF{3}
- 	#+f AT{6}
- 	#+f AV{5}
- 	#+f SF{6}
- 	#+f DD{6}
-	#+f TO{6}
+ 	+f GN{2}
+ 	+f VV{6}
+ 	+f GK{6}
+ 	+f TB{6}
+ 	+f FP{1}
+ 	+f FF{3}
+ 	+f AT{6}
+ 	+f AV{5}
+ 	+f SF{6}
+ 	+f DD{6}
+	+f TO{6}
 	+f AN{2}
 	
 	###################
