@@ -1,5 +1,9 @@
+box
+	position 368 0 30
+	size 10 10 0.001
+end
 teleporter top1
-	position 368 0 30.00001
+	position 368 0 30.001
 	size .125 10 15
 	rotation 0
 	border 1
@@ -23,9 +27,12 @@ teleporter left1
 	border 0
 end
 
-
+box
+	position -368 0 30
+	size 10 10 0.001
+end
 teleporter top2
-	position -368 0 30.00001
+	position -368 0 30.001
 	size .125 10 15
 	rotation 0
 	border 1

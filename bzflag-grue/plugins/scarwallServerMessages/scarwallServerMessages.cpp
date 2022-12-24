@@ -150,7 +150,8 @@ void ScarwallServerMessages::Event(bz_EventData *ed)
 				(mode == "red" && bz_getPlayerTeam(data->killerID) == eRedTeam) ||
 				(mode == "green" && bz_getPlayerTeam(data->killerID) == eGreenTeam))
 			{
-				if (!bz_isTeamFlag(bz_getPlayerFlagAbbr(data->killerID).c_str()))
+				if (!bz_isTeamFlag(bz_getPlayerFlagAbbr(data->killerID).c_str()) &&
+					strcmp(bz_getPlayerFlagAbbr(data->killerID).c_str(), "AN") != 0)
 					bz_resetFlag(bz_getPlayerFlagID(data->killerID));
 			}
 		} break;
@@ -236,6 +237,14 @@ bool HelpCommands::SlashCommand (int playerID, bz_ApiString command, bz_ApiStrin
 		"*                                                        *\n"
 		"* - Torpedo (TO): Tank fires an extra two Super Bullet   *\n"
 		"*   shots at ground level.          				      *\n"
+		"*                                                        *\n"
+		"* - Low Gravity (LG): Gravity is lowered, tank can jump  *\n"
+		"*   higher.                                              *\n"
+		"*                                                        *\n"
+		"* - Wish (W): Make a wish for a flag! When you have this *\n"
+		"*   flag, type /wish ## where ## is any flag's           *\n"
+		"*   abbreviation. Be careful not to wish for something   *\n"
+		"*   too powerful or you may face dire consequences!      *\n"
 		"*       												  *\n"
 		"**********************************************************";
 		broadcastMessage(lines, playerID);

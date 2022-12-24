@@ -33,7 +33,6 @@ class ObserverHandler : public bz_Plugin {
         bz_removeCustomSlashCommand("leave");
         Flush();
     }
-    void sendPlayerToObserver(int playerID);
 };
 
 BZ_PLUGIN(ObserverHandler)
@@ -103,7 +102,19 @@ bool ObserverHandlerCommands::SlashCommand (int playerID, bz_ApiString command, 
         if (bz_getPlayerTeam(playerID) == eObservers)
         {
             bz_eTeamType team = bz_getUnbalancedTeam(eRedTeam, eGreenTeam);
+
+            
+
             bz_changeTeam(playerID, team);
+
+            if (bz_getTeamCount(team) == 1)
+            {
+                if (team == eGreenTeam)
+                    bz_resetFlag(1);
+                else if (team == eRedTeam)
+                    bz_resetFlag(0);
+            }
+
             bz_sendTextMessagef(BZ_SERVER, playerID, "You have joined the %s team", bz_eTeamTypeLiteral(team));
         }
         else

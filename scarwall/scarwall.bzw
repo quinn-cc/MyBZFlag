@@ -25,6 +25,8 @@ options
 	-loadplugin ../bzflag-grue/plugins/skyfireFlag/.libs/skyfireFlag.so
 	-loadplugin ../bzflag-grue/plugins/dimensionDoorFlag/.libs/dimensionDoorFlag.so
 	-loadplugin ../bzflag-grue/plugins/torpedoFlag/.libs/torpedoFlag.so
+	-loadplugin ../bzflag-grue/plugins/lowGravityFlag/.libs/lowGravityFlag.so
+	-loadplugin ../bzflag-grue/plugins/wishFlag/.libs/wishFlag.so
 	
 	# Gameplay
 	-loadplugin ../bzflag-grue/plugins/teamFlagGeno/.libs/teamFlagGeno.so
@@ -135,6 +137,8 @@ options
  	+f DD{6}
 	+f TO{6}
 	+f AN{2}
+	+f LG{6}
+	+f W{2}
 	
 	###################
 	## 		Fog 	 ##
@@ -175,7 +179,7 @@ options
 	## Flag: Laser ##
 	#################
 	#-set _laserAdVel 1000			# The length of each laser shot
-	-set _laserAdRate .15			# Multiplied by _rFireAdRate to determine the firing rate for a laser.
+	-set _laserAdRate .1			# Multiplied by _rFireAdRate to determine the firing rate for a laser.
 	#-set _laserAdLife 0.1			# The amount of time (in seconds) that a laser remains after being fired.
 	
 	##########################
@@ -242,7 +246,7 @@ options
 	-set _grenadeAccuracy 0.1
 	-set _grenadeLifetime 4
 	-set _grenadeExplosionLifetime 8
-	-set _grenadeExplosionLifetimeEndShort 0.5
+	-set _grenadeExplosionLifetimeEndShort 0.8
 	
 	################################
 	##   Flag: Vertical Velocity  ##
@@ -298,6 +302,12 @@ options
 	##   Flag: Torpedo          ##
 	##############################
 	# settings here...
+
+	##############################
+	##   Flag: Low Gravity      ##
+	##############################
+	-set _lowGravityMult 1.2
+	-set _lowGravityJumpVelMult 1.5
 	
 
 	#################################

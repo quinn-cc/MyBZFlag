@@ -4900,6 +4900,19 @@ BZF_API bz_eTeamType bz_getUnbalancedTeam(bz_eTeamType team1, bz_eTeamType team2
     return team;
 }
 
+BZF_API void bz_setServerVariableForPlayer(int playerID, const std::string& key, const std::string& value)
+{
+    void *bufStart = getDirectMessageBuffer();
+    void *buf = nboPackUShort(bufStart, 1);
+    buf = nboPackUByte(buf, key.length());
+    buf = nboPackString(buf, key.c_str(), key.length());
+    buf = nboPackUByte(buf, value.length());
+    buf = nboPackString(buf, value.c_str(), value.length());
+    const int len = (char*)buf - (char*)bufStart;
+    directMessage(playerID, MsgSetVar, len, bufStart);
+}
+
+
 /*
 BZF_API std::string bz_ltrim (std::string _str, const char* trim = " ")
 {
