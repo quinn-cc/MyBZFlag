@@ -27,6 +27,7 @@ options
 	-loadplugin ../bzflag-grue/plugins/torpedoFlag/.libs/torpedoFlag.so
 	-loadplugin ../bzflag-grue/plugins/lowGravityFlag/.libs/lowGravityFlag.so
 	-loadplugin ../bzflag-grue/plugins/wishFlag/.libs/wishFlag.so
+	-loadplugin ../bzflag-grue/plugins/shittyFlags/.libs/shittyFlags.so
 	
 	# Gameplay
 	-loadplugin ../bzflag-grue/plugins/teamFlagGeno/.libs/teamFlagGeno.so
@@ -139,6 +140,9 @@ options
 	+f AN{2}
 	+f LG{6}
 	+f W{2}
+	+f DB{2}
+	+f RR{2}
+	+f AC{2}
 	
 	###################
 	## 		Fog 	 ##
@@ -356,3 +360,12 @@ group debris_group
 end
 include mapfiles/ground_reflectors.bzw
 include mapfiles/zones.bzw
+define tower_windows
+	include mapfiles/tower_windows.bzw
+enddef
+group tower_windows
+	rotation 0
+end
+group tower_windows
+	rotation 180
+end

@@ -1,0 +1,330 @@
+# Exported from Wings 3D 2.2.4
+
+mesh
+  name window.001_Cube.007
+  #8 vertices, 6 faces
+  vertex -7.0300 403.0751 81.9308
+  vertex -7.0300 403.0751 95.3527
+  vertex -14.1314 410.1765 81.9308
+  vertex -14.1314 410.1765 95.3527
+  vertex -5.6157 404.4893 81.9308
+  vertex -5.6157 404.4893 95.3527
+  vertex -12.7172 411.5907 81.9308
+  vertex -12.7172 411.5907 95.3527
+  normal -0.7071 -0.7071 0.0000
+  normal 0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -0.7071 -0.7071 0.0000
+  normal 0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -0.7071 -0.7071 0.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -0.7071 -0.7071 0.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.0000
+  texcoord 0.3750 0.2500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 0.3750 1.0000
+  texcoord 0.6250 0.0000
+  texcoord 0.6250 0.2500
+  texcoord 0.6250 0.5000
+  texcoord 0.6250 0.7500
+  texcoord 0.6250 1.0000
+  texcoord 0.8750 0.5000
+  texcoord 0.8750 0.7500
+  #matref window.001_Cube.007 # group?_glass_blue
+  matref glass_blue
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 5 10 11
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 7 8 3 2
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 13 10 9 12
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 0 4 5 1
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 8 9 4 3
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 5 4 9 10
+  endface
+end
+mesh
+  name window.002_Cube.006
+  #8 vertices, 6 faces
+  vertex 14.0768 410.2233 81.9308
+  vertex 14.0768 410.2233 95.3527
+  vertex 6.9754 403.1219 81.9308
+  vertex 6.9754 403.1219 95.3527
+  vertex 12.6626 411.6375 81.9308
+  vertex 12.6626 411.6375 95.3527
+  vertex 5.5611 404.5361 81.9308
+  vertex 5.5611 404.5361 95.3527
+  normal 0.7071 -0.7071 0.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.7071 -0.7071 0.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.7071 -0.7071 0.0000
+  normal -0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.7071 -0.7071 0.0000
+  normal -0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -0.7071 -0.7071 0.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -0.7071 -0.7071 0.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.0000
+  texcoord 0.3750 0.2500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 0.3750 1.0000
+  texcoord 0.6250 0.0000
+  texcoord 0.6250 0.2500
+  texcoord 0.6250 0.5000
+  texcoord 0.6250 0.7500
+  texcoord 0.6250 1.0000
+  texcoord 0.8750 0.5000
+  texcoord 0.8750 0.7500
+  #matref window.002_Cube.006 # group?_glass_blue
+  matref glass_blue
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 5 10 11
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 7 8 3 2
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 13 10 9 12
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 0 4 5 1
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 8 9 4 3
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 5 4 9 10
+  endface
+end
+mesh
+  name window.003_Cube.005
+  #8 vertices, 6 faces
+  vertex 7.0287 431.3131 81.9308
+  vertex 7.0287 431.3131 95.3527
+  vertex 14.1301 424.2116 81.9308
+  vertex 14.1301 424.2116 95.3527
+  vertex 5.6145 429.8989 81.9308
+  vertex 5.6145 429.8989 95.3527
+  vertex 12.7159 422.7974 81.9308
+  vertex 12.7159 422.7974 95.3527
+  normal 0.7071 0.7071 0.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.7071 0.7071 0.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -0.7071 -0.7071 0.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -0.7071 -0.7071 0.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.7071 -0.7071 0.0000
+  normal -0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.7071 -0.7071 0.0000
+  normal -0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.0000
+  texcoord 0.3750 0.2500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 0.3750 1.0000
+  texcoord 0.6250 0.0000
+  texcoord 0.6250 0.2500
+  texcoord 0.6250 0.5000
+  texcoord 0.6250 0.7500
+  texcoord 0.6250 1.0000
+  texcoord 0.8750 0.5000
+  texcoord 0.8750 0.7500
+  #matref window.003_Cube.005 # group?_glass_blue
+  matref glass_blue
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 5 10 11
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 7 8 3 2
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 13 10 9 12
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 0 4 5 1
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 8 9 4 3
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 5 4 9 10
+  endface
+end
+mesh
+  name window_Cube.004
+  #8 vertices, 6 faces
+  vertex -14.0454 424.1322 81.9308
+  vertex -14.0454 424.1322 95.3527
+  vertex -6.9440 431.2337 81.9308
+  vertex -6.9440 431.2337 95.3527
+  vertex -12.6312 422.7180 81.9308
+  vertex -12.6312 422.7180 95.3527
+  vertex -5.5298 429.8195 81.9308
+  vertex -5.5298 429.8195 95.3527
+  normal -0.7071 0.7071 0.0000
+  normal -0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -0.7071 0.7071 0.0000
+  normal -0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal -0.7071 0.7071 0.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.7071 -0.7071 0.0000
+  normal -0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.7071 -0.7071 0.0000
+  normal -0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 -1.0000
+  normal 0.7071 0.7071 0.0000
+  normal 0.7071 -0.7071 0.0000
+  normal 0.0000 0.0000 1.0000
+  texcoord 0.1250 0.5000
+  texcoord 0.1250 0.7500
+  texcoord 0.3750 0.0000
+  texcoord 0.3750 0.2500
+  texcoord 0.3750 0.5000
+  texcoord 0.3750 0.7500
+  texcoord 0.3750 1.0000
+  texcoord 0.6250 0.0000
+  texcoord 0.6250 0.2500
+  texcoord 0.6250 0.5000
+  texcoord 0.6250 0.7500
+  texcoord 0.6250 1.0000
+  texcoord 0.8750 0.5000
+  texcoord 0.8750 0.7500
+  #matref window_Cube.004 # group?_glass_blue
+  matref glass_blue
+  face
+    vertices 0 4 5 1
+    normals 1 13 16 4
+    texcoords 6 5 10 11
+  endface
+  face
+    vertices 1 3 2 0
+    normals 3 9 6 0
+    texcoords 7 8 3 2
+  endface
+  face
+    vertices 1 5 7 3
+    normals 5 17 23 11
+    texcoords 13 10 9 12
+  endface
+  face
+    vertices 2 6 4 0
+    normals 8 20 14 2
+    texcoords 0 4 5 1
+  endface
+  face
+    vertices 3 7 6 2
+    normals 10 21 18 7
+    texcoords 8 9 4 3
+  endface
+  face
+    vertices 4 6 7 5
+    normals 12 19 22 15
+    texcoords 5 4 9 10
+  endface
+end

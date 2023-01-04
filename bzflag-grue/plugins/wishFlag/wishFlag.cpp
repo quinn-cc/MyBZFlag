@@ -100,11 +100,30 @@ bool WishCommand::SlashCommand(int playerID, bz_ApiString command, bz_ApiString 
                     bz_isTeamFlag(flagWished))
                 {
                     if (bz_getPlayerFlagAbbr(playerID) == "W" )
+                    {
                         bz_sendTextMessage(BZ_SERVER, playerID, "You can't wish for more wishes! Aladdin 101...");
+                        bz_killPlayer(playerID, false, BZ_SERVER);
+                    }
+                    else if (bz_getPlayerFlagAbbr(playerID) == "US")
+                    {
+                        bz_sendTextMessage(BZ_SERVER, playerID, "Here's a useless flag for you.");
+
+                        const char* uselessFlags[14] = { "US", "MQ", "DB", "AC", "RR" };
+                        srand(bz_getCurrentTime());
+                        int flagIndex = rand() % 14;
+                        bz_givePlayerFlag(playerID, uselessFlags[flagIndex], true);
+                    }
                     else
+                    {
                         bz_sendTextMessage(BZ_SERVER, playerID, "POWERFUL WISHES HAVE POWERFUL CONSEQUENCES");
 
-                    bz_killPlayer(playerID, false, BZ_SERVER);
+                        const char* badFlags[14] = { "B", "BY", "CB", "FO", "JM", "LT", "M", "NJ", "O", "RC", "RO", "RT", "TR", "WA" };
+                        srand(bz_getCurrentTime());
+                        int flagIndex = rand() % 14;
+                        bz_givePlayerFlag(playerID, badFlags[flagIndex], true);
+                    }
+
+                    
                 }
             }
             else

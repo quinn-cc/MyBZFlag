@@ -159,6 +159,13 @@ void ScarwallServerMessages::Event(bz_EventData *ed)
 		{
 			refreshGameMode(bz_getTeamCount(eRedTeam), bz_getTeamCount(eGreenTeam));
 		} break;
+		case bz_eFlagDroppedEvent:
+		{
+			bz_FlagDroppedEventData_V1* data = (bz_FlagDroppedEventData_V1*) ed;
+
+			if (bz_isNaturalBadFlag(data->flagType))
+				bz_resetFlag(data->flagID);
+		}
 		default:
 			break;
 	}

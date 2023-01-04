@@ -1,1 +1,1 @@
-bzfs -world scarwall.bzw -publicaddr 3.84.77.253:5154 -publictitle "Castle Scarwall by Grue - No VPNs!" -reportfile reports.txt -groupdb groupfile.txt -banfile banfile.txt -publickey 733f71055060eb7340ab4bfe55cacc8edaef73b0 -passwd 3k9#grpBz
+bzfs -world scarwall.bzw -publicaddr 3.84.77.253:5154 -publictitle "Castle Scarwall by Grue - No VPNs!" -reportfile reports.txt -groupdb ../groupfile.txt -banfile ../banfile.txt -publickey 733f71055060eb7340ab4bfe55cacc8edaef73b0

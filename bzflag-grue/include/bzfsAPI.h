@@ -2464,6 +2464,7 @@ BZF_API bool bz_isValidSpawnPoint(float* pos);
 BZF_API float* bz_getServerShotPos(uint32_t shotID);
 BZF_API bz_eTeamType bz_getUnbalancedTeam(bz_eTeamType, bz_eTeamType);
 BZF_API void bz_setServerVariableForPlayer(int playerID, const std::string& key, const std::string& value);
+BZF_API bool bz_isNaturalBadFlag(const char* flagAbbr);
 
 
 #endif //_BZFS_API_H_

@@ -4912,6 +4912,17 @@ BZF_API void bz_setServerVariableForPlayer(int playerID, const std::string& key,
     directMessage(playerID, MsgSetVar, len, bufStart);
 }
 
+BZF_API bool bz_isNaturalBadFlag(const char* flagAbbr)
+{
+    const char* badFlags[14] = { "B", "BY", "CB", "FO", "JM", "LT", "M", "NJ", "O", "RC", "RO", "RT", "TR", "WA" };
+
+    for (int i = 0; i < 14; i++)
+        if (strcmp(flagAbbr, badFlags[i]) == 0)
+            return true;
+
+    return false;
+}
+
 
 /*
 BZF_API std::string bz_ltrim (std::string _str, const char* trim = " ")
