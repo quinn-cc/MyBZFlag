@@ -46,7 +46,7 @@ options
 	-a 0 0
 	-fb  						# Allows flags to spawn on boxes/surfaces
 	-sb							# Allows tanks to spawn on boxes/surfaces
-	-autoTeam  					# Automatically assigns to a team
+	-autoTeam  					# Automatically assigns to a team.
 	-noTeamKills
 	-synclocation
 	-synctime
