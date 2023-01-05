@@ -867,14 +867,12 @@ void ctfOverseer::Event(bz_EventData *eventData)
 			if (bz_getCurrentTime() - lastCacheTime > bz_getBZDBDouble("_gameStateCacheInterval"))
 			{
 				cacheGameState();
-				bz_debugMessagef(0, "game state cached, size %d", cachedGameStates.size());
 				lastCacheTime = bz_getCurrentTime();
 			}
 
 			if (bz_getCurrentTime() - getReferenceState().time > bz_getBZDBDouble("_cachedMemoryTime"))
 			{
 				cachedGameStates.pop();
-				bz_debugMessagef(0, "game state popped, size %d", cachedGameStates.size());
 			}
         } break;
         case bz_ePlayerJoinEvent:
