@@ -39,7 +39,7 @@ options
 	## Server Settings ##
 	#####################
 	-c   						# CTF mode
-	+r   						# Enable Ricochet
+	+r   						# Enable Ricochet.
 	-j   						# Enable Jumping
 	-ms 5						# Max number of shots
 	-mp 0,40,0,40,0,15  		# rogue,red,green,blue,purple,observer
