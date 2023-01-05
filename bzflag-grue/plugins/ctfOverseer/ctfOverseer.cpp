@@ -120,8 +120,8 @@ class ctfOverseer : public bz_Plugin
 	}
 
 private:
-	bz_eTeamType TEAM1;
-	bz_eTeamType TEAM2;
+	bz_eTeamType TEAM1 = eRedTeam;
+	bz_eTeamType TEAM2 = eBlueTeam;
 
 	// The last team that was capped	
 	bz_eTeamType lastTeamCapped = eNoTeam;
@@ -217,7 +217,7 @@ BZ_PLUGIN(ctfOverseer)
 
 void ctfOverseer::Init(const char* config)
 {
-	loadConfiguration(config);
+	//loadConfiguration(config);
 
 	bz_registerCustomBZDBBool("_noTeamCapture", true);
 	bz_registerCustomBZDBBool("_switchTeamsOnUnfairCap", true);
