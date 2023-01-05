@@ -947,6 +947,7 @@ config.status:1420: creating tools/bzwtransform/Makefile
 config.status:1420: creating tools/modeltool/Makefile
 config.status:1420: creating tools/modeltool/MSVC/Makefile
 config.status:1420: creating include/config.h
+config.status:1601: include/config.h is unchanged
 config.status:1649: executing depfiles commands
 config.status:1726: cd plugins/ctfOverseer       && sed -e '/# am--include-marker/d' Makefile         | make -f - am--depfiles
 make: Nothing to be done for 'am--depfiles'.
