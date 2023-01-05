@@ -540,7 +540,7 @@ bool ctfOverseer::isQuitter(bz_ApiString ipAddress, bz_ApiString &cachedCallsign
 
 void ctfOverseer::loadConfiguration(const char* configPath)
 {
-	PluginConfig config = PluginConfig(configPath);
+	/*PluginConfig config = PluginConfig(configPath);
     string section = "two_team";
 
     if (config.errors)
@@ -550,7 +550,10 @@ void ctfOverseer::loadConfiguration(const char* configPath)
     }
 
     TEAM1 = bz_stringToTeamType(config.item(section, "TEAM1"));
-    TEAM2 = bz_stringToTeamType(config.item(section, "TEAM2"));
+    TEAM2 = bz_stringToTeamType(config.item(section, "TEAM2"));*/
+
+	TEAM1 = eRedTeam;
+	TEAM2 = eBlueTeam;
 }
 
 void ctfOverseer::Event(bz_EventData *eventData)
