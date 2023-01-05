@@ -120,8 +120,8 @@ class ctfOverseer : public bz_Plugin
 	}
 
 private:
-	bz_eTeamType TEAM1 = eRedTeam;
-	bz_eTeamType TEAM2 = eBlueTeam;
+	bz_eTeamType TEAM1;
+	bz_eTeamType TEAM2;
 
 	// The last team that was capped	
 	bz_eTeamType lastTeamCapped = eNoTeam;
@@ -217,7 +217,7 @@ BZ_PLUGIN(ctfOverseer)
 
 void ctfOverseer::Init(const char* config)
 {
-	//loadConfiguration(config);
+	loadConfiguration(config);
 
 	bz_registerCustomBZDBBool("_noTeamCapture", true);
 	bz_registerCustomBZDBBool("_switchTeamsOnUnfairCap", true);
@@ -254,7 +254,14 @@ bz_eTeamType ctfOverseer::oppositeTeam(bz_eTeamType t)
 
 CachedGameState ctfOverseer::getReferenceState()
 {
-	return cachedGameStates.front();
+	if (cachedGameStates.size() > 0)
+		return cachedGameStates.front();
+	else
+	{
+		CachedGameState state;
+		state.time = bz_getCurrentTime();
+		return state;
+	}
 }
 
 /*
@@ -540,7 +547,7 @@ bool ctfOverseer::isQuitter(bz_ApiString ipAddress, bz_ApiString &cachedCallsign
 
 void ctfOverseer::loadConfiguration(const char* configPath)
 {
-	/*PluginConfig config = PluginConfig(configPath);
+	PluginConfig config = PluginConfig(configPath);
     string section = "two_team";
 
     if (config.errors)
@@ -550,10 +557,7 @@ void ctfOverseer::loadConfiguration(const char* configPath)
     }
 
     TEAM1 = bz_stringToTeamType(config.item(section, "TEAM1"));
-    TEAM2 = bz_stringToTeamType(config.item(section, "TEAM2"));*/
-
-	TEAM1 = eRedTeam;
-	TEAM2 = eBlueTeam;
+    TEAM2 = bz_stringToTeamType(config.item(section, "TEAM2"));
 }
 
 void ctfOverseer::Event(bz_EventData *eventData)
