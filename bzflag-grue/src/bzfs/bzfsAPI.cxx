@@ -4923,6 +4923,52 @@ BZF_API bool bz_isNaturalBadFlag(const char* flagAbbr)
     return false;
 }
 
+BZF_API bz_eTeamType bz_stringToTeamType(std::string teamColor)
+{
+    teamColor = bz_tolower(teamColor.c_str());
+
+    if (teamColor == "rogue")
+    {
+        return eRogueTeam;
+    }
+    else if (teamColor == "red")
+    {
+        return eRedTeam;
+    }
+    else if (teamColor == "green")
+    {
+        return eGreenTeam;
+    }
+    else if (teamColor == "blue")
+    {
+        return eBlueTeam;
+    }
+    else if (teamColor == "purple")
+    {
+        return ePurpleTeam;
+    }
+    else if (teamColor == "rabbit")
+    {
+        return eRabbitTeam;
+    }
+    else if (teamColor == "hunter")
+    {
+        return eHunterTeam;
+    }
+    else if (teamColor == "observer")
+    {
+        return eObservers;
+    }
+    else if (teamColor == "administrator")
+    {
+        return eAdministrators;
+    }
+    else
+    {
+        return eNoTeam;
+    }
+}
+
 
 /*
 BZF_API std::string bz_ltrim (std::string _str, const char* trim = " ")

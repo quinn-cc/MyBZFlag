@@ -27,11 +27,11 @@ options
 	-loadplugin ../bzflag-grue/plugins/torpedoFlag/.libs/torpedoFlag.so
 	-loadplugin ../bzflag-grue/plugins/lowGravityFlag/.libs/lowGravityFlag.so
 	-loadplugin ../bzflag-grue/plugins/wishFlag/.libs/wishFlag.so
-	-loadplugin ../bzflag-grue/plugins/shittyFlags/.libs/shittyFlags.so
+	#-loadplugin ../bzflag-grue/plugins/shittyFlags/.libs/shittyFlags.so
 	
 	# Gameplay
 	-loadplugin ../bzflag-grue/plugins/teamFlagGeno/.libs/teamFlagGeno.so
-	-loadplugin ../bzflag-grue/plugins/ctfOverseer/.libs/ctfOverseer.so
+	-loadplugin ../bzflag-grue/plugins/ctfOverseer/.libs/ctfOverseer.so,config.cfg
 	-loadplugin ../bzflag-grue/plugins/ScoreRestorer-master/.libs/ScoreRestorer.so
 	-loadplugin ../bzflag-grue/plugins/shotLimitZone-master/.libs/shotLimitZone.so
 	-loadplugin ../bzflag-grue/plugins/playHistoryTracker/.libs/playHistoryTracker.so
@@ -49,7 +49,7 @@ options
 	+r   						# Enable Ricochet
 	-j   						# Enable Jumping
 	-ms 5						# Max number of shots
-	-mp 2,40,40,0,0,10  		# rogue,red,green,blue,purple,observer
+	-mp 2,40,40,0,0,15  		# rogue,red,green,blue,purple,observer
 	-a 0 0
 	-fb  						# Allows flags to spawn on boxes/surfaces
 	-sb							# Allows tanks to spawn on boxes/surfaces
@@ -140,9 +140,9 @@ options
 	+f AN{2}
 	+f LG{6}
 	+f W{2}
-	+f DB{2}
-	+f RR{2}
-	+f AC{2}
+	#+f DB{2}
+	#+f RR{2}
+	#+f AC{2}
 	
 	###################
 	## 		Fog 	 ##

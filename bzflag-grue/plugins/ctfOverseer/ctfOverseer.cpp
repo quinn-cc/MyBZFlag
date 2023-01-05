@@ -71,7 +71,9 @@
  */
 
 #include "bzfsAPI.h"
+#include "plugin_config.h"
 #include <map>
+#include <queue>
 using namespace std;
 
 /*
@@ -92,6 +94,12 @@ struct CachedPlayerData
 	double quitTime = -1;
 };
 
+struct CachedGameState
+{
+	vector<CachedPlayerData> playerList;
+	double time;
+};
+
 
 
 class ctfOverseer : public bz_Plugin
@@ -103,6 +111,7 @@ class ctfOverseer : public bz_Plugin
 
 	virtual void Init(const char*);
 	virtual void Event(bz_EventData*);
+	virtual void loadConfiguration(const char* config);
 	~ctfOverseer();
 
 	virtual void Cleanup(void)
@@ -111,6 +120,9 @@ class ctfOverseer : public bz_Plugin
 	}
 
 private:
+	bz_eTeamType TEAM1;
+	bz_eTeamType TEAM2;
+
 	// The last team that was capped	
 	bz_eTeamType lastTeamCapped = eNoTeam;
 	// The time at which the last team was capped.
@@ -153,17 +165,23 @@ private:
 	 * the current player list and the recent player list. When these players are
 	 * called out, they are added to the Quitters list (see below)
 	 */
-	vector<CachedPlayerData> cachedPlayers;
+	//vector<CachedPlayerData> cachedPlayers;
 	// This method immediately updates the cached players to be what the player
 	// list currently is. This method should *not* be called when a player joins
 	// or parts.
-	void updateCachedPlayers();
+	//void updateCachedPlayers();
 	// This bool should be set to true when a player joins or parts the game.
-	bool cachedPlayersNeedsUpdate = false;
+	//bool cachedPlayersNeedsUpdate = false;
 	// The timestamp of when the cached players was last updated
-	double lastCachedPlayersUpdate = 0;
+	//double lastCachedPlayersUpdate = 0;
 	// Returns a certain team count on the cached player list.
+	//int getCachedTeamCount(bz_eTeamType);
+
+	queue<CachedGameState> cachedGameStates;
+	void cacheGameState();
+	double lastCacheTime = 0;
 	int getCachedTeamCount(bz_eTeamType);
+	CachedGameState getReferenceState();
 	
 	/*
 	* Quitters
@@ -197,8 +215,10 @@ private:
 ctfOverseer::~ctfOverseer() {}
 BZ_PLUGIN(ctfOverseer)
 
-void ctfOverseer::Init(const char*)
+void ctfOverseer::Init(const char* config)
 {
+	loadConfiguration(config);
+
 	bz_registerCustomBZDBBool("_noTeamCapture", true);
 	bz_registerCustomBZDBBool("_switchTeamsOnUnfairCap", true);
 	bz_registerCustomBZDBDouble("_fairCapRatio", 1.34);
@@ -207,8 +227,9 @@ void ctfOverseer::Init(const char*)
 	bz_registerCustomBZDBInt("_unfairCapMult", 5);
 	bz_registerCustomBZDBInt("_selfCapMult", 5);
 	bz_registerCustomBZDBInt("_capWaitTime", 30);
-	bz_registerCustomBZDBDouble("_cachedMemoryTime", 5.0);
+	bz_registerCustomBZDBDouble("_cachedMemoryTime", 10.0);
 	bz_registerCustomBZDBDouble("_quitterMemoryTime", 60);
+	bz_registerCustomBZDBDouble("_gameStateCacheInterval", 4.0);
 	
     Register(bz_eFlagGrabbedEvent);
     Register(bz_eCaptureEvent);
@@ -216,7 +237,6 @@ void ctfOverseer::Init(const char*)
  	Register(bz_eAllowFlagGrab);
  	Register(bz_eTickEvent);
  	Register(bz_ePlayerJoinEvent);
- 	Register(bz_ePlayerPartEvent);
 }
 
 /*
@@ -226,10 +246,15 @@ void ctfOverseer::Init(const char*)
  */
 bz_eTeamType ctfOverseer::oppositeTeam(bz_eTeamType t)
 {
-	if (t == eRedTeam)
-		return eGreenTeam;
+	if (t == TEAM1)
+		return TEAM2;
 	else
-		return eRedTeam;
+		return TEAM1;
+}
+
+CachedGameState ctfOverseer::getReferenceState()
+{
+	return cachedGameStates.front();
 }
 
 /*
@@ -300,13 +325,43 @@ bool ctfOverseer::cachedFairCap(bz_eTeamType teamA, bz_eTeamType teamB)
 int ctfOverseer::getCachedTeamCount(bz_eTeamType t)
 {
 	int count = 0;
-	for (int i = 0; i < cachedPlayers.size(); i++)
-		if (cachedPlayers[i].team == t)
+	vector<CachedPlayerData> playerList = getReferenceState().playerList;
+
+	for (int i = 0; i < playerList.size(); i++)
+		if (playerList[i].team == t)
 			count++;
+
 	return count;
 }
 
-void ctfOverseer::updateCachedPlayers()
+void ctfOverseer::cacheGameState()
+{
+	bz_APIIntList* playerList = bz_getPlayerIndexList();
+	CachedGameState gameState;
+	
+	gameState.time = bz_getCurrentTime();
+
+	for (int i = 0; i < bz_getPlayerCount(); i++)
+	{
+		bz_BasePlayerRecord* player = bz_getPlayerByIndex(playerList->get(i));
+
+		if (player)
+		{
+			CachedPlayerData cachedData;
+			cachedData.callsign = player->callsign;
+			cachedData.ipAddress = player->ipAddress;
+			cachedData.team = player->team;
+			gameState.playerList.push_back(cachedData);
+		}
+
+		bz_freePlayerRecord(player);
+	}
+
+	cachedGameStates.push(gameState);
+	bz_deleteIntList(playerList);
+}
+
+/*void ctfOverseer::updateCachedPlayers()
 {
 	bz_APIIntList* playerList = bz_getPlayerIndexList();
 
@@ -402,7 +457,7 @@ void ctfOverseer::updateCachedPlayers()
 	// of an update. This will in the future be set to true again once a player
 	// quits or joins the game.
 	cachedPlayersNeedsUpdate = false;
-}
+}*/
 
 /*
  * Adds the given CachedPlayerData to the quitters list
@@ -457,8 +512,7 @@ void ctfOverseer::refreshQuitters()
  * passed as what their current callsign is. If their cached callsign was
  * something different, then it will be changed.
  */
-bool ctfOverseer::isQuitter(bz_ApiString ipAddress,
-	bz_ApiString &cachedCallsign)
+bool ctfOverseer::isQuitter(bz_ApiString ipAddress, bz_ApiString &cachedCallsign)
 {
 	bool quitter = false;
 
@@ -482,6 +536,21 @@ bool ctfOverseer::isQuitter(bz_ApiString ipAddress,
 	}
 	
 	return quitter;
+}
+
+void ctfOverseer::loadConfiguration(const char* configPath)
+{
+	PluginConfig config = PluginConfig(configPath);
+    string section = "two_team";
+
+    if (config.errors)
+    {
+        bz_debugMessage(0, "Your configuration file has errors");
+        return;
+    }
+
+    TEAM1 = bz_stringToTeamType(config.item(section, "TEAM1"));
+    TEAM2 = bz_stringToTeamType(config.item(section, "TEAM2"));
 }
 
 void ctfOverseer::Event(bz_EventData *eventData)
@@ -511,13 +580,10 @@ void ctfOverseer::Event(bz_EventData *eventData)
 		 */
 		case bz_eFlagGrabbedEvent:
 		{
-			bz_FlagGrabbedEventData_V1 *data =
-				(bz_FlagGrabbedEventData_V1*) eventData;
+			bz_FlagGrabbedEventData_V1 *data = (bz_FlagGrabbedEventData_V1*) eventData;
 			
 			// First get the player's flag.
-			bz_ApiString flag = "";
-			if (bz_getPlayerFlag(data->playerID))
-				flag = bz_getPlayerFlag(data->playerID);
+			bz_ApiString flag = bz_getPlayerFlagAbbr(data->playerID);
 			
 			bz_BasePlayerRecord *player = bz_getPlayerByIndex(data->playerID);
 
@@ -525,8 +591,7 @@ void ctfOverseer::Event(bz_EventData *eventData)
 				return;
 
 			// If a player grabs the opposing team's flag
-			if ((player->team == eGreenTeam && flag == "R*") ||
-				(player->team == eRedTeam && flag == "G*"))
+			if (bz_isTeamFlag(flag.c_str()) && bz_getTeamFromFlag(flag.c_str()) != player->team)
 			{
 				int thisTeamCount = bz_getTeamCount(player->team);
 				int otherTeamCount = bz_getTeamCount(oppositeTeam(player->team));
@@ -592,24 +657,26 @@ void ctfOverseer::Event(bz_EventData *eventData)
 	 		{
 	 			// This list temporarily stores the players that quit during 
 	 			// this cap.
-	 			vector<bz_ApiString> currentQuitters;
+	 			vector<bz_ApiString> newQuitters;
 	 		
 	 			// Add any quitters into the quitters list, and add them into
 				// the current quitters.
-	 			for (int i = 0; i < cachedPlayers.size(); i++)
+	 			for (int i = 0; i < getReferenceState().playerList.size(); i++)
 	 			{
 	 				// Quitters can only come from the team that was capped
-	 				if (cachedPlayers[i].team == data->teamCapped)
+	 				if (getReferenceState().playerList[i].team == data->teamCapped)
 	 				{
-	 					bz_BasePlayerRecord* playerRecord
-							= bz_getPlayerBySlotOrCallsign(
-								cachedPlayers[i].callsign.c_str());
+	 					bz_BasePlayerRecord* playerRecord = bz_getPlayerBySlotOrCallsign(getReferenceState().playerList[i].callsign.c_str());
 	 					
 		 				if (!playerRecord)
 		 				{
-		 					addQuitter(cachedPlayers[i]);
-		 					currentQuitters.push_back(cachedPlayers[i].callsign);
+		 					addQuitter(getReferenceState().playerList[i]);
+		 					newQuitters.push_back(getReferenceState().playerList[i].callsign);
 		 				}
+						else if (playerRecord->team == eObservers)
+						{
+							newQuitters.push_back(getReferenceState().playerList[i].callsign);
+						}
 		 					
 		 				bz_freePlayerRecord(playerRecord);
 	 				}
@@ -618,21 +685,21 @@ void ctfOverseer::Event(bz_EventData *eventData)
 	 			// Note that there may not actually be any quitters. Players
 				// could have quickly joined the capper's team causing an
 				// inbalance.
-	 			if (currentQuitters.size() > 0)
+	 			if (newQuitters.size() > 0)
 	 			{
 					// Stores a string of the quitters
 		 			bz_ApiString quitterList = "";
 		 			
-		 			for (int i = 0; i < currentQuitters.size(); i++)
+		 			for (int i = 0; i < newQuitters.size(); i++)
 		 			{
-		 				quitterList += currentQuitters[i];
+		 				quitterList += newQuitters[i];
 
-						if (currentQuitters.size() == 2 && i == 0)
+						if (newQuitters.size() == 2 && i == 0)
 							quitterList += " and ";
-						else if (i < currentQuitters.size() - 1) {
-							if (currentQuitters.size() > 2)
+						else if (i < newQuitters.size() - 1) {
+							if (newQuitters.size() > 2)
 								quitterList += ", ";
-							if (i == currentQuitters.size() - 1)
+							if (i == newQuitters.size() - 1)
 								quitterList += "and ";
 						}
 		 			}
@@ -671,6 +738,8 @@ void ctfOverseer::Event(bz_EventData *eventData)
 					bz_getPlayerCallsign(data->playerCapping),
 					to_string(reward).c_str()
 				);
+
+				bz_incrementPlayerWins(data->playerCapping, reward);
 	 		}
 	 		else
 	 		{
@@ -795,25 +864,22 @@ void ctfOverseer::Event(bz_EventData *eventData)
             	lastFlagWarnMsg.clear();
 			}
             
-			// If the cached players needs to be updated and sufficient time has
-			// passed since they have been updated, then update the cached
-			// player list.
-            if (cachedPlayersNeedsUpdate)
-            {
-            	if (bz_getCurrentTime() - lastCachedPlayersUpdate > bz_getBZDBDouble("_cachedMemoryTime"))
-            	{
-            		updateCachedPlayers();
-            	}
-            }
+			if (bz_getCurrentTime() - lastCacheTime > bz_getBZDBDouble("_gameStateCacheInterval"))
+			{
+				cacheGameState();
+				bz_debugMessagef(0, "game state cached, size %d", cachedGameStates.size());
+				lastCacheTime = bz_getCurrentTime();
+			}
+
+			if (bz_getCurrentTime() - getReferenceState().time > bz_getBZDBDouble("_cachedMemoryTime"))
+			{
+				cachedGameStates.pop();
+				bz_debugMessagef(0, "game state popped, size %d", cachedGameStates.size());
+			}
         } break;
         case bz_ePlayerJoinEvent:
 		{
 			bz_PlayerJoinPartEventData_V1* data = (bz_PlayerJoinPartEventData_V1*) eventData;
-
-			// When a player joins the game, the cached player list needs to be
-			// updated.
-			lastCachedPlayersUpdate = bz_getCurrentTime();
-		    cachedPlayersNeedsUpdate = true;
 		    
 			// This local variable is passed by reference into the isQuitter
 			// method. The isQuitter method detects if the joining ipAddress
@@ -854,13 +920,6 @@ void ctfOverseer::Event(bz_EventData *eventData)
 		    	removeQuitter(data->record->ipAddress, data->record->callsign);
 		    }
 		    
-		} break;
-		case bz_ePlayerPartEvent:
-		{
-			// When a player parts the game, the cached player list needs to be
-			// updated.
-			lastCachedPlayersUpdate = bz_getCurrentTime();
-			cachedPlayersNeedsUpdate = true;
 		} break;
 	 	default: break;
  	}
