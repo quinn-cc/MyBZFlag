@@ -432,7 +432,7 @@ AUTOCONF = ${SHELL} /home/quinn/Documents/MyBZFlag/bzflag-grue/misc/missing auto
 AUTOHEADER = ${SHELL} /home/quinn/Documents/MyBZFlag/bzflag-grue/misc/missing autoheader
 AUTOMAKE = ${SHELL} /home/quinn/Documents/MyBZFlag/bzflag-grue/misc/missing automake-1.16
 AWK = gawk
-BUILD_DATE = 2023-01-05
+BUILD_DATE = 2023-01-06
 BZFLAG_DATA = /usr/local/share/bzflag
 CC = gcc
 CCACHE = 
@@ -446,7 +446,7 @@ CONF_CXXFLAGS =  -Wall -Wextra -Wcast-qual -Wredundant-decls -Wshadow -Wundef -p
 CPP = gcc -E
 CPPFLAGS = 
 CURSES_LIB = 
-CUSTOM_PLUGIN_LIST = ctfOverseer
+CUSTOM_PLUGIN_LIST = playHistoryTracker
 CXX = g++ -std=gnu++11
 CXXCPP = g++ -std=gnu++11 -E
 CXXDEPMODE = depmode=gcc3

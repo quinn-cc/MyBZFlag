@@ -108,52 +108,67 @@ end
 #### Tower flags #######
 ########################
 
-#zone
-#	position 0 417 82
-#	size 5 5 1
-#	rotation 45
-#	zoneflag B 1
-#	zoneflag BY 1
-#	zoneflag CB 1
-#	zoneflag FO 1
-#	zoneflag JM 1
-#	zoneflag LT 1
-#	zoneflag M 1
-#	zoneflag NJ 1
-#	zoneflag O 1
-#	zoneflag RC 1
-#	zoneflag RO 1
-#	zoneflag RT 1
-#	zoneflag TR 1
-#	zoneflag WA 1
-#	zoneflag US 1
-#	zoneflag MQ 1
-#	zoneflag AC 1
-#	zoneflag DB 1
-#	zoneflag RR 1
-#end
+zone
+	position 0 417 82
+	size 5 5 1
+	rotation 45
+	zoneflag B 1
+	zoneflag BY 1
+	zoneflag CB 1
+	zoneflag FO 1
+	zoneflag JM 1
+	zoneflag LT 1
+	zoneflag M 1
+	zoneflag NJ 1
+	zoneflag O 1
+	zoneflag RC 1
+	zoneflag RO 1
+	zoneflag RT 1
+	zoneflag TR 1
+	zoneflag WA 1
+	zoneflag US 1
+	zoneflag MQ 1
+	flag AC
+	flag DB
+	flag RR
+end
 
-#zone
-#	position 0 -417 82
-#	size 5 5 1
-#	rotation 45
-#	zoneflag B 1
-#	zoneflag BY 1
-#	zoneflag CB 1
-#	zoneflag FO 1
-#	zoneflag JM 1
-#	zoneflag LT 1
-#	zoneflag M 1
-#	zoneflag NJ 1
-#	zoneflag O 1
-#	zoneflag RC 1
-#	zoneflag RO 1
-#	zoneflag RT 1
-#	zoneflag TR 1
-#	zoneflag WA 1
-#	zoneflag US 1
-#	zoneflag MQ 1
-#	zoneflag AC 1
-#	zoneflag DB 1
-#	zoneflag RR 1
-#end
+zone
+	position 0 -417 82
+	size 5 5 1
+	rotation 45
+	zoneflag B 1
+	zoneflag BY 1
+	zoneflag CB 1
+	zoneflag FO 1
+	zoneflag JM 1
+	zoneflag LT 1
+	zoneflag M 1
+	zoneflag NJ 1
+	zoneflag O 1
+	zoneflag RC 1
+	zoneflag RO 1
+	zoneflag RT 1
+	zoneflag TR 1
+	zoneflag WA 1
+	zoneflag US 1
+	zoneflag MQ 1
+	flag AC
+	flag DB
+	flag RR
+end
+
+
+basezone
+	position 0 30 25
+	rotation 0
+	size 15 15 1
+	team green
+end
+
+basezone
+	position 0 -30 25
+	rotation 0
+	size 15 15 1
+	team red
+end

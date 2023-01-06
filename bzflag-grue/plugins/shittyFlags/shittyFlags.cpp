@@ -114,7 +114,7 @@ void ShittyFlags::Event(bz_EventData *ed)
             {
                 uint32_t shotGUID = bz_getShotGUID(data->killerID, data->shotID);
                 
-                // If the killer had a flag...
+                // If the killer was Laser
                 if (data->flagKilledWith != "" && data->flagKilledWith == "L")
                 {
                     bz_BasePlayerRecord* playerRecord = bz_getPlayerByIndex(data->killerID);

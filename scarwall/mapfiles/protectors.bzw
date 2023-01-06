@@ -212,7 +212,27 @@ box
 end
 
 
+##################################
+##### Tower protectors ###########
+##################################
+physics
+	name towerProtector
+	death Nice try
+end
 
+box
+	position 0 -417 82
+	size 12 12 4
+	rotation 45
+  matref protector
+  phydrv towerProtector
+end
 
-
+box
+  position 0 417 82
+  size 12 12 4
+  rotation 45
+  matref protector
+  phydrv towerProtector
+end
 

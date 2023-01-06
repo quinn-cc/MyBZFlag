@@ -118,12 +118,14 @@ BZ_PLUGIN(AnnihilationFlag)
 void AnnihilationFlag::Init(const char*)
 {
     bz_RegisterCustomFlag("AN", "Annihilation", "You are rogue now, shoot anyone to destroy the map!", 0, eGoodFlag);
+
     bz_registerCustomBZDBBool("_annihilationUseFX", true);
     bz_registerCustomBZDBInt("_annihilationFXSWCount", 20);
     bz_registerCustomBZDBInt("_annihilationFXSWMinHeight", 10);	
     bz_registerCustomBZDBInt("_annihilationFXSWMaxHeight", 20);
 	bz_registerCustomBZDBBool("_annihilationBUImmune", true);
-    Register(bz_eFlagGrabbedEvent);
+    
+	Register(bz_eFlagGrabbedEvent);
 	Register(bz_eFlagDroppedEvent);
 	Register(bz_eFlagTransferredEvent);
 	Register(bz_eGetPlayerSpawnPosEvent);
@@ -217,6 +219,13 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 		{
 			bz_PlayerDieEventData_V2 *data = (bz_PlayerDieEventData_V2*) eventData;
 
+			bz_ApiString flag = bz_getFlagName(data->flagHeldWhenKilled);
+			if (flag == "AN")
+			{
+				data->killerID = BZ_SERVERPLAYER;
+				bz_incrementPlayerWins(data->killerID, 1);
+			}
+
 			// If the player shoots someone else with AN
 			if (data->flagKilledWith == "AN" && data->killerID != data->playerID)
 			{
@@ -284,4 +293,3 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 			break;
 	}
 }
-

@@ -52,6 +52,11 @@ void WishFlag::Init (const char*)
 {
 	bz_RegisterCustomFlag("W", "Wish", "Wish for anything and make it count!", 0, eGoodFlag);
     bz_registerCustomSlashCommand("wish", &wishCommand);
+
+    bz_registerCustomBZDBDouble("_wishPowerfulError", 0.9);
+    bz_registerCustomBZDBDouble("_wishForWishError", 1);
+    bz_registerCustomBZDBDouble("_wishRegularError", 0.1);
+
     Register(bz_eFlagGrabbedEvent);
     Register(bz_eFlagTransferredEvent);
 }
@@ -88,50 +93,84 @@ bool WishCommand::SlashCommand(int playerID, bz_ApiString command, bz_ApiString 
         {
             int wishFlagID = bz_getPlayerFlagID(playerID);
             const char* flagWished = params->get(0).c_str();
-            bool success = bz_givePlayerFlag(playerID, flagWished, true);
+            flagWished = bz_toupper(flagWished);
 
-            if (success)
+            bool error;
+            bool success = false;
+
+            if (strcmp("US", flagWished) == 0)
             {
-                bz_resetFlag(wishFlagID);
+                bz_sendTextMessage(BZ_SERVER, playerID, "Here's a useless flag for you.");
 
-                if (bz_getPlayerFlagAbbr(playerID) == "L" || bz_getPlayerFlagAbbr(playerID) == "GN"  ||
-                    bz_getPlayerFlagAbbr(playerID) == "GM" || bz_getPlayerFlagAbbr(playerID) == "AN"  ||
-                    bz_getPlayerFlagAbbr(playerID) == "FP"  || bz_getPlayerFlagAbbr(playerID) == "W"  ||
-                    bz_isTeamFlag(flagWished))
-                {
-                    if (bz_getPlayerFlagAbbr(playerID) == "W" )
-                    {
-                        bz_sendTextMessage(BZ_SERVER, playerID, "You can't wish for more wishes! Aladdin 101...");
-                        bz_killPlayer(playerID, false, BZ_SERVER);
-                    }
-                    else if (bz_getPlayerFlagAbbr(playerID) == "US")
-                    {
-                        bz_sendTextMessage(BZ_SERVER, playerID, "Here's a useless flag for you.");
+                const char* uselessFlags[5] = { "US", "MQ", "DB", "AC", "RR" };
+                srand(bz_getCurrentTime());
+                int flagIndex = rand() % 5;
+                bz_givePlayerFlag(playerID, uselessFlags[flagIndex], true);
 
-                        const char* uselessFlags[14] = { "US", "MQ", "DB", "AC", "RR" };
-                        srand(bz_getCurrentTime());
-                        int flagIndex = rand() % 14;
-                        bz_givePlayerFlag(playerID, uselessFlags[flagIndex], true);
-                    }
-                    else
-                    {
-                        bz_sendTextMessage(BZ_SERVER, playerID, "POWERFUL WISHES HAVE POWERFUL CONSEQUENCES");
+                error = false;
+                success = true;
+            }
+            else if (strcmp("W", flagWished) == 0)
+            {
+                error = bz_randFloatBetween(0, 1) < bz_getBZDBDouble("_wishForWishError");
 
-                        const char* badFlags[14] = { "B", "BY", "CB", "FO", "JM", "LT", "M", "NJ", "O", "RC", "RO", "RT", "TR", "WA" };
-                        srand(bz_getCurrentTime());
-                        int flagIndex = rand() % 14;
-                        bz_givePlayerFlag(playerID, badFlags[flagIndex], true);
-                    }
+                if (error)
+                    bz_sendTextMessage(BZ_SERVER, playerID, "You can't wish for more wishes! Aladdin 101... you have been cursed.");
+                else
+                    bz_sendTextMessage(BZ_SERVER, playerID, "You wished for another wish? Why?");
+            }
+            else if (strcmp("RR", flagWished) == 0 || strcmp("DB", flagWished) == 0 ||
+                    strcmp("AC", flagWished) == 0 || strcmp("MQ", flagWished) == 0)
+            {
+                bz_sendTextMessage(BZ_SERVER, playerID, "You had one wish, and you wished for that??");
+                error = false;
+            }
+            else if (strcmp("L", flagWished) == 0 || strcmp("GN", flagWished) == 0 ||
+                    strcmp("GM", flagWished) == 0 || strcmp("AN", flagWished) == 0 ||
+                    strcmp("FP", flagWished) == 0 || bz_isTeamFlag(flagWished))
+            {
+                error = bz_randFloatBetween(0, 1) < bz_getBZDBDouble("_wishPowerfulError");
 
-                    
-                }
+                if (error)
+                    bz_sendTextMessage(BZ_SERVER, playerID, "POWERFUL WISHES HAVE POWERFUL CONSEQUENCES");
+                else
+                    bz_sendTextMessage(BZ_SERVER, playerID, "It's your lucky day.");
             }
             else
             {
-                bz_sendTextMessagef(BZ_SERVER, playerID, "The flag '%s' does not exist.", flagWished);
-                bz_sendTextMessage(BZ_SERVER, playerID, "The correct format is /wish ##, where ## is any flag's abbreviation.");
-                bz_sendTextMessage(BZ_SERVER, playerID, "For example, /wish QT will give the Quick Turn flag.");
+                error = bz_randFloatBetween(0, 1) < bz_getBZDBDouble("_wishRegularError");
+
+                if (error)
+                    bz_sendTextMessage(BZ_SERVER, playerID, "You don't always get what you want.");
             }
+
+            // Got bad flag
+            if (error)
+            {
+                const char* badFlags[14] = { "B", "BY", "CB", "FO", "JM", "LT", "M", "NJ", "O", "RC", "RO", "RT", "TR", "WA" };
+                srand(bz_getCurrentTime());
+                int flagIndex = rand() % 14;
+                bz_givePlayerFlag(playerID, badFlags[flagIndex], true);
+                bz_resetFlag(wishFlagID);
+            }
+            else
+            {
+                if (!success)
+                    success = bz_givePlayerFlag(playerID, flagWished, true);
+
+                if (success)
+                {
+                    bz_resetFlag(wishFlagID);
+                }
+                else
+                {
+                    bz_sendTextMessagef(BZ_SERVER, playerID, "The flag '%s' does not exist.", flagWished);
+                    bz_sendTextMessage(BZ_SERVER, playerID, "The correct format is /wish ##, where ## is any flag's abbreviation.");
+                    bz_sendTextMessage(BZ_SERVER, playerID, "For example, /wish QT will give the Quick Turn flag.");
+                }
+            }
+
+            
         }
         else
         {

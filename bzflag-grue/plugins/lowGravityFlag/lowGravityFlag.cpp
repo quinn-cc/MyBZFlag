@@ -70,6 +70,7 @@ void LowGravityFlag::Init (const char*)
     bz_registerCustomBZDBDouble("_lowGravityJumpVelMult", 0.2);
     Register(bz_eFlagGrabbedEvent);
     Register(bz_eFlagDroppedEvent);
+    Register(bz_eFlagTransferredEvent);
 }
 
 void LowGravityFlag::Event(bz_EventData *eventData)

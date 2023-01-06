@@ -27,7 +27,7 @@ options
 	-loadplugin ../bzflag-grue/plugins/torpedoFlag/.libs/torpedoFlag.so
 	-loadplugin ../bzflag-grue/plugins/lowGravityFlag/.libs/lowGravityFlag.so
 	-loadplugin ../bzflag-grue/plugins/wishFlag/.libs/wishFlag.so
-	#-loadplugin ../bzflag-grue/plugins/shittyFlags/.libs/shittyFlags.so
+	-loadplugin ../bzflag-grue/plugins/shittyFlags/.libs/shittyFlags.so
 	
 	# Gameplay
 	-loadplugin ../bzflag-grue/plugins/teamFlagGeno/.libs/teamFlagGeno.so
@@ -140,9 +140,10 @@ options
 	+f AN{2}
 	+f LG{6}
 	+f W{2}
-	#+f DB{2}
-	#+f RR{2}
-	#+f AC{2}
+	+f DB{2}
+	+f RR{2}
+	+f AC{2}
+	
 	
 	###################
 	## 		Fog 	 ##
@@ -328,18 +329,23 @@ world
 	size 500
 end
 
+# Green
 base
 	position 0 30 23.000001
 	rotation 0
 	size 15 15 2
 	color 2
 end
+
+
+# Red
 base
 	position 0 -30 23.000001
 	rotation 0
 	size 15 15 2
 	color 1
 end
+
 
 
 include mapfiles/materials.bzw

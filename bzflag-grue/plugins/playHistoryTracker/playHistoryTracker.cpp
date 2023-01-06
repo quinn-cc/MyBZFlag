@@ -158,6 +158,8 @@ void PlayHistoryTracker::Event(bz_EventData *eventData)
 								bz_incrementPlayerLosses(data->killerID, points);
 							else
 								bz_incrementPlayerWins(data->killerID, points);
+
+							bz_sendTextMessage(BZ_SERVER, data->killerID, bountyMessage.c_str());
 						}
 						
 						bz_sendTextMessage(BZ_SERVER, BZ_ALLUSERS, message.c_str());

@@ -46,6 +46,7 @@ void GruesomeKillerFlag::Init(const char*)
 	bz_registerCustomBZDBInt("_gruesomeKillerBlossomCount", 12);
 	bz_registerCustomBZDBDouble("_gruesomeKillerShockwaveLifetime", 3);
 	bz_registerCustomBZDBDouble("_gruesomeKillerShrapnelLifetime", 4);
+	bz_registerCustomBZDBDouble("_gruesomeKillerShrapnelAdVel", 1.2);
 	Register(bz_ePlayerDieEvent);
 }
 
@@ -64,6 +65,9 @@ void fireShot(float playerPos[3], int killerID, float rotation, bool up)
 		vel[0] *= sqrt(2)/2.0;
 		vel[1] *= sqrt(2)/2.0;
 	}
+
+	for (int i = 0; i < 3; i++)
+		vel[i] *= bz_getBZDBDouble("_gruesomeKillerShrapnelAdVel");
 	
 	bz_fireServerShotAsPlayer("GK", pos, vel, "GK", killerID,
 			bz_getBZDBDouble("_gruesomeKillerShrapnelLifetime"));

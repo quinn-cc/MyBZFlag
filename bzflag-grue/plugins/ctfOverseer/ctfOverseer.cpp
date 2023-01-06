@@ -100,9 +100,14 @@ struct CachedGameState
 	double time;
 };
 
+class BaseZone : public bz_CustomZoneObject
+{
+public:
+	BaseZone() : bz_CustomZoneObject() {}
+	bz_eTeamType team;
+};
 
-
-class ctfOverseer : public bz_Plugin
+class ctfOverseer : public bz_Plugin, bz_CustomMapObjectHandler
 {
 	virtual const char* Name()
 	{
@@ -111,12 +116,15 @@ class ctfOverseer : public bz_Plugin
 
 	virtual void Init(const char*);
 	virtual void Event(bz_EventData*);
+	virtual bool MapObject(bz_ApiString, bz_CustomMapObjectInfo*);
 	virtual void loadConfiguration(const char* config);
 	~ctfOverseer();
 
 	virtual void Cleanup(void)
 	{
 		Flush();
+
+		bz_removeCustomMapObject("basezone");
 	}
 
 private:
@@ -136,12 +144,12 @@ private:
 	// messages, this map stores the last time the server warned the player that
 	// they must give the team flag time before they can pick it up.
 	std::map<int, double> lastFlagWarnMsg;
+	map<bz_eTeamType, BaseZone> baseZones;
 
 	int getCapReward(bz_eTeamType, bz_eTeamType);
 	bool fairCap(int, int);
 	bool fairCap(bz_eTeamType, bz_eTeamType);
 	bool cachedFairCap(bz_eTeamType, bz_eTeamType);
-	bz_eTeamType oppositeTeam(bz_eTeamType);
 	
 	/*
 	 * Cached Player List
@@ -230,26 +238,47 @@ void ctfOverseer::Init(const char* config)
 	bz_registerCustomBZDBDouble("_cachedMemoryTime", 10.0);
 	bz_registerCustomBZDBDouble("_quitterMemoryTime", 60);
 	bz_registerCustomBZDBDouble("_gameStateCacheInterval", 4.0);
+
+	bz_registerCustomMapObject("basezone", this);
 	
     Register(bz_eFlagGrabbedEvent);
     Register(bz_eCaptureEvent);
  	Register(bz_eAllowCTFCaptureEvent);
  	Register(bz_eAllowFlagGrab);
  	Register(bz_eTickEvent);
+	Register(bz_ePlayerUpdateEvent);
  	Register(bz_ePlayerJoinEvent);
 }
 
-/*
- * Returns the opposite team of the parameter. Recall this plugin only works
- * with two teams. 't' is used instead of 'team' because there is a global
- * bzflag variable called 'team'
- */
-bz_eTeamType ctfOverseer::oppositeTeam(bz_eTeamType t)
+bool ctfOverseer::MapObject(bz_ApiString object, bz_CustomMapObjectInfo* data)
 {
-	if (t == TEAM1)
-		return TEAM2;
-	else
-		return TEAM1;
+	if (object != "BASEZONE" || !data)
+		return false;
+	
+	BaseZone baseZone;
+	baseZone.handleDefaultOptions(data);
+
+	for (unsigned int i = 0; i < data->data.size(); i++)
+	{
+		std::string line = data->data.get(i).c_str();
+
+		// Step 4
+		bz_APIStringList nubs;
+		nubs.tokenize(line.c_str(), " ", 0, true);
+
+		if (nubs.size() > 0)
+		{
+			std::string key = bz_toupper(nubs.get(0).c_str());
+
+			if (key == "TEAM" && nubs.size() > 1)
+			{
+				baseZone.team = bz_stringToTeamType(nubs.get(1).c_str());
+			}
+		}
+	}
+
+	baseZones[baseZone.team] = baseZone;
+	return true;
 }
 
 CachedGameState ctfOverseer::getReferenceState()
@@ -601,7 +630,7 @@ void ctfOverseer::Event(bz_EventData *eventData)
 			if (bz_isTeamFlag(flag.c_str()) && bz_getTeamFromFlag(flag.c_str()) != player->team)
 			{
 				int thisTeamCount = bz_getTeamCount(player->team);
-				int otherTeamCount = bz_getTeamCount(oppositeTeam(player->team));
+				int otherTeamCount = bz_getTeamCount(bz_getTeamFromFlag(flag.c_str()));
 
 				// If it's not fair, let them know they're being a dick.
 				if (!fairCap(thisTeamCount, otherTeamCount))
@@ -835,29 +864,13 @@ void ctfOverseer::Event(bz_EventData *eventData)
 	 			// Clear the cap time wait if:
 	 			// (a) The last team capped grabs their own team flag
 	 			// (b) The last team capped grabs their opponents' team flag
-	 			if ((flag == bz_getFlagFromTeam(lastTeamCapped) &&
-						bz_getPlayerTeam(data->playerID) == lastTeamCapped) ||
-	 				(flag == bz_getFlagFromTeam(oppositeTeam(lastTeamCapped)) &&
-						bz_getPlayerTeam(data->playerID) == lastTeamCapped))
+	 			if (bz_isTeamFlag(flag.c_str()) && bz_getPlayerTeam(data->playerID) == lastTeamCapped)
 	 			{
 	 				lastCapTime = 0;
 	 			}
-	 			else if (flag == bz_getFlagFromTeam(lastTeamCapped) &&
-					bz_getPlayerTeam(data->playerID) == oppositeTeam(lastTeamCapped))
+	 			else if (flag == bz_getFlagFromTeam(lastTeamCapped) && bz_getPlayerTeam(data->playerID) != lastTeamCapped)
 	 			{
 	 				data->allow = false;
-		 				
-	 				// Wait 5 seconds between spamming with wait messages.
-	 				if (bz_getCurrentTime() > lastFlagWarnMsg[data->playerID] + 5)
-	 				{
-		 				bz_sendTextMessagef(
-							BZ_SERVER,
-							data->playerID,
-							"You must wait another %d seconds to grab the flag. Don't spawn-cap.",
-							(int) (lastCapTime + bz_getBZDBDouble("_capWaitTime") - bz_getCurrentTime())
-						);
-		 				lastFlagWarnMsg[data->playerID] = bz_getCurrentTime();
-	 				}
 	 			}
 	 		}
 	 	} break;
@@ -882,6 +895,33 @@ void ctfOverseer::Event(bz_EventData *eventData)
 				cachedGameStates.pop();
 			}
         } break;
+		case bz_ePlayerUpdateEvent:
+		{
+			bz_PlayerUpdateEventData_V1 *data = (bz_PlayerUpdateEventData_V1*) eventData;
+
+			if (bz_getCurrentTime() - lastCapTime < bz_getBZDBDouble("_capWaitTime"))
+	 		{
+		 		if (baseZones[lastTeamCapped].pointInZone(data->state.pos))
+				{
+					bz_debugMessagef(0, "Current time: %f", bz_getCurrentTime());
+					string warnMSG = "last warn: " + to_string(lastFlagWarnMsg[data->playerID]);
+					bz_debugMessagef(0, warnMSG.c_str());
+
+					// Wait 5 seconds between spamming with wait messages.
+					if (bz_getCurrentTime() > lastFlagWarnMsg[data->playerID] + 5.0)
+					{
+						bz_sendTextMessagef(
+							BZ_SERVER,
+							data->playerID,
+							"You must wait another %d seconds to grab the flag. Don't spawn-cap.",
+							(int) (lastCapTime + bz_getBZDBDouble("_capWaitTime") - bz_getCurrentTime())
+						);
+						
+						lastFlagWarnMsg[data->playerID] = bz_getCurrentTime();
+					}
+				}
+	 		}
+		} break;
         case bz_ePlayerJoinEvent:
 		{
 			bz_PlayerJoinPartEventData_V1* data = (bz_PlayerJoinPartEventData_V1*) eventData;

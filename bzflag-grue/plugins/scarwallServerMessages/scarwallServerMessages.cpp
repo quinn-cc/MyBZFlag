@@ -163,9 +163,10 @@ void ScarwallServerMessages::Event(bz_EventData *ed)
 		{
 			bz_FlagDroppedEventData_V1* data = (bz_FlagDroppedEventData_V1*) ed;
 
-			if (bz_isNaturalBadFlag(data->flagType))
+			if (bz_isNaturalBadFlag(data->flagType) || strcmp(data->flagType, "DB") == 0 ||
+				strcmp(data->flagType, "AC") == 0 || strcmp(data->flagType, "RR") == 0)
 				bz_resetFlag(data->flagID);
-		}
+		} break;
 		default:
 			break;
 	}
