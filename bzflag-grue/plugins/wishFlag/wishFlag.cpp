@@ -102,9 +102,9 @@ bool WishCommand::SlashCommand(int playerID, bz_ApiString command, bz_ApiString 
             {
                 bz_sendTextMessage(BZ_SERVER, playerID, "Here's a useless flag for you.");
 
-                const char* uselessFlags[5] = { "US", "MQ", "DB", "AC", "RR" };
+                const char* uselessFlags[6] = { "US", "MQ", "DB", "AC", "RR", "TA" };
                 srand(bz_getCurrentTime());
-                int flagIndex = rand() % 5;
+                int flagIndex = rand() % 6;
                 bz_givePlayerFlag(playerID, uselessFlags[flagIndex], true);
 
                 error = false;

@@ -48,6 +48,7 @@ void ScarwallServerMessages::Init(const char* arg)
     Register(bz_ePlayerJoinEvent);
     Register(bz_eTickEvent);
 	Register(bz_ePlayerDieEvent);
+	Register(bz_eFlagDroppedEvent);
     bz_registerCustomSlashCommand("teamflaggeno", &helpCommands);
     bz_registerCustomSlashCommand("customflags", &helpCommands);
     
@@ -164,7 +165,9 @@ void ScarwallServerMessages::Event(bz_EventData *ed)
 			bz_FlagDroppedEventData_V1* data = (bz_FlagDroppedEventData_V1*) ed;
 
 			if (bz_isNaturalBadFlag(data->flagType) || strcmp(data->flagType, "DB") == 0 ||
-				strcmp(data->flagType, "AC") == 0 || strcmp(data->flagType, "RR") == 0)
+				strcmp(data->flagType, "AC") == 0 || strcmp(data->flagType, "RR") == 0 ||
+				strcmp(data->flagType, "TA") == 0 || strcmp(data->flagType, "US") == 0 ||
+				strcmp(data->flagType, "MQ") == 0)
 				bz_resetFlag(data->flagID);
 		} break;
 		default:

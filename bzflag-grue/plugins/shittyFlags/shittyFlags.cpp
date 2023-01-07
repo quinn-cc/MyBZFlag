@@ -23,6 +23,33 @@ class ShittyFlags : public bz_Plugin
 	{
 		Flush();
 	}
+
+    map<int, double> lastComplainTimes;
+    const string* complaints = new string[20] {
+        "this map is so boring",
+        "anyone want to go to apoc?",
+        "there's too many shock waves",
+        "wish is so pointless",
+        "why does this map try to be like apoc",
+        "yawn",
+        "meow",
+        "can we hide the flag at the top of the tower",
+        "why cant we climb the towers",
+        "i miss apoc",
+        "skyfire is dumb",
+        "im only here cause nobody is on apoc",
+        "i miss the useless flag",
+        "shock wave is too big here",
+        "shock wave is too small here",
+        "dimension door is too confusing",
+        "this map bores me to no end",
+        "there needs to be a way to hide the flag",
+        "theres nowhere to camp with gm",
+        "sigh",
+    };
+    const int numComplaints = 20;
+    
+    const double complaintInterval = 5;
 };
 
 BZ_PLUGIN(ShittyFlags)
@@ -32,7 +59,11 @@ void ShittyFlags::Init(const char*) {
 	bz_RegisterCustomFlag("DB", "Death Blossom", "Tank shoots extra bullets in random directions.", 0, eGoodFlag);
     bz_RegisterCustomFlag("AC", "Ass Cannon", "Tank has the shits, extra shot comes out the ass.", 0, eGoodFlag);
     bz_RegisterCustomFlag("RR", "Retroreflector", "Kinda like Avenger, but stupid.", 0, eGoodFlag);
+    bz_RegisterCustomFlag("TA", "the annoying cat", "You uncontrollably complain about the map pine for Apoc.", 0, eGoodFlag);
 	Register(bz_eShotFiredEvent);
+    Register(bz_ePlayerUpdateEvent);
+    Register(bz_ePlayerJoinEvent);
+    Register(bz_ePlayerPartEvent);
 }
 
 void ShittyFlags::Event(bz_EventData *ed)
@@ -128,6 +159,37 @@ void ShittyFlags::Event(bz_EventData *ed)
                     bz_freePlayerRecord(playerRecord);
                 }
             }
+        } break;
+        case bz_ePlayerUpdateEvent:
+        {
+            bz_PlayerUpdateEventData_V1* data = (bz_PlayerUpdateEventData_V1*) ed;
+            bz_BasePlayerRecord* player = bz_getPlayerByIndex(data->playerID);
+
+            bz_ApiString flag = bz_getFlagName(player->currentFlagID);
+            if (flag == "TA")
+            {
+                if (bz_getCurrentTime() - lastComplainTimes[player->playerID] > complaintInterval)
+                {
+                    string complaint;
+                    int num = (int) bz_randFloatBetween(0, numComplaints - 0.000001);
+                    complaint = complaints[num];
+                    
+                    bz_sendTextMessage(data->playerID, BZ_ALLUSERS, complaint.c_str());
+                    lastComplainTimes[player->playerID] = bz_getCurrentTime();
+                }
+            }
+
+            bz_freePlayerRecord(player);
+        } break;
+        case bz_ePlayerJoinEvent:
+        {
+            bz_PlayerJoinPartEventData_V1* data = (bz_PlayerJoinPartEventData_V1*) ed;
+            lastComplainTimes[data->playerID] = 0;
+        } break;
+        case bz_ePlayerPartEvent:
+        {
+            bz_PlayerJoinPartEventData_V1* data = (bz_PlayerJoinPartEventData_V1*) ed;
+            lastComplainTimes.erase(data->playerID);
         } break;
         default:
             break;

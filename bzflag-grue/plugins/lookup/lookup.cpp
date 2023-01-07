@@ -1,5 +1,7 @@
 /*
  * Must keep a file called lookup.txt
+ * 
+ * FIX ME: lookup path does not work, it is hardcoded and MUST be at ../lookup.txt
  *
  * ./configure --enable-custom-plugins=lookup
  */
@@ -66,7 +68,6 @@ void writeLookupMap()
 
     if (!file)
     {
-        bz_debugMessage(0, "Failed to find file 'lookup.txt'");
         return;
     }
 
@@ -87,8 +88,6 @@ void writeLookupMap()
     
     file.close();
     lastLookupWriteTime = bz_getCurrentTime();
-
-    bz_debugMessage(1, "The lookup cache has been logged to lookup.txt");
 }
 
 bool LookupCommand::SlashCommand (int playerID, bz_ApiString command, bz_ApiString, bz_APIStringList* params)

@@ -131,6 +131,7 @@ zone
 	flag AC
 	flag DB
 	flag RR
+	flag TA
 end
 
 zone
@@ -156,6 +157,7 @@ zone
 	flag AC
 	flag DB
 	flag RR
+	flag TA
 end
 
 

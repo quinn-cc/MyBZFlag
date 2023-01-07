@@ -4823,6 +4823,9 @@ BZF_API bool bz_changeTeam(int playerID, bz_eTeamType _team)
     sendPlayerInfo();
     sendIPUpdate(-1, playerID);
 
+    if (bz_getTeamCount(_team) == 1)
+        bz_resetFlag((int) _team - 1);
+
     return true;
 }
 

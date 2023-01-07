@@ -219,13 +219,6 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 		{
 			bz_PlayerDieEventData_V2 *data = (bz_PlayerDieEventData_V2*) eventData;
 
-			bz_ApiString flag = bz_getFlagName(data->flagHeldWhenKilled);
-			if (flag == "AN")
-			{
-				data->killerID = BZ_SERVERPLAYER;
-				bz_incrementPlayerWins(data->killerID, 1);
-			}
-
 			// If the player shoots someone else with AN
 			if (data->flagKilledWith == "AN" && data->killerID != data->playerID)
 			{
@@ -285,8 +278,13 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 						bz_fireServerShot("SW", pos, vel, eRogueTeam);
 					}
 				}
-				
-				
+			}
+
+			bz_ApiString flag = bz_getFlagName(data->flagHeldWhenKilled);
+			if (flag == "AN")
+			{
+				data->killerID = BZ_SERVERPLAYER;
+				bz_incrementPlayerWins(data->killerID, 1);
 			}
 		} break;
 		default:

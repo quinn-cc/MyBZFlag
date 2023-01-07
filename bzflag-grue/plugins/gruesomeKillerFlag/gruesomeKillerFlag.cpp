@@ -57,7 +57,7 @@ void GruesomeKillerFlag::Init(const char*)
 void fireShot(float playerPos[3], int killerID, float rotation, bool up)
 {
 	float vel[3] = { cos(rotation), sin(rotation), 0 };
-	float pos[3] = { playerPos[0], playerPos[1], (float)bz_getBZDBDouble("_muzzleHeight") };
+	float pos[3] = { playerPos[0], playerPos[1], playerPos[2] + (float)bz_getBZDBDouble("_muzzleHeight") };
 	
 	if (up)
 	{

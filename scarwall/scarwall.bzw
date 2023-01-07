@@ -31,7 +31,7 @@ options
 	
 	# Gameplay
 	-loadplugin ../bzflag-grue/plugins/teamFlagGeno/.libs/teamFlagGeno.so
-	-loadplugin ../bzflag-grue/plugins/ctfOverseer/.libs/ctfOverseer.so,config.cfg
+	-loadplugin ../bzflag-grue/plugins/ctfOverseer/.libs/ctfOverseer.so
 	-loadplugin ../bzflag-grue/plugins/ScoreRestorer-master/.libs/ScoreRestorer.so
 	-loadplugin ../bzflag-grue/plugins/shotLimitZone-master/.libs/shotLimitZone.so
 	-loadplugin ../bzflag-grue/plugins/playHistoryTracker/.libs/playHistoryTracker.so
@@ -70,7 +70,6 @@ options
 	#-set _genoCooldownTime 30
 	-set _noClimb 0
 	-set _disableSpeedChecks 1	# Don't kick for moving too fast
-	-set _lookupPath ../lookup.txt
 	
 	-jitterdrop 3				# 3 jitter warnings before kicked
 	-maxidle 90					# 90 seconds, if not caught by the plugin before
@@ -139,10 +138,11 @@ options
 	+f TO{6}
 	+f AN{2}
 	+f LG{6}
-	+f W{2}
+	+f W{4}
 	+f DB{2}
 	+f RR{2}
 	+f AC{2}
+	+f TA{2}
 	
 	
 	###################
@@ -295,6 +295,7 @@ options
 	-set _gruesomeKillerBlossomCount 12
 	-set _gruesomeKillerShockwaveLifetime 2
 	-set _gruesomeKillerShrapnelLifetime 5
+	-set _gruesomeKillerShrapnelAdVel 1.5
 	
 	##############################
 	##   Flag: Dimension Door  ##

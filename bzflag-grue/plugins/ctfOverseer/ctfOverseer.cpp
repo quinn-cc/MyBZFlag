@@ -117,7 +117,6 @@ class ctfOverseer : public bz_Plugin, bz_CustomMapObjectHandler
 	virtual void Init(const char*);
 	virtual void Event(bz_EventData*);
 	virtual bool MapObject(bz_ApiString, bz_CustomMapObjectInfo*);
-	virtual void loadConfiguration(const char* config);
 	~ctfOverseer();
 
 	virtual void Cleanup(void)
@@ -128,9 +127,6 @@ class ctfOverseer : public bz_Plugin, bz_CustomMapObjectHandler
 	}
 
 private:
-	bz_eTeamType TEAM1;
-	bz_eTeamType TEAM2;
-
 	// The last team that was capped	
 	bz_eTeamType lastTeamCapped = eNoTeam;
 	// The time at which the last team was capped.
@@ -225,8 +221,6 @@ BZ_PLUGIN(ctfOverseer)
 
 void ctfOverseer::Init(const char* config)
 {
-	loadConfiguration(config);
-
 	bz_registerCustomBZDBBool("_noTeamCapture", true);
 	bz_registerCustomBZDBBool("_switchTeamsOnUnfairCap", true);
 	bz_registerCustomBZDBDouble("_fairCapRatio", 1.34);
@@ -574,21 +568,6 @@ bool ctfOverseer::isQuitter(bz_ApiString ipAddress, bz_ApiString &cachedCallsign
 	return quitter;
 }
 
-void ctfOverseer::loadConfiguration(const char* configPath)
-{
-	PluginConfig config = PluginConfig(configPath);
-    string section = "two_team";
-
-    if (config.errors)
-    {
-        bz_debugMessage(0, "Your configuration file has errors");
-        return;
-    }
-
-    TEAM1 = bz_stringToTeamType(config.item(section, "TEAM1"));
-    TEAM2 = bz_stringToTeamType(config.item(section, "TEAM2"));
-}
-
 void ctfOverseer::Event(bz_EventData *eventData)
 {
 	switch (eventData->eventType)
@@ -638,7 +617,7 @@ void ctfOverseer::Event(bz_EventData *eventData)
 					bz_sendTextMessagef(
 						BZ_SERVER,
 						data->playerID, 
-						"%d v %d? Don't be that person.",
+						"%d v %d? Don't be a jerk.",
 						thisTeamCount,
 						otherTeamCount
 					);
