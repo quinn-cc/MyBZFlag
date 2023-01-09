@@ -151,8 +151,15 @@ void ScarwallServerMessages::Event(bz_EventData *ed)
 				(mode == "red" && bz_getPlayerTeam(data->killerID) == eRedTeam) ||
 				(mode == "green" && bz_getPlayerTeam(data->killerID) == eGreenTeam))
 			{
+				const char* flagType = bz_getPlayerFlagAbbr(data->killerID).c_str();
+
 				if (!bz_isTeamFlag(bz_getPlayerFlagAbbr(data->killerID).c_str()) &&
-					strcmp(bz_getPlayerFlagAbbr(data->killerID).c_str(), "AN") != 0)
+					strcmp(bz_getPlayerFlagAbbr(data->killerID).c_str(), "AN") != 0 &&
+					!(bz_isNaturalBadFlag(flagType) || strcmp(flagType, "DB") == 0 ||
+					strcmp(flagType, "AC") == 0 || strcmp(flagType, "RR") == 0 ||
+					strcmp(flagType, "TA") == 0 || strcmp(flagType, "US") == 0 ||
+					strcmp(flagType, "MQ") == 0))
+
 					bz_resetFlag(bz_getPlayerFlagID(data->killerID));
 			}
 		} break;
@@ -168,7 +175,9 @@ void ScarwallServerMessages::Event(bz_EventData *ed)
 				strcmp(data->flagType, "AC") == 0 || strcmp(data->flagType, "RR") == 0 ||
 				strcmp(data->flagType, "TA") == 0 || strcmp(data->flagType, "US") == 0 ||
 				strcmp(data->flagType, "MQ") == 0)
-				bz_resetFlag(data->flagID);
+				if (data->flagID >= 0)
+					bz_resetFlag(data->flagID);
+					//bz_resetFlag(data->flagID);
 		} break;
 		default:
 			break;

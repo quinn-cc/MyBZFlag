@@ -79,7 +79,7 @@ void ObserverHandler::Event(bz_EventData* eventData)
                 }
             }
 
-            delete playerList;
+            bz_deleteIntList(playerList);
         } break;
         case bz_ePlayerJoinEvent:
 		{
