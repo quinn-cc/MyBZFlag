@@ -160,7 +160,7 @@ void ScarwallServerMessages::Event(bz_EventData *ed)
 					strcmp(flagType, "TA") == 0 || strcmp(flagType, "US") == 0 ||
 					strcmp(flagType, "MQ") == 0))
 
-					bz_resetFlag(bz_getPlayerFlagID(data->killerID));
+					bz_delayedFlagReset(bz_getPlayerFlagID(data->killerID));
 			}
 		} break;
 		case bz_eTickEvent:
@@ -176,8 +176,7 @@ void ScarwallServerMessages::Event(bz_EventData *ed)
 				strcmp(data->flagType, "TA") == 0 || strcmp(data->flagType, "US") == 0 ||
 				strcmp(data->flagType, "MQ") == 0)
 				if (data->flagID >= 0)
-					bz_resetFlag(data->flagID);
-					//bz_resetFlag(data->flagID);
+					bz_delayedFlagReset(data->flagID);
 		} break;
 		default:
 			break;

@@ -263,8 +263,11 @@ Permissions.o: Permissions.cxx /usr/include/stdc-predef.h Permissions.h \
  ../../include/Flag.h ../../include/WordFilter.h \
  ../../include/PlayerState.h FlagHistory.h ../../include/LagInfo.h \
  ../../include/PlayerInfo.h Score.h ../../include/bzfsAPI.h \
- /usr/include/c++/9/cstring RecordReplay.h ../../include/NetHandler.h \
- /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/cstring /usr/include/c++/9/queue \
+ /usr/include/c++/9/deque /usr/include/c++/9/bits/stl_deque.h \
+ /usr/include/c++/9/bits/deque.tcc /usr/include/c++/9/bits/stl_queue.h \
+ RecordReplay.h ../../include/NetHandler.h /usr/include/c++/9/memory \
+ /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \
  /usr/include/c++/9/bits/unique_ptr.h \
  /usr/include/c++/9/bits/shared_ptr.h \
@@ -280,11 +283,9 @@ Permissions.o: Permissions.cxx /usr/include/stdc-predef.h Permissions.h \
  WorldInfo.h EntryZones.h CustomZone.h WorldFileLocation.h \
  WorldFileObject.h ../../include/MeshTransform.h WorldWeapons.h \
  ../../include/WorldEventManager.h ../../include/bzfsAPI.h \
- ../../include/LinkManager.h VotingArbiter.h /usr/include/c++/9/deque \
- /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc \
- ../../include/VotingBooth.h ShotManager.h ../../include/vectors.h \
- ../../include/vectors_old.h /usr/include/c++/9/functional \
- /usr/include/c++/9/bits/std_function.h
+ ../../include/LinkManager.h VotingArbiter.h ../../include/VotingBooth.h \
+ ShotManager.h ../../include/vectors.h ../../include/vectors_old.h \
+ /usr/include/c++/9/functional /usr/include/c++/9/bits/std_function.h
 
 /usr/include/stdc-predef.h:
 
@@ -1002,6 +1003,16 @@ Score.h:
 
 /usr/include/c++/9/cstring:
 
+/usr/include/c++/9/queue:
+
+/usr/include/c++/9/deque:
+
+/usr/include/c++/9/bits/stl_deque.h:
+
+/usr/include/c++/9/bits/deque.tcc:
+
+/usr/include/c++/9/bits/stl_queue.h:
+
 RecordReplay.h:
 
 ../../include/NetHandler.h:
@@ -1067,12 +1078,6 @@ WorldWeapons.h:
 ../../include/LinkManager.h:
 
 VotingArbiter.h:
-
-/usr/include/c++/9/deque:
-
-/usr/include/c++/9/bits/stl_deque.h:
-
-/usr/include/c++/9/bits/deque.tcc:
 
 ../../include/VotingBooth.h:
 

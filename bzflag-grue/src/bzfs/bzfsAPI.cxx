@@ -4972,6 +4972,25 @@ BZF_API bz_eTeamType bz_stringToTeamType(std::string teamColor)
     }
 }
 
+std::queue<std::tuple<double, int>> delayedFlagResetQueue;
+
+BZF_API bool bz_delayedFlagReset(int flagID)
+{
+    bool valid = true;
+
+    if (bz_pluginExists("Delayed Flag Reset Manager"))
+    {
+        std::tuple<double, int> data(bz_getCurrentTime(), flagID);
+        delayedFlagResetQueue.push(data);
+    }
+    else
+    {
+        bz_debugMessage(0, "Error: trying to use the bz_delayedFlagReset method without the 'Delayed Flag Reset Manager' plugin loaded.");
+    }
+
+    return valid;
+}
+
 
 /*
 BZF_API std::string bz_ltrim (std::string _str, const char* trim = " ")

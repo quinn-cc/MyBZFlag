@@ -21,6 +21,8 @@
 #include <vector>
 #include <cstdlib>
 #include <stdint.h>
+#include <queue>
+#include <tuple>
 
 
 /* DO NOT INCLUDE ANY OTHER HEADERS IN THIS FILE */
@@ -2466,6 +2468,10 @@ BZF_API bz_eTeamType bz_getUnbalancedTeam(bz_eTeamType, bz_eTeamType);
 BZF_API void bz_setServerVariableForPlayer(int playerID, const std::string& key, const std::string& value);
 BZF_API bool bz_isNaturalBadFlag(const char* flagAbbr);
 BZF_API bz_eTeamType bz_stringToTeamType(std::string teamColor);
+
+BZF_API bool bz_delayedFlagReset(int flagID);
+extern std::queue<std::tuple<double, int>> delayedFlagResetQueue; // time, flagID
+
 
 #endif //_BZFS_API_H_
 

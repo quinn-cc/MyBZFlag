@@ -12,6 +12,9 @@ options
 	# Shot assigner, must be loaded before any custom flags
 	-loadplugin ../bzflag-grue/plugins/shotAssigner/.libs/shotAssigner.so
 
+	# Delayed Flag Reset Manager, must be loaded to use the bz_delayedFlagReset method
+	-loadplugin ../bzflag-grue/plugins/delayedFlagResetManager/.libs/delayedFlagResetManager.so
+
 	# Custom flags
 	-loadplugin ../bzflag-grue/plugins/grenadeFlag/.libs/grenadeFlag.so
 	-loadplugin ../bzflag-grue/plugins/verticalVelocityFlag/.libs/verticalVelocityFlag.so
@@ -26,6 +29,7 @@ options
 	-loadplugin ../bzflag-grue/plugins/dimensionDoorFlag/.libs/dimensionDoorFlag.so
 	-loadplugin ../bzflag-grue/plugins/torpedoFlag/.libs/torpedoFlag.so
 	-loadplugin ../bzflag-grue/plugins/lowGravityFlag/.libs/lowGravityFlag.so
+	-loadplugin ../bzflag-grue/plugins/highGravityFlag/.libs/highGravityFlag.so
 	-loadplugin ../bzflag-grue/plugins/wishFlag/.libs/wishFlag.so
 	-loadplugin ../bzflag-grue/plugins/shittyFlags/.libs/shittyFlags.so
 	
@@ -138,7 +142,10 @@ options
 	+f TO{6}
 	+f AN{2}
 	+f LG{6}
+	+f HG{6}
 	+f W{4}
+
+	# Shitty flags
 	+f DB{2}
 	+f RR{2}
 	+f AC{2}
@@ -195,20 +202,7 @@ options
 	
 	##########################
 	##   Flag: Rapid Fire   ##
-	##########################
-	-set _rFireAdVel 2				# Multiplied by _shotSpeed to determine the speed of the rapid fire bullets.
-	-set _rFireAdRate 2				# The reload time (in seconds) for rapid fire bullets.
-	
-	#####################
-	##   Flag: Shield  ##
-	#####################
-	-set _shieldFlight .05			# The amount of time (in seconds) that a shield flag floats in the air (after you drop it) before coming down again.
-
-	##########################
-	##   Flag: Shock Wave   ##
-	##########################
-	-set _shockAdLife .2			# The amount of time (in seconds) that a shockwave lasts.
-	-set _shockInRadius 10			# _tankLength	The starting radius of the shockwave. Negative values will make the shockwave shrink and expand.
+	####################lowGravityFlag0			# _tankLength	The starting radius of the shockwave. Negative values will make the shockwave shrink and expand.
 	-set _shockOutRadius 45
 	
 	###########################
@@ -314,6 +308,12 @@ options
 	##############################
 	-set _lowGravityMult 1.2
 	-set _lowGravityJumpVelMult 1.5
+
+	##############################
+	##   Flag: High Gravity     ##
+	##############################
+	-set _highGravityMult 4
+	-set _highGravityJumpVelMult 1.2
 	
 
 	#################################

@@ -151,7 +151,7 @@ bool WishCommand::SlashCommand(int playerID, bz_ApiString command, bz_ApiString 
                 srand(bz_getCurrentTime());
                 int flagIndex = rand() % 14;
                 bz_givePlayerFlag(playerID, badFlags[flagIndex], true);
-                bz_resetFlag(wishFlagID);
+                bz_delayedFlagReset(wishFlagID);
             }
             else
             {
@@ -160,7 +160,7 @@ bool WishCommand::SlashCommand(int playerID, bz_ApiString command, bz_ApiString 
 
                 if (success)
                 {
-                    bz_resetFlag(wishFlagID);
+                    bz_delayedFlagReset(wishFlagID);
                 }
                 else
                 {

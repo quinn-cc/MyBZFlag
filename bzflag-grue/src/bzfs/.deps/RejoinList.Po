@@ -259,8 +259,11 @@ RejoinList.o: RejoinList.cxx /usr/include/stdc-predef.h RejoinList.h \
  GameKeeper.h ../../include/PlayerState.h FlagHistory.h Permissions.h \
  /usr/include/c++/9/bitset ../../include/LagInfo.h \
  ../../include/PlayerInfo.h Score.h ../../include/bzfsAPI.h \
- /usr/include/c++/9/cstring ../../include/NetHandler.h \
- /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/cstring /usr/include/c++/9/queue \
+ /usr/include/c++/9/deque /usr/include/c++/9/bits/stl_deque.h \
+ /usr/include/c++/9/bits/deque.tcc /usr/include/c++/9/bits/stl_queue.h \
+ ../../include/NetHandler.h /usr/include/c++/9/memory \
+ /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \
  /usr/include/c++/9/bits/unique_ptr.h \
  /usr/include/c++/9/bits/shared_ptr.h \
@@ -977,6 +980,16 @@ Score.h:
 ../../include/bzfsAPI.h:
 
 /usr/include/c++/9/cstring:
+
+/usr/include/c++/9/queue:
+
+/usr/include/c++/9/deque:
+
+/usr/include/c++/9/bits/stl_deque.h:
+
+/usr/include/c++/9/bits/deque.tcc:
+
+/usr/include/c++/9/bits/stl_queue.h:
 
 ../../include/NetHandler.h:
 

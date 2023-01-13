@@ -204,7 +204,10 @@ WorldEventManager.o: WorldEventManager.cxx /usr/include/stdc-predef.h \
  ../../include/bzfsAPI.h /usr/include/c++/9/cstring /usr/include/string.h \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+ /usr/include/c++/9/queue /usr/include/c++/9/deque \
+ /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc \
+ /usr/include/c++/9/bits/stl_queue.h
 
 /usr/include/stdc-predef.h:
 
@@ -731,3 +734,13 @@ WorldEventManager.o: WorldEventManager.cxx /usr/include/stdc-predef.h \
 /usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
+/usr/include/c++/9/queue:
+
+/usr/include/c++/9/deque:
+
+/usr/include/c++/9/bits/stl_deque.h:
+
+/usr/include/c++/9/bits/deque.tcc:
+
+/usr/include/c++/9/bits/stl_queue.h:

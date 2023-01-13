@@ -253,10 +253,12 @@ CustomPyramid.o: CustomPyramid.cxx /usr/include/stdc-predef.h \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- ../../include/PlayerInfo.h ../../include/TimeKeeper.h \
- ../../include/Team.h ../../include/Protocol.h ../../include/Flag.h \
- ../../include/WordFilter.h /usr/include/c++/9/fstream \
- /usr/include/c++/9/bits/codecvt.h \
+ /usr/include/c++/9/queue /usr/include/c++/9/deque \
+ /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc \
+ /usr/include/c++/9/bits/stl_queue.h ../../include/PlayerInfo.h \
+ ../../include/TimeKeeper.h ../../include/Team.h ../../include/Protocol.h \
+ ../../include/Flag.h ../../include/WordFilter.h \
+ /usr/include/c++/9/fstream /usr/include/c++/9/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
  /usr/include/c++/9/bits/fstream.tcc ../../include/TextUtils.h \
@@ -933,6 +935,16 @@ WorldWeapons.h:
 /usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
+/usr/include/c++/9/queue:
+
+/usr/include/c++/9/deque:
+
+/usr/include/c++/9/bits/stl_deque.h:
+
+/usr/include/c++/9/bits/deque.tcc:
+
+/usr/include/c++/9/bits/stl_queue.h:
 
 ../../include/PlayerInfo.h:
 
