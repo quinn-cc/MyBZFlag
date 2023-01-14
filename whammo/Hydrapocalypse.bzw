@@ -210,6 +210,84 @@ options
   +f V{2}  #  Velocity (high speed)
   +f WG{2} #  WinGs 
   -f bad
+
+  ######################
+	##   Flag: Grenade  ##
+	######################
+	-set _grenadeVerticalVelocity 1
+	-set _grenadeSpeedAdVel 2
+	-set _grenadeAccuracy 0.1
+	-set _grenadeLifetime 4
+	-set _grenadeExplosionLifetime 8
+	-set _grenadeExplosionLifetimeEndShort 0.8
+	
+	################################
+	##   Flag: Vertical Velocity  ##
+	################################
+	-set _verticalVelocityWidth 2.5
+	
+	##########################
+	##   Flag: Fifty Point  ##
+	##########################
+	-sl fp 1
+	
+	###########################
+	##   Flag: Annihilation  ##
+	###########################
+	-set _annihilationFXSWCount 150
+	-set _annihilationFXSWMinHeight 46
+	-set _annihilationFXSWMaxHeight 90
+	
+	######################
+	##   Flag: Airshot  ##
+	######################
+	 -set _airshotAngle 0.10
+	
+	###########################
+	##   Flag: Phantom Zone  ##
+	###########################
+	-sl PZ 1
+	
+	######################
+	##   Flag: Skyfire  ##
+	######################
+	-set _skyfireHeight 150
+	-set _skyfireRadius 70
+	-set _skyfireCount 15
+	-set _skyfireVertSpeedAdVel 1.7
+	-set _skyfireHorizSpeedAdVel 1
+	
+	##############################
+	##   Flag: Gruesome Killer  ##
+	##############################
+	-set _gruesomeKillerBlossomCount 12
+	-set _gruesomeKillerShockwaveLifetime 2
+	-set _gruesomeKillerShrapnelLifetime 5
+	-set _gruesomeKillerShrapnelAdVel 1.5
+	
+	##############################
+	##   Flag: Dimension Door  ##
+	##############################
+	-set _dimensionDoorAdVel 4
+	-set _dimensionDoorVerticalVelocity 1
+	-set _dimensionDoorWidth 2
+
+	##############################
+	##   Flag: Torpedo          ##
+	##############################
+	# settings here...
+
+	##############################
+	##   Flag: Low Gravity      ##
+	##############################
+	-set _lowGravityMult 1.2
+	-set _lowGravityJumpVelMult 1.5
+
+	##############################
+	##   Flag: High Gravity     ##
+	##############################
+	-set _highGravityMult 4
+	-set _highGravityJumpVelMult 1.2
   
   +s 200
   -f US
