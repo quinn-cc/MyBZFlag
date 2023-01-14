@@ -80,6 +80,10 @@ options
 	+f AN{2}
 	+f LG{6}
 
+  -set _flagHeight -1
+	-set _noClimb 0
+	-set _disableSpeedChecks 1	# Don't kick for moving too fast
+
   -c
   -mp 2,2,2,0,0,2
   -j
