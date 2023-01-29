@@ -282,12 +282,6 @@ options
 	##############################
 	-set _lowGravityMult 1.2
 	-set _lowGravityJumpVelMult 1.5
-
-	##############################
-	##   Flag: High Gravity     ##
-	##############################
-	-set _highGravityMult 4
-	-set _highGravityJumpVelMult 1.2
   
   +s 200
   -f US

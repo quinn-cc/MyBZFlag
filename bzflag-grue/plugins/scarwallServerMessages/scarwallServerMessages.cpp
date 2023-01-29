@@ -217,10 +217,8 @@ bool HelpCommands::SlashCommand (int playerID, bz_ApiString command, bz_ApiStrin
 		"*   time you fire, a shock wave explodes at the position *\n"
 		"*   of the zoned shots.                                  *\n"
 		"*                                                        *\n"
-		"* - Vertical Velocity (VV): The tank fires two extra     *\n"
-		"*   shots alongside the normal one that travel with      *\n"
-		"*   vertical velocity. That means, if your tank is       *\n"
-		"*   travelling upward when you shoot, so do those shots. *\n"
+		"* - Vertical Velocity (VV): Shots travel with vertical   *\n"
+		"*   velocity.                                            *\n"
 		"*                                                        *\n"
 		"* - Annihilation (AN): You go rogue when you grab this   *\n"
 		"*   flag! Shooting anyone will make the whole map blow   *\n"
@@ -265,6 +263,8 @@ bool HelpCommands::SlashCommand (int playerID, bz_ApiString command, bz_ApiStrin
 		"*   abbreviation. Be careful not to wish for something   *\n"
 		"*   too powerful or you may face dire consequences!      *\n"
 		"*       												  *\n"
+		"* - Shotgun (SG): Tank fires a small cluster of shots.   *\n"
+		"*                                                        *\n"
 		"**********************************************************";
 		broadcastMessage(lines, playerID);
 		

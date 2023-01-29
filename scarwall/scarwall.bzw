@@ -1,6 +1,3 @@
-#
-# 
-
 options 
 	###################
 	## 	  Plugins 	 ##
@@ -29,9 +26,9 @@ options
 	-loadplugin ../bzflag-grue/plugins/dimensionDoorFlag/.libs/dimensionDoorFlag.so
 	-loadplugin ../bzflag-grue/plugins/torpedoFlag/.libs/torpedoFlag.so
 	-loadplugin ../bzflag-grue/plugins/lowGravityFlag/.libs/lowGravityFlag.so
-	-loadplugin ../bzflag-grue/plugins/highGravityFlag/.libs/highGravityFlag.so
 	-loadplugin ../bzflag-grue/plugins/wishFlag/.libs/wishFlag.so
 	-loadplugin ../bzflag-grue/plugins/shittyFlags/.libs/shittyFlags.so
+	-loadplugin ../bzflag-grue/plugins/shotgunFlag/.libs/shotgunFlag.so
 	
 	# Gameplay
 	-loadplugin ../bzflag-grue/plugins/teamFlagGeno/.libs/teamFlagGeno.so
@@ -74,6 +71,7 @@ options
 	#-set _genoCooldownTime 30
 	-set _noClimb 0
 	-set _disableSpeedChecks 1	# Don't kick for moving too fast
+	-sw 1 						# Drop bad flag after one win
 	
 	-jitterdrop 3				# 3 jitter warnings before kicked
 	-maxidle 90					# 90 seconds, if not caught by the plugin before
@@ -142,8 +140,8 @@ options
 	+f TO{6}
 	+f AN{2}
 	+f LG{6}
-	+f HG{6}
 	+f W{4}
+	+f SG{6}
 
 	# Shitty flags
 	+f DB{2}
@@ -308,12 +306,6 @@ options
 	##############################
 	-set _lowGravityMult 1.2
 	-set _lowGravityJumpVelMult 1.5
-
-	##############################
-	##   Flag: High Gravity     ##
-	##############################
-	-set _highGravityMult 4
-	-set _highGravityJumpVelMult 1.2
 	
 
 	#################################

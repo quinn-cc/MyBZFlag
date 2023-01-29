@@ -160,7 +160,7 @@ void AnnihilationFlag::Event(bz_EventData *eventData)
 				originalPlayerTeam.find(data->playerID) != originalPlayerTeam.end() &&
 				playerLocMap.find(data->playerID) == playerLocMap.end())
 			{
-				bz_resetFlag(data->flagID);
+				bz_delayedFlagReset(data->flagID);
 				switchPlayer(data->playerID, false);
 			}
 		} break;
