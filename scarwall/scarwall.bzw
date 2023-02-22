@@ -12,6 +12,8 @@ options
 	# Delayed Flag Reset Manager, must be loaded to use the bz_delayedFlagReset method
 	-loadplugin ../bzflag-grue/plugins/delayedFlagResetManager/.libs/delayedFlagResetManager.so
 
+	-loadplugin ../bzflag-grue/plugins/openai/.libs/openai.so
+
 	# Custom flags
 	-loadplugin ../bzflag-grue/plugins/grenadeFlag/.libs/grenadeFlag.so
 	-loadplugin ../bzflag-grue/plugins/verticalVelocityFlag/.libs/verticalVelocityFlag.so
@@ -29,6 +31,7 @@ options
 	-loadplugin ../bzflag-grue/plugins/wishFlag/.libs/wishFlag.so
 	-loadplugin ../bzflag-grue/plugins/shittyFlags/.libs/shittyFlags.so
 	-loadplugin ../bzflag-grue/plugins/shotgunFlag/.libs/shotgunFlag.so
+	
 	
 	# Gameplay
 	-loadplugin ../bzflag-grue/plugins/teamFlagGeno/.libs/teamFlagGeno.so
