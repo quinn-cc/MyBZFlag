@@ -66,7 +66,7 @@ void broadcastMsg(std::string msg)
 void makeOpenAICall(std::string msg)
 {
     bz_debugMessage(0, "Message to server");
-    std::string cmd = "python3.8 openai_runner.py \"" + msg + "\"";
+    std::string cmd = "./openai_runner.py \"" + msg + "\"";
     std::string output = exec(cmd.c_str());
     bz_debugMessage(0, "Exec finished");
     broadcastMsg(output);
